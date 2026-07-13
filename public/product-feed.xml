@@ -4,6 +4,18 @@
     <title>קולולו</title>
     <link>https://example.com</link>
     <description>Product feed for קולולו</description>
-    <lastBuildDate>Mon, 13 Jul 2026 13:10:21 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jul 2026 13:29:09 GMT</lastBuildDate>
+    <item>
+      <g:id>86d8d427-81e2-45f5-985a-be418f6a2758</g:id>
+      <g:title>מארז יום הולדת לאישה</g:title>
+      <g:description>מארז יום הולדת לאישה</g:description>
+      <g:link>https://example.com/product/marz-yvm-hvldt-layshh-dyefos</g:link>
+      <g:image_link>https://example.com/assets/product-1783949078369-9lzt09.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>399.00 ILS</g:price>
+      <g:condition>new</g:condition>
+      <g:brand>קולולו</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+    </item>
   </channel>
 </rss>

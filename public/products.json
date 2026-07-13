@@ -1,8 +1,31 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-13T13:10:21.963Z",
+  "generated_at": "2026-07-13T13:29:09.195Z",
   "base_url": "https://example.com",
   "currency": "ILS",
-  "count": 0,
-  "products": []
+  "count": 1,
+  "products": [
+    {
+      "id": "86d8d427-81e2-45f5-985a-be418f6a2758",
+      "slug": "marz-yvm-hvldt-layshh-dyefos",
+      "name": "מארז יום הולדת לאישה",
+      "name_translations": {},
+      "description": "",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 399,
+      "base_price": 399,
+      "sale_price": null,
+      "currency": "ILS",
+      "images": [
+        "https://example.com/assets/product-1783949078369-9lzt09.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://example.com/product/marz-yvm-hvldt-layshh-dyefos",
+      "categories": [],
+      "updated_at": "2026-07-13T13:27:04.721Z"
+    }
+  ]
 }
