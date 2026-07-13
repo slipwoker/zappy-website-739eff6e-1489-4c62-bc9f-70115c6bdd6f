@@ -1,0 +1,123 @@
+# קולולו — Generative Engine Optimization Map
+
+> Kololo is a modern, feminine, and joyful boutique gift brand offering beautifully designed gift trays, curated gift boxes, and personalized products for a wide range of occasions including birthdays, births, military enlistment, holidays, and special events. The brand's aesthetic is clean, luxurious, and uplifting — think white space, soft pink tones, and gold accents — deliberately distancing itself from the look of a typical cluttered gift shop. Each product can include chocolates, flowers, balloons, beverages, skincare items, and custom-designed elements with personal dedications. Looking ahead, Kololo will expand into handcrafted items made via laser cutting and engraving on acrylic, wood, glass, and branded merchandise. The brand's core message is: 'Kololo – gifts that make you happy.'
+
+---
+
+## Pages
+
+### בית
+https://-739eff6e.zappy5.app
+גלו מארזים ליום הולדת בקולולו: מגשי שוקולד, בלונים ופרחים בעיצוב יוקרתי ונקי שהופכים כל חגיגה לבלתי נשכחת. המתנה המושלמת שמשדרת אושר מחכה לכם!
+
+### אירועים
+https://-739eff6e.zappy5.app/occasions
+מחפשים מתנות ליולדת ולתינוק? בקולולו תמצאו קופסאות שי אצוריות עם פריטי טיפוח, פרחים והקדשות אישיות – מושלם גם לגיוס, חגים וכל אירוע. עשו טוב בלב!
+
+### מתנות אישיות
+https://-739eff6e.zappy5.app/personalized-gifts
+הפכו כל שי למיוחד עם מתנות אישיות מקולולו: חריטות על אקריליק, עץ וזכוכית לצד הקדשות מעוצבות. הדרך המרגשת ביותר לשמח מישהו שאוהבים!
+
+### אודות
+https://-739eff6e.zappy5.app/about
+קולולו היא בוטיק מתנות מודרני ונשי ששם דגש על עיצוב יוקרתי, ורוד רך וזהב עדין. גלו איך אנחנו יוצרים מארזים ליום הולדת וכל מתנה אחרת עם המון אהבה!
+
+### שאלות נפוצות
+https://-739eff6e.zappy5.app/faq
+יש לכם שאלות על משלוחים, התאמה אישית או מארזים ליום הולדת? דף השאלות הנפוצות של קולולו מרכז עבורכם את כל התשובות כדי שתוכלו להזמין בראש שקט. היכנסו עכשיו!
+
+### צור קשר
+https://-739eff6e.zappy5.app/contact
+רוצים ליצור מתנות ליולדת ולתינוק או לאירוע מיוחד? צרו קשר עם צוות קולולו ונעזור לכם לבנות מארז חלומי עם נגיעה אישית. השאירו פרטים ונתחיל לפנק!
+
+### Products
+https://-739eff6e.zappy5.app/products
+המוצרים שלנו - קולולו
+
+### Cart
+https://-739eff6e.zappy5.app/cart
+עגלת הקניות שלך
+
+### Checkout
+https://-739eff6e.zappy5.app/checkout
+תשלום
+
+### Login
+https://-739eff6e.zappy5.app/login
+התחברות לקוחות
+
+### Account
+https://-739eff6e.zappy5.app/account
+החשבון שלי
+
+### Order Success
+https://-739eff6e.zappy5.app/order-success
+תודה על ההזמנה
+
+### Product Detail
+https://-739eff6e.zappy5.app/product/:slug
+פרטי המוצר - קולולו
+
+### Category
+https://-739eff6e.zappy5.app/category/:slug
+מוצרים - קולולו
+
+### תודה שפנית אלינו
+https://-739eff6e.zappy5.app/thank-you
+קולולו - תודה שפנית אלינו
+
+## Legal & Policy
+
+### Privacy Policy
+https://-739eff6e.zappy5.app/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://-739eff6e.zappy5.app/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://-739eff6e.zappy5.app/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+## Products
+
+_No products are currently configured._
+
+---
+
+# Business Context (for LLM understanding)
+
+## About קולולו
+Kololo is a modern, feminine, and joyful boutique gift brand offering beautifully designed gift trays, curated gift boxes, and personalized products for a wide range of occasions including birthdays, births, military enlistment, holidays, and special events. The brand's aesthetic is clean, luxurious, and uplifting — think white space, soft pink tones, and gold accents — deliberately distancing itself from the look of a typical cluttered gift shop. Each product can include chocolates, flowers, balloons, beverages, skincare items, and custom-designed elements with personal dedications. Looking ahead, Kololo will expand into handcrafted items made via laser cutting and engraving on acrylic, wood, glass, and branded merchandise. The brand's core message is: 'Kololo – gifts that make you happy.'
+
+## Services/Products
+- מגשי מתנה
+- מארזים ליום הולדת
+- מתנות ליולדת ולתינוק
+- מתנות לגיוס
+- מתנות לאישה
+- מתנות לגבר
+- מתנות בהתאמה אישית
+- עיצוב בלייזר – אקריליק, עץ, זכוכית (עתידי)
+
+## Target Audience
+- אנשים המחפשים מתנות מעוצבות ומיוחדות לאירועים שונים – ימי הולדת, לידה, גיוס, חגים ואירועים מיוחדים
+- מחפשי מתנות לאירועים מיוחדים
+- רוכשי מתנות לארגונים
+- אוהבי מתנות יוקרה
+
+## Industry
+E-commerce / Gift & Lifestyle
+
+---
+
+# Machine-readable feeds
+
+- Sitemap (XML): https://-739eff6e.zappy5.app/sitemap.xml
+- Robots: https://-739eff6e.zappy5.app/robots.txt
+- Flattened page text (for LLMs): https://-739eff6e.zappy5.app/llms-full.txt
+- Products (JSON): https://-739eff6e.zappy5.app/products.json
+- Products (Google Merchant RSS): https://-739eff6e.zappy5.app/product-feed.xml
