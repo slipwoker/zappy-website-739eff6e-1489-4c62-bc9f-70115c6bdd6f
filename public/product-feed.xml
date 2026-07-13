@@ -2,15 +2,15 @@
 <rss xmlns:g="http://base.google.com/ns/1.0" version="2.0">
   <channel>
     <title>קולולו</title>
-    <link>https://example.com</link>
+    <link>https://kolulu.zappy5.app</link>
     <description>Product feed for קולולו</description>
-    <lastBuildDate>Mon, 13 Jul 2026 13:31:25 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jul 2026 13:31:46 GMT</lastBuildDate>
     <item>
       <g:id>86d8d427-81e2-45f5-985a-be418f6a2758</g:id>
       <g:title>מארז יום הולדת לאישה</g:title>
       <g:description>מארז יום הולדת לאישה</g:description>
-      <g:link>https://example.com/product/marz-yvm-hvldt-layshh-dyefos</g:link>
-      <g:image_link>https://example.com/assets/product-1783949078369-9lzt09.webp</g:image_link>
+      <g:link>https://kolulu.zappy5.app/product/marz-yvm-hvldt-layshh-dyefos</g:link>
+      <g:image_link>https://kolulu.zappy5.app/assets/product-1783949078369-9lzt09.webp</g:image_link>
       <g:availability>in_stock</g:availability>
       <g:price>399.00 ILS</g:price>
       <g:condition>new</g:condition>

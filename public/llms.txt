@@ -7,77 +7,77 @@
 ## Pages
 
 ### בית
-https://example.com
+https://kolulu.zappy5.app
 גלו מארזים ליום הולדת בקולולו: מגשי שוקולד, בלונים ופרחים בעיצוב יוקרתי ונקי שהופכים כל חגיגה לבלתי נשכחת. המתנה המושלמת שמשדרת אושר מחכה לכם!
 
 ### אירועים
-https://example.com/occasions
+https://kolulu.zappy5.app/occasions
 מחפשים מתנות ליולדת ולתינוק? בקולולו תמצאו קופסאות שי אצוריות עם פריטי טיפוח, פרחים והקדשות אישיות – מושלם גם לגיוס, חגים וכל אירוע. עשו טוב בלב!
 
 ### מתנות אישיות
-https://example.com/personalized-gifts
+https://kolulu.zappy5.app/personalized-gifts
 הפכו כל שי למיוחד עם מתנות אישיות מקולולו: חריטות על אקריליק, עץ וזכוכית לצד הקדשות מעוצבות. הדרך המרגשת ביותר לשמח מישהו שאוהבים!
 
 ### אודות
-https://example.com/about
+https://kolulu.zappy5.app/about
 קולולו היא בוטיק מתנות מודרני ונשי ששם דגש על עיצוב יוקרתי, ורוד רך וזהב עדין. גלו איך אנחנו יוצרים מארזים ליום הולדת וכל מתנה אחרת עם המון אהבה!
 
 ### שאלות נפוצות
-https://example.com/faq
+https://kolulu.zappy5.app/faq
 יש לכם שאלות על משלוחים, התאמה אישית או מארזים ליום הולדת? דף השאלות הנפוצות של קולולו מרכז עבורכם את כל התשובות כדי שתוכלו להזמין בראש שקט. היכנסו עכשיו!
 
 ### צור קשר
-https://example.com/contact
+https://kolulu.zappy5.app/contact
 רוצים ליצור מתנות ליולדת ולתינוק או לאירוע מיוחד? צרו קשר עם צוות קולולו ונעזור לכם לבנות מארז חלומי עם נגיעה אישית. השאירו פרטים ונתחיל לפנק!
 
 ### Products
-https://example.com/products
+https://kolulu.zappy5.app/products
 המוצרים שלנו - קולולו
 
 ### Cart
-https://example.com/cart
+https://kolulu.zappy5.app/cart
 עגלת הקניות שלך
 
 ### Checkout
-https://example.com/checkout
+https://kolulu.zappy5.app/checkout
 תשלום
 
 ### Login
-https://example.com/login
+https://kolulu.zappy5.app/login
 התחברות לקוחות
 
 ### Account
-https://example.com/account
+https://kolulu.zappy5.app/account
 החשבון שלי
 
 ### Order Success
-https://example.com/order-success
+https://kolulu.zappy5.app/order-success
 תודה על ההזמנה
 
 ### Product Detail
-https://example.com/product/:slug
+https://kolulu.zappy5.app/product/:slug
 פרטי המוצר - קולולו
 
 ### Category
-https://example.com/category/:slug
+https://kolulu.zappy5.app/category/:slug
 מוצרים - קולולו
 
 ### תודה שפנית אלינו
-https://example.com/thank-you
+https://kolulu.zappy5.app/thank-you
 קולולו - תודה שפנית אלינו
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://example.com/privacy
+https://kolulu.zappy5.app/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://example.com/terms
+https://kolulu.zappy5.app/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://example.com/accessibility
+https://kolulu.zappy5.app/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
@@ -87,10 +87,10 @@ Information about WCAG compliance and accessibility features.
 **Total active products: 1**
 
 ### מארז יום הולדת לאישה
-https://example.com/product/marz-yvm-hvldt-layshh-dyefos
+https://kolulu.zappy5.app/product/marz-yvm-hvldt-layshh-dyefos
 - Price: 399.00 ILS
 - Availability: In stock
-- Image: https://example.com/assets/product-1783949078369-9lzt09.webp
+- Image: https://kolulu.zappy5.app/assets/product-1783949078369-9lzt09.webp
 
 ---
 
@@ -122,8 +122,8 @@ E-commerce / Gift & Lifestyle
 
 # Machine-readable feeds
 
-- Sitemap (XML): https://example.com/sitemap.xml
-- Robots: https://example.com/robots.txt
-- Flattened page text (for LLMs): https://example.com/llms-full.txt
-- Products (JSON): https://example.com/products.json
-- Products (Google Merchant RSS): https://example.com/product-feed.xml
+- Sitemap (XML): https://kolulu.zappy5.app/sitemap.xml
+- Robots: https://kolulu.zappy5.app/robots.txt
+- Flattened page text (for LLMs): https://kolulu.zappy5.app/llms-full.txt
+- Products (JSON): https://kolulu.zappy5.app/products.json
+- Products (Google Merchant RSS): https://kolulu.zappy5.app/product-feed.xml
