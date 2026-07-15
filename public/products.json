@@ -1,33 +1,57 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-15T16:29:42.352Z",
+  "generated_at": "2026-07-15T16:33:03.112Z",
   "base_url": "https://kolulu.zappy5.app",
   "currency": "ILS",
-  "count": 22,
+  "count": 23,
   "products": [
     {
-      "id": "ac019847-20b1-4449-a0e7-2abe1163aa4e",
-      "slug": "kvlvlv-yvm-hvldt-dgm-mlkvt-blbn-zhb-copy-gor0pt",
-      "name": "קולולו יום הולדת דגם מלכות בלבן זהב  (Copy)",
+      "id": "15f81425-ab1a-4052-90bf-65822333aaa8",
+      "slug": "kvlvlv-yvm-hvldt-dgm-avdlyh-copy-5lhhlq",
+      "name": "קולולו יום הולדת דגם אודליה (Copy)",
       "name_translations": {},
       "description": "",
       "short_description": null,
       "sku": null,
       "brand": null,
-      "price": 299,
-      "base_price": 299,
+      "price": 349,
+      "base_price": 349,
       "sale_price": null,
       "currency": "ILS",
       "images": [
-        "https://kolulu.zappy5.app/assets/product-enhanced-1784132891787-jvdt7.webp"
+        "https://kolulu.zappy5.app/assets/product-enhanced-1784133056326-06lop.webp"
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-mlkvt-blbn-zhb-copy-gor0pt",
+      "url": "https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-avdlyh-copy-5lhhlq",
       "categories": [
         "קולולו יום הולדת בשבילה"
       ],
-      "updated_at": "2026-07-15T16:29:10.254Z"
+      "updated_at": "2026-07-15T16:32:41.903Z"
+    },
+    {
+      "id": "ac019847-20b1-4449-a0e7-2abe1163aa4e",
+      "slug": "kvlvlv-yvm-hvldt-dgm-avdlyh-5ecwhu",
+      "name": "קולולו יום הולדת דגם אודליה",
+      "name_translations": {},
+      "description": "",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 349,
+      "base_price": 349,
+      "sale_price": null,
+      "currency": "ILS",
+      "images": [
+        "https://kolulu.zappy5.app/assets/product-enhanced-1784133056326-06lop.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-avdlyh-5ecwhu",
+      "categories": [
+        "קולולו יום הולדת בשבילה"
+      ],
+      "updated_at": "2026-07-15T16:32:31.392Z"
     },
     {
       "id": "96e8e32e-c39f-4bb7-8063-e05766429e49",
