@@ -76,14 +76,21 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 21**
+**Total active products: 22**
 
-### קולולו יום הולדת דגם לירון בלבן (Copy)
-https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-lyrvn-blbn-copy-qikfx7
+### קולולו יום הולדת דגם מלכות בלבן זהב  (Copy)
+https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-mlkvt-blbn-zhb-copy-gor0pt
 - Price: 299.00 ILS
 - Availability: In stock
 - Category: קולולו יום הולדת בשבילה
-- Image: https://kolulu.zappy5.app/assets/product-enhanced-1784132726842-olztyk.webp
+- Image: https://kolulu.zappy5.app/assets/product-enhanced-1784132891787-jvdt7.webp
+
+### קולולו יום הולדת דגם מלכות בלבן זהב 
+https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-mlkvt-blbn-zhb-2c69la
+- Price: 299.00 ILS
+- Availability: In stock
+- Category: קולולו יום הולדת בשבילה
+- Image: https://kolulu.zappy5.app/assets/product-enhanced-1784132891787-jvdt7.webp
 
 ### קולולו יום הולדת דגם לירון בלבן
 https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-lyrvn-blbn-8zexib

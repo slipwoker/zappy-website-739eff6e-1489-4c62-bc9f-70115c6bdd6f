@@ -1,14 +1,14 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-15T16:27:39.231Z",
+  "generated_at": "2026-07-15T16:29:30.945Z",
   "base_url": "https://kolulu.zappy5.app",
   "currency": "ILS",
-  "count": 21,
+  "count": 22,
   "products": [
     {
-      "id": "96e8e32e-c39f-4bb7-8063-e05766429e49",
-      "slug": "kvlvlv-yvm-hvldt-dgm-lyrvn-blbn-copy-qikfx7",
-      "name": "קולולו יום הולדת דגם לירון בלבן (Copy)",
+      "id": "ac019847-20b1-4449-a0e7-2abe1163aa4e",
+      "slug": "kvlvlv-yvm-hvldt-dgm-mlkvt-blbn-zhb-copy-gor0pt",
+      "name": "קולולו יום הולדת דגם מלכות בלבן זהב  (Copy)",
       "name_translations": {},
       "description": "",
       "short_description": null,
@@ -19,15 +19,39 @@
       "sale_price": null,
       "currency": "ILS",
       "images": [
-        "https://kolulu.zappy5.app/assets/product-enhanced-1784132726842-olztyk.webp"
+        "https://kolulu.zappy5.app/assets/product-enhanced-1784132891787-jvdt7.webp"
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-lyrvn-blbn-copy-qikfx7",
+      "url": "https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-mlkvt-blbn-zhb-copy-gor0pt",
       "categories": [
         "קולולו יום הולדת בשבילה"
       ],
-      "updated_at": "2026-07-15T16:27:07.219Z"
+      "updated_at": "2026-07-15T16:29:10.254Z"
+    },
+    {
+      "id": "96e8e32e-c39f-4bb7-8063-e05766429e49",
+      "slug": "kvlvlv-yvm-hvldt-dgm-mlkvt-blbn-zhb-2c69la",
+      "name": "קולולו יום הולדת דגם מלכות בלבן זהב ",
+      "name_translations": {},
+      "description": "",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 299,
+      "base_price": 299,
+      "sale_price": null,
+      "currency": "ILS",
+      "images": [
+        "https://kolulu.zappy5.app/assets/product-enhanced-1784132891787-jvdt7.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-mlkvt-blbn-zhb-2c69la",
+      "categories": [
+        "קולולו יום הולדת בשבילה"
+      ],
+      "updated_at": "2026-07-15T16:28:59.227Z"
     },
     {
       "id": "55f02929-9abf-42b6-ac0c-9c7d7d77c046",
