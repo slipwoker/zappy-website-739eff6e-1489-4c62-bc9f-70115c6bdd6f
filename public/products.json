@@ -1,13 +1,37 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-15T14:49:39.852Z",
+  "generated_at": "2026-07-15T14:50:47.076Z",
   "base_url": "https://kolulu.zappy5.app",
   "currency": "ILS",
-  "count": 9,
+  "count": 10,
   "products": [
     {
+      "id": "8bc8c243-d9da-4fa3-b411-0fba9c57e125",
+      "slug": "kvlvlv-yvm-hvldt-dgm-shyr-copy-gaw02s",
+      "name": "קולולו יום הולדת דגם שיר (Copy)",
+      "name_translations": {},
+      "description": "",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 350,
+      "base_price": 350,
+      "sale_price": null,
+      "currency": "ILS",
+      "images": [
+        "https://kolulu.zappy5.app/assets/product-1784126928824-k9p5e8.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-shyr-copy-gaw02s",
+      "categories": [
+        "קולולו יום הולדת בשבילה"
+      ],
+      "updated_at": "2026-07-15T14:50:24.528Z"
+    },
+    {
       "id": "2fceea67-db80-4081-afd1-4e6a094a02cf",
-      "slug": "kvlvlv-yvm-hvldt-dgm-shyr-e8gw94",
+      "slug": "kvlvlv-yvm-hvldt-dgm-shyr-vidcw1",
       "name": "קולולו יום הולדת דגם שיר",
       "name_translations": {},
       "description": "",
@@ -23,11 +47,11 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-shyr-e8gw94",
+      "url": "https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-shyr-vidcw1",
       "categories": [
         "קולולו יום הולדת בשבילה"
       ],
-      "updated_at": "2026-07-15T14:49:08.454Z"
+      "updated_at": "2026-07-15T14:50:15.053Z"
     },
     {
       "id": "3c0dea43-c2c2-4854-9f2e-6f2955c3b23c",
