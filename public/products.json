@@ -1,14 +1,14 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-15T16:18:28.803Z",
+  "generated_at": "2026-07-15T16:20:36.717Z",
   "base_url": "https://kolulu.zappy5.app",
   "currency": "ILS",
-  "count": 18,
+  "count": 20,
   "products": [
     {
-      "id": "5537a122-36cc-4b9e-ac54-415b728152d7",
-      "slug": "kvlvlv-yvm-hvldt-dgm-sylbr-copy-9uv7fi",
-      "name": "קולולו יום הולדת דגם סילבר  (Copy)",
+      "id": "55f02929-9abf-42b6-ac0c-9c7d7d77c046",
+      "slug": "kvlvlv-yvm-hvldt-dgm-myrb-copy-copy-r0qd38",
+      "name": "קולולו יום הולדת דגם מירב (Copy) (Copy)",
       "name_translations": {},
       "description": "",
       "short_description": null,
@@ -19,15 +19,63 @@
       "sale_price": null,
       "currency": "ILS",
       "images": [
-        "https://kolulu.zappy5.app/assets/product-enhanced-1784132147687-jefdau.webp"
+        "https://kolulu.zappy5.app/assets/product-enhanced-1784132360920-b0exxu.webp"
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-sylbr-copy-9uv7fi",
+      "url": "https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-myrb-copy-copy-r0qd38",
       "categories": [
         "קולולו יום הולדת בשבילה"
       ],
-      "updated_at": "2026-07-15T16:17:56.464Z"
+      "updated_at": "2026-07-15T16:20:04.553Z"
+    },
+    {
+      "id": "6e6cd203-1e62-47e9-806b-a7240c63b902",
+      "slug": "kvlvlv-yvm-hvldt-dgm-myrb-copy-lredau",
+      "name": "קולולו יום הולדת דגם מירב (Copy)",
+      "name_translations": {},
+      "description": "",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 299,
+      "base_price": 299,
+      "sale_price": null,
+      "currency": "ILS",
+      "images": [
+        "https://kolulu.zappy5.app/assets/product-enhanced-1784132360920-b0exxu.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-myrb-copy-lredau",
+      "categories": [
+        "קולולו יום הולדת בשבילה"
+      ],
+      "updated_at": "2026-07-15T16:19:49.322Z"
+    },
+    {
+      "id": "5537a122-36cc-4b9e-ac54-415b728152d7",
+      "slug": "kvlvlv-yvm-hvldt-dgm-myrb-gialsf",
+      "name": "קולולו יום הולדת דגם מירב",
+      "name_translations": {},
+      "description": "",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 299,
+      "base_price": 299,
+      "sale_price": null,
+      "currency": "ILS",
+      "images": [
+        "https://kolulu.zappy5.app/assets/product-enhanced-1784132360920-b0exxu.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-myrb-gialsf",
+      "categories": [
+        "קולולו יום הולדת בשבילה"
+      ],
+      "updated_at": "2026-07-15T16:19:31.479Z"
     },
     {
       "id": "743f6479-04cb-4852-9a50-0f0d820511b2",

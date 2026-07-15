@@ -76,14 +76,28 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 18**
+**Total active products: 20**
 
-### קולולו יום הולדת דגם סילבר  (Copy)
-https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-sylbr-copy-9uv7fi
+### קולולו יום הולדת דגם מירב (Copy) (Copy)
+https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-myrb-copy-copy-r0qd38
 - Price: 299.00 ILS
 - Availability: In stock
 - Category: קולולו יום הולדת בשבילה
-- Image: https://kolulu.zappy5.app/assets/product-enhanced-1784132147687-jefdau.webp
+- Image: https://kolulu.zappy5.app/assets/product-enhanced-1784132360920-b0exxu.webp
+
+### קולולו יום הולדת דגם מירב (Copy)
+https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-myrb-copy-lredau
+- Price: 299.00 ILS
+- Availability: In stock
+- Category: קולולו יום הולדת בשבילה
+- Image: https://kolulu.zappy5.app/assets/product-enhanced-1784132360920-b0exxu.webp
+
+### קולולו יום הולדת דגם מירב
+https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-myrb-gialsf
+- Price: 299.00 ILS
+- Availability: In stock
+- Category: קולולו יום הולדת בשבילה
+- Image: https://kolulu.zappy5.app/assets/product-enhanced-1784132360920-b0exxu.webp
 
 ### קולולו יום הולדת דגם סילבר 
 https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-sylbr-mvxi8w
