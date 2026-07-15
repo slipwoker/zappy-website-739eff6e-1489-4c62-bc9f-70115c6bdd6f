@@ -1,10 +1,34 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-15T14:46:47.543Z",
+  "generated_at": "2026-07-15T14:48:13.198Z",
   "base_url": "https://kolulu.zappy5.app",
   "currency": "ILS",
-  "count": 8,
+  "count": 9,
   "products": [
+    {
+      "id": "2fceea67-db80-4081-afd1-4e6a094a02cf",
+      "slug": "kvlvlv-yvm-hvldt-dgm-astrykh-copy-vr1jfn",
+      "name": "קולולו יום הולדת דגם אסתריקה (Copy)",
+      "name_translations": {},
+      "description": "",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 350,
+      "base_price": 350,
+      "sale_price": null,
+      "currency": "ILS",
+      "images": [
+        "https://kolulu.zappy5.app/assets/product-ai-fit-1784126730881-n6f1le.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-astrykh-copy-vr1jfn",
+      "categories": [
+        "קולולו יום הולדת בשבילה"
+      ],
+      "updated_at": "2026-07-15T14:47:41.167Z"
+    },
     {
       "id": "3c0dea43-c2c2-4854-9f2e-6f2955c3b23c",
       "slug": "kvlvlv-yvm-hvldt-dgm-astrykh-3s0r7i",
@@ -31,7 +55,7 @@
     },
     {
       "id": "531c191c-03fc-479f-86ba-64cf2f1c87ea",
-      "slug": "kvlvlv-yvm-hvldt-dgm-alynvr-5iimvr",
+      "slug": "kvlvlv-yvm-hvldt-dgm-alynvr-6tlaxh",
       "name": "קולולו יום הולדת דגם אלינור",
       "name_translations": {},
       "description": "",
@@ -43,15 +67,15 @@
       "sale_price": null,
       "currency": "ILS",
       "images": [
-        "https://kolulu.zappy5.app/assets/product-ai-fit-1784126580063-m1hzpf.webp"
+        "https://kolulu.zappy5.app/assets/product-enhanced-1784126834371-bqhg6v.webp"
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-alynvr-5iimvr",
+      "url": "https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-alynvr-6tlaxh",
       "categories": [
         "קולולו יום הולדת בשבילה"
       ],
-      "updated_at": "2026-07-15T14:44:04.850Z"
+      "updated_at": "2026-07-15T14:47:29.022Z"
     },
     {
       "id": "ddc50a89-d0a7-4190-bfc8-8172033b41e8",
