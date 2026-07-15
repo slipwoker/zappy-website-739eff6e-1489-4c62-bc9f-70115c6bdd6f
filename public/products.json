@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-15T15:55:23.762Z",
+  "generated_at": "2026-07-15T15:56:03.414Z",
   "base_url": "https://kolulu.zappy5.app",
   "currency": "ILS",
   "count": 12,
@@ -223,7 +223,7 @@
     },
     {
       "id": "ddc50a89-d0a7-4190-bfc8-8172033b41e8",
-      "slug": "avgt-bntv-tkltvrvd-ppyvnym-vyntag-lvtp4h",
+      "slug": "avgt-bntv-tkltvrvd-ppyvnym-vyntag-w3ixtn",
       "name": "עוגת בנטו  תכלת/ורוד פפיונים וינטאג׳ ",
       "name_translations": {},
       "description": "",
@@ -235,15 +235,15 @@
       "sale_price": null,
       "currency": "ILS",
       "images": [
-        "https://kolulu.zappy5.app/assets/product-1784126392285-64bi6b.webp"
+        "https://kolulu.zappy5.app/assets/product-enhanced-1784130921013-o5cic5q.webp"
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://kolulu.zappy5.app/product/avgt-bntv-tkltvrvd-ppyvnym-vyntag-lvtp4h",
+      "url": "https://kolulu.zappy5.app/product/avgt-bntv-tkltvrvd-ppyvnym-vyntag-w3ixtn",
       "categories": [
         "עוגות בנטו "
       ],
-      "updated_at": "2026-07-15T15:50:56.057Z"
+      "updated_at": "2026-07-15T15:55:31.285Z"
     },
     {
       "id": "7035a4a5-4a65-49e6-912f-b151b3f1a5ac",
