@@ -1,14 +1,14 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-15T14:50:56.797Z",
+  "generated_at": "2026-07-15T14:52:41.819Z",
   "base_url": "https://kolulu.zappy5.app",
   "currency": "ILS",
-  "count": 10,
+  "count": 11,
   "products": [
     {
-      "id": "8bc8c243-d9da-4fa3-b411-0fba9c57e125",
-      "slug": "kvlvlv-yvm-hvldt-dgm-shyr-copy-gaw02s",
-      "name": "קולולו יום הולדת דגם שיר (Copy)",
+      "id": "b3dedfdc-a9c1-45de-aeeb-ba3c171dba16",
+      "slug": "kvlvlv-yvm-hvldt-dgm-syvvn-copy-j3v3pd",
+      "name": "קולולו יום הולדת דגם סיוון (Copy)",
       "name_translations": {},
       "description": "",
       "short_description": null,
@@ -19,15 +19,39 @@
       "sale_price": null,
       "currency": "ILS",
       "images": [
-        "https://kolulu.zappy5.app/assets/product-1784126928824-k9p5e8.webp"
+        "https://kolulu.zappy5.app/assets/product-enhanced-1784127096801-5n5fat.webp"
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-shyr-copy-gaw02s",
+      "url": "https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-syvvn-copy-j3v3pd",
       "categories": [
         "קולולו יום הולדת בשבילה"
       ],
-      "updated_at": "2026-07-15T14:50:24.528Z"
+      "updated_at": "2026-07-15T14:52:32.779Z"
+    },
+    {
+      "id": "8bc8c243-d9da-4fa3-b411-0fba9c57e125",
+      "slug": "kvlvlv-yvm-hvldt-dgm-syvvn-uyavti",
+      "name": "קולולו יום הולדת דגם סיוון",
+      "name_translations": {},
+      "description": "",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 350,
+      "base_price": 350,
+      "sale_price": null,
+      "currency": "ILS",
+      "images": [
+        "https://kolulu.zappy5.app/assets/product-enhanced-1784127096801-5n5fat.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-syvvn-uyavti",
+      "categories": [
+        "קולולו יום הולדת בשבילה"
+      ],
+      "updated_at": "2026-07-15T14:52:10.504Z"
     },
     {
       "id": "2fceea67-db80-4081-afd1-4e6a094a02cf",

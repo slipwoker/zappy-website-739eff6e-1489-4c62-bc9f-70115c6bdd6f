@@ -76,14 +76,21 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 10**
+**Total active products: 11**
 
-### קולולו יום הולדת דגם שיר (Copy)
-https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-shyr-copy-gaw02s
+### קולולו יום הולדת דגם סיוון (Copy)
+https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-syvvn-copy-j3v3pd
 - Price: 350.00 ILS
 - Availability: In stock
 - Category: קולולו יום הולדת בשבילה
-- Image: https://kolulu.zappy5.app/assets/product-1784126928824-k9p5e8.webp
+- Image: https://kolulu.zappy5.app/assets/product-enhanced-1784127096801-5n5fat.webp
+
+### קולולו יום הולדת דגם סיוון
+https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-syvvn-uyavti
+- Price: 350.00 ILS
+- Availability: In stock
+- Category: קולולו יום הולדת בשבילה
+- Image: https://kolulu.zappy5.app/assets/product-enhanced-1784127096801-5n5fat.webp
 
 ### קולולו יום הולדת דגם שיר
 https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-shyr-vidcw1
