@@ -4,7 +4,7 @@
     <title>קולולו</title>
     <link>https://kolulu.zappy5.app</link>
     <description>Product feed for קולולו</description>
-    <lastBuildDate>Wed, 15 Jul 2026 16:02:16 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jul 2026 16:03:14 GMT</lastBuildDate>
     <item>
       <g:id>b3dedfdc-a9c1-45de-aeeb-ba3c171dba16</g:id>
       <g:title>קולולו יום הולדת דגם ליטל</g:title>
@@ -76,6 +76,32 @@
       <g:description>עוגת בנטו ורוד עתיק פפיון שחור וינטאג</g:description>
       <g:link>https://kolulu.zappy5.app/product/avgt-bntv-vrvd-atyk-ppyvn-shchvr-vyntag-6x1kp6</g:link>
       <g:image_link>https://kolulu.zappy5.app/assets/product-enhanced-1784131130678-91gycd.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>199.00 ILS</g:price>
+      <g:condition>new</g:condition>
+      <g:brand>קולולו</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>עוגות בנטו </g:product_type>
+    </item>
+    <item>
+      <g:id>c3166316-c139-4578-8fb7-b81d8a363144</g:id>
+      <g:title>עוגת בנטו  לבן וינטאג׳ (Copy) (Copy)</g:title>
+      <g:description>עוגת בנטו לבן וינטאג׳ (Copy) (Copy)</g:description>
+      <g:link>https://kolulu.zappy5.app/product/avgt-bntv-lbn-vyntag-copy-copy-4tcaqz</g:link>
+      <g:image_link>https://kolulu.zappy5.app/assets/product-enhanced-1784130882429-ktmqm.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>199.00 ILS</g:price>
+      <g:condition>new</g:condition>
+      <g:brand>קולולו</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>עוגות בנטו </g:product_type>
+    </item>
+    <item>
+      <g:id>a6c4faba-fe8b-4801-aaee-c1d21a5747ed</g:id>
+      <g:title>עוגת בנטו  לבן וינטאג׳ (Copy)</g:title>
+      <g:description>עוגת בנטו לבן וינטאג׳ (Copy)</g:description>
+      <g:link>https://kolulu.zappy5.app/product/avgt-bntv-lbn-vyntag-copy-rcv6u2</g:link>
+      <g:image_link>https://kolulu.zappy5.app/assets/product-enhanced-1784130882429-ktmqm.webp</g:image_link>
       <g:availability>in_stock</g:availability>
       <g:price>199.00 ILS</g:price>
       <g:condition>new</g:condition>

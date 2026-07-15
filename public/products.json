@@ -1,9 +1,9 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-15T16:02:16.593Z",
+  "generated_at": "2026-07-15T16:03:14.212Z",
   "base_url": "https://kolulu.zappy5.app",
   "currency": "ILS",
-  "count": 13,
+  "count": 15,
   "products": [
     {
       "id": "b3dedfdc-a9c1-45de-aeeb-ba3c171dba16",
@@ -148,6 +148,54 @@
         "עוגות בנטו "
       ],
       "updated_at": "2026-07-15T16:02:08.633Z"
+    },
+    {
+      "id": "c3166316-c139-4578-8fb7-b81d8a363144",
+      "slug": "avgt-bntv-lbn-vyntag-copy-copy-4tcaqz",
+      "name": "עוגת בנטו  לבן וינטאג׳ (Copy) (Copy)",
+      "name_translations": {},
+      "description": "",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 199,
+      "base_price": 199,
+      "sale_price": null,
+      "currency": "ILS",
+      "images": [
+        "https://kolulu.zappy5.app/assets/product-enhanced-1784130882429-ktmqm.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://kolulu.zappy5.app/product/avgt-bntv-lbn-vyntag-copy-copy-4tcaqz",
+      "categories": [
+        "עוגות בנטו "
+      ],
+      "updated_at": "2026-07-15T16:02:42.425Z"
+    },
+    {
+      "id": "a6c4faba-fe8b-4801-aaee-c1d21a5747ed",
+      "slug": "avgt-bntv-lbn-vyntag-copy-rcv6u2",
+      "name": "עוגת בנטו  לבן וינטאג׳ (Copy)",
+      "name_translations": {},
+      "description": "",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 199,
+      "base_price": 199,
+      "sale_price": null,
+      "currency": "ILS",
+      "images": [
+        "https://kolulu.zappy5.app/assets/product-enhanced-1784130882429-ktmqm.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://kolulu.zappy5.app/product/avgt-bntv-lbn-vyntag-copy-rcv6u2",
+      "categories": [
+        "עוגות בנטו "
+      ],
+      "updated_at": "2026-07-15T16:02:34.597Z"
     },
     {
       "id": "cf71381c-c15c-4d6b-a557-01b293b48baf",
