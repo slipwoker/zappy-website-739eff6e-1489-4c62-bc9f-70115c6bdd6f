@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-15T16:46:17.413Z",
+  "generated_at": "2026-07-15T16:48:24.926Z",
   "base_url": "https://kolulu.zappy5.app",
   "currency": "ILS",
   "count": 25,
@@ -31,8 +31,8 @@
     },
     {
       "id": "15f81425-ab1a-4052-90bf-65822333aaa8",
-      "slug": "kvlvlv-yvm-hvldt-dgm-rvyal-lbv-m1dvg4",
-      "name": "קולולו יום הולדת דגם רויאל לבו",
+      "slug": "kvlvlv-yvm-hvldt-dgm-rvyal-lbn-yf04g1",
+      "name": "קולולו יום הולדת דגם רויאל לבן",
       "name_translations": {},
       "description": "",
       "short_description": null,
@@ -43,15 +43,15 @@
       "sale_price": null,
       "currency": "ILS",
       "images": [
-        "https://kolulu.zappy5.app/assets/product-1784133352367-3vn5zo.webp"
+        "https://kolulu.zappy5.app/assets/product-enhanced-1784134050497-1ttakd.webp"
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-rvyal-lbv-m1dvg4",
+      "url": "https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-rvyal-lbn-yf04g1",
       "categories": [
         "קולולו יום הולדת בשבילה"
       ],
-      "updated_at": "2026-07-15T16:44:33.073Z"
+      "updated_at": "2026-07-15T16:47:53.158Z"
     },
     {
       "id": "ac019847-20b1-4449-a0e7-2abe1163aa4e",
