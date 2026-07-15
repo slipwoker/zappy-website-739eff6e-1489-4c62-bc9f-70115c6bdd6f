@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-15T15:49:38.628Z",
+  "generated_at": "2026-07-15T15:50:57.107Z",
   "base_url": "https://kolulu.zappy5.app",
   "currency": "ILS",
   "count": 12,
@@ -27,7 +27,7 @@
       "categories": [
         "קולולו יום הולדת בשבילה"
       ],
-      "updated_at": "2026-07-15T15:49:30.832Z"
+      "updated_at": "2026-07-15T15:50:56.057Z"
     },
     {
       "id": "8bc8c243-d9da-4fa3-b411-0fba9c57e125",
@@ -51,7 +51,7 @@
       "categories": [
         "קולולו יום הולדת בשבילה"
       ],
-      "updated_at": "2026-07-15T15:49:30.832Z"
+      "updated_at": "2026-07-15T15:50:56.057Z"
     },
     {
       "id": "2fceea67-db80-4081-afd1-4e6a094a02cf",
@@ -75,7 +75,7 @@
       "categories": [
         "קולולו יום הולדת בשבילה"
       ],
-      "updated_at": "2026-07-15T15:49:30.832Z"
+      "updated_at": "2026-07-15T15:50:56.057Z"
     },
     {
       "id": "3c0dea43-c2c2-4854-9f2e-6f2955c3b23c",
@@ -99,7 +99,7 @@
       "categories": [
         "קולולו יום הולדת בשבילה"
       ],
-      "updated_at": "2026-07-15T15:49:30.832Z"
+      "updated_at": "2026-07-15T15:50:56.057Z"
     },
     {
       "id": "531c191c-03fc-479f-86ba-64cf2f1c87ea",
@@ -123,7 +123,7 @@
       "categories": [
         "קולולו יום הולדת בשבילה"
       ],
-      "updated_at": "2026-07-15T15:49:30.832Z"
+      "updated_at": "2026-07-15T15:50:56.057Z"
     },
     {
       "id": "cf71381c-c15c-4d6b-a557-01b293b48baf",
@@ -147,7 +147,7 @@
       "categories": [
         "עוגות בנטו "
       ],
-      "updated_at": "2026-07-15T15:49:30.832Z"
+      "updated_at": "2026-07-15T15:50:56.057Z"
     },
     {
       "id": "a01504b8-f8fb-4888-8dcf-c4a5c01e5473",
@@ -171,7 +171,7 @@
       "categories": [
         "עוגות בנטו "
       ],
-      "updated_at": "2026-07-15T15:49:30.832Z"
+      "updated_at": "2026-07-15T15:50:56.057Z"
     },
     {
       "id": "4a0ee3aa-44fc-4bf4-aea5-d51bb736b5aa",
@@ -195,7 +195,7 @@
       "categories": [
         "עוגות בנטו "
       ],
-      "updated_at": "2026-07-15T15:49:30.832Z"
+      "updated_at": "2026-07-15T15:50:56.057Z"
     },
     {
       "id": "d5823f99-a796-4d2f-acd7-0af0a6127645",
@@ -219,7 +219,7 @@
       "categories": [
         "עוגות בנטו "
       ],
-      "updated_at": "2026-07-15T15:49:30.832Z"
+      "updated_at": "2026-07-15T15:50:56.057Z"
     },
     {
       "id": "ddc50a89-d0a7-4190-bfc8-8172033b41e8",
@@ -243,7 +243,7 @@
       "categories": [
         "עוגות בנטו "
       ],
-      "updated_at": "2026-07-15T15:49:30.832Z"
+      "updated_at": "2026-07-15T15:50:56.057Z"
     },
     {
       "id": "7035a4a5-4a65-49e6-912f-b151b3f1a5ac",
@@ -267,12 +267,12 @@
       "categories": [
         "עוגות בנטו "
       ],
-      "updated_at": "2026-07-15T15:49:30.832Z"
+      "updated_at": "2026-07-15T15:50:56.057Z"
     },
     {
       "id": "705f147f-0962-43c1-bd63-b668cbd75f46",
-      "slug": "avgt-bntv-s4b940",
-      "name": "עוגת בנטו",
+      "slug": "avgt-bntv-nyvd-vrvd-ppyvnym-vyntag-vsns3e",
+      "name": "עוגת בנטו ניוד ורוד פפיונים וינטאג׳",
       "name_translations": {},
       "description": "",
       "short_description": "עוגת בנטו ",
@@ -287,11 +287,11 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://kolulu.zappy5.app/product/avgt-bntv-s4b940",
+      "url": "https://kolulu.zappy5.app/product/avgt-bntv-nyvd-vrvd-ppyvnym-vyntag-vsns3e",
       "categories": [
         "עוגות בנטו "
       ],
-      "updated_at": "2026-07-15T15:49:30.832Z"
+      "updated_at": "2026-07-15T15:50:56.057Z"
     }
   ]
 }
