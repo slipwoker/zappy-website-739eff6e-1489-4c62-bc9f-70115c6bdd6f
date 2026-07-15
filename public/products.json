@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-15T16:48:24.926Z",
+  "generated_at": "2026-07-15T16:49:30.807Z",
   "base_url": "https://kolulu.zappy5.app",
   "currency": "ILS",
   "count": 25,
@@ -79,8 +79,8 @@
     },
     {
       "id": "96e8e32e-c39f-4bb7-8063-e05766429e49",
-      "slug": "kvlvlv-yvm-hvldt-dgm-mlkvt-blbn-zhb-2c69la",
-      "name": "קולולו יום הולדת דגם מלכות בלבן זהב ",
+      "slug": "kvlvlv-yvm-hvldt-dgm-glyt-qxtbbf",
+      "name": "קולולו יום הולדת דגם גלית",
       "name_translations": {},
       "description": "",
       "short_description": null,
@@ -91,15 +91,15 @@
       "sale_price": null,
       "currency": "ILS",
       "images": [
-        "https://kolulu.zappy5.app/assets/product-enhanced-1784132891787-jvdt7.webp"
+        "https://kolulu.zappy5.app/assets/product-1784134113974-m2312.webp"
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-mlkvt-blbn-zhb-2c69la",
+      "url": "https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-glyt-qxtbbf",
       "categories": [
         "קולולו יום הולדת בשבילה"
       ],
-      "updated_at": "2026-07-15T16:44:33.073Z"
+      "updated_at": "2026-07-15T16:49:28.703Z"
     },
     {
       "id": "55f02929-9abf-42b6-ac0c-9c7d7d77c046",
