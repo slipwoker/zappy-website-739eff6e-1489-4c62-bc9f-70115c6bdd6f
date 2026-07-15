@@ -12638,6 +12638,12 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 .nav-cta-btn { color: #333333 !important; }
 /* === BUTTON TEXT OVERRIDES END === */
 
+/* Font pairing applied */
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400&display=swap');
+:root { --font-heading: 'Assistant', sans-serif; --font-body: 'Assistant', sans-serif; }
+body { font-family: 'Assistant', sans-serif; font-weight: 400; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Assistant', sans-serif; font-weight: 400; }
+
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
