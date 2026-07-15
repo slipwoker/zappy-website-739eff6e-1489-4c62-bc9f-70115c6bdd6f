@@ -1,10 +1,34 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-15T16:26:37.835Z",
+  "generated_at": "2026-07-15T16:27:20.113Z",
   "base_url": "https://kolulu.zappy5.app",
   "currency": "ILS",
-  "count": 20,
+  "count": 21,
   "products": [
+    {
+      "id": "96e8e32e-c39f-4bb7-8063-e05766429e49",
+      "slug": "kvlvlv-yvm-hvldt-dgm-lyrvn-blbn-copy-qikfx7",
+      "name": "קולולו יום הולדת דגם לירון בלבן (Copy)",
+      "name_translations": {},
+      "description": "",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 299,
+      "base_price": 299,
+      "sale_price": null,
+      "currency": "ILS",
+      "images": [
+        "https://kolulu.zappy5.app/assets/product-enhanced-1784132726842-olztyk.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-lyrvn-blbn-copy-qikfx7",
+      "categories": [
+        "קולולו יום הולדת בשבילה"
+      ],
+      "updated_at": "2026-07-15T16:27:07.219Z"
+    },
     {
       "id": "55f02929-9abf-42b6-ac0c-9c7d7d77c046",
       "slug": "kvlvlv-yvm-hvldt-dgm-lyrvn-blbn-8zexib",
@@ -31,8 +55,8 @@
     },
     {
       "id": "6e6cd203-1e62-47e9-806b-a7240c63b902",
-      "slug": "kvlvlv-yvm-hvldt-dgm-lyrvn-ggjtfx",
-      "name": "קולולו יום הולדת דגם לירון",
+      "slug": "kvlvlv-yvm-hvldt-dgm-lyrvn-bvrvd-ej8n7i",
+      "name": "קולולו יום הולדת דגם לירון בורוד",
       "name_translations": {},
       "description": "",
       "short_description": null,
@@ -47,11 +71,11 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-lyrvn-ggjtfx",
+      "url": "https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-lyrvn-bvrvd-ej8n7i",
       "categories": [
         "קולולו יום הולדת בשבילה"
       ],
-      "updated_at": "2026-07-15T16:23:41.507Z"
+      "updated_at": "2026-07-15T16:26:48.221Z"
     },
     {
       "id": "5537a122-36cc-4b9e-ac54-415b728152d7",
