@@ -1,13 +1,13 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-15T16:14:10.497Z",
+  "generated_at": "2026-07-15T16:16:31.234Z",
   "base_url": "https://kolulu.zappy5.app",
   "currency": "ILS",
   "count": 17,
   "products": [
     {
       "id": "743f6479-04cb-4852-9a50-0f0d820511b2",
-      "slug": "kvlvlv-yvm-hvldt-dgm-lytl-copy-copy-hh572o",
+      "slug": "kvlvlv-yvm-hvldt-dgm-lytl-copy-copy-85tt8k",
       "name": "קולולו יום הולדת דגם ליטל (Copy) (Copy)",
       "name_translations": {},
       "description": "",
@@ -19,15 +19,15 @@
       "sale_price": null,
       "currency": "ILS",
       "images": [
-        "https://kolulu.zappy5.app/assets/product-enhanced-1784127317127-x851in.webp"
+        "https://kolulu.zappy5.app/assets/product-enhanced-1784132147687-jefdau.webp"
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-lytl-copy-copy-hh572o",
+      "url": "https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-lytl-copy-copy-85tt8k",
       "categories": [
         "קולולו יום הולדת בשבילה"
       ],
-      "updated_at": "2026-07-15T16:07:28.634Z"
+      "updated_at": "2026-07-15T16:15:59.651Z"
     },
     {
       "id": "456c03c0-be09-4e7f-854f-657eee4a7cd8",
