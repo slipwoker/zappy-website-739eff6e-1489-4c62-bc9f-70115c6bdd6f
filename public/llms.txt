@@ -79,21 +79,24 @@ Information about WCAG compliance and accessibility features.
 **Total active products: 3**
 
 ### עוגת בנטו
-https://kolulu.zappy5.app/product/avgt-bntv-hgcws3
+https://kolulu.zappy5.app/product/avgt-bntv-9u10tv
 - Price: 200.00 ILS
 - Availability: In stock
+- Category: עוגות בנטו 
 - Image: https://kolulu.zappy5.app/assets/product-1784124540611-twfd1e.webp
 
 ### עוגת בנטו
-https://kolulu.zappy5.app/product/avgt-bntv-quvtyq
+https://kolulu.zappy5.app/product/avgt-bntv-zsz2fx
 - Price: 200.00 ILS
 - Availability: In stock
+- Category: עוגות בנטו 
 - Image: https://kolulu.zappy5.app/assets/product-1784124368259-ft17dm.webp
 
 ### עוגת בנטו
-https://kolulu.zappy5.app/product/avgt-bntv-ulo38w
+https://kolulu.zappy5.app/product/avgt-bntv-erocv3
 - Price: 200.00 ILS
 - Availability: In stock
+- Category: עוגות בנטו 
 - Description: עוגת בנטו
 - Image: https://kolulu.zappy5.app/assets/product-1784109198280-gbpvy.webp
 
