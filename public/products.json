@@ -1,14 +1,14 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-15T14:44:48.650Z",
+  "generated_at": "2026-07-15T14:46:47.543Z",
   "base_url": "https://kolulu.zappy5.app",
   "currency": "ILS",
   "count": 8,
   "products": [
     {
       "id": "3c0dea43-c2c2-4854-9f2e-6f2955c3b23c",
-      "slug": "kvlvlv-yvm-hvldt-dgm-alynvr-copy-ietv4n",
-      "name": "קולולו יום הולדת דגם אלינור (Copy)",
+      "slug": "kvlvlv-yvm-hvldt-dgm-astrykh-3s0r7i",
+      "name": "קולולו יום הולדת דגם אסתריקה",
       "name_translations": {},
       "description": "",
       "short_description": null,
@@ -19,15 +19,15 @@
       "sale_price": null,
       "currency": "ILS",
       "images": [
-        "https://kolulu.zappy5.app/assets/product-ai-fit-1784126580063-m1hzpf.webp"
+        "https://kolulu.zappy5.app/assets/product-ai-fit-1784126730881-n6f1le.webp"
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-alynvr-copy-ietv4n",
+      "url": "https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-astrykh-3s0r7i",
       "categories": [
         "קולולו יום הולדת בשבילה"
       ],
-      "updated_at": "2026-07-15T14:44:16.636Z"
+      "updated_at": "2026-07-15T14:45:54.248Z"
     },
     {
       "id": "531c191c-03fc-479f-86ba-64cf2f1c87ea",
