@@ -1,14 +1,14 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-15T14:09:14.499Z",
+  "generated_at": "2026-07-15T14:11:05.342Z",
   "base_url": "https://kolulu.zappy5.app",
   "currency": "ILS",
   "count": 5,
   "products": [
     {
       "id": "d5823f99-a796-4d2f-acd7-0af0a6127645",
-      "slug": "avgt-bntv-kshr-bdts-copy-copy-8k46fl",
-      "name": "עוגת בנטו-כשר בד״ץ (Copy) (Copy)",
+      "slug": "avgt-bntv-hgcws3",
+      "name": "עוגת בנטו",
       "name_translations": {},
       "description": "",
       "short_description": null,
@@ -19,18 +19,18 @@
       "sale_price": null,
       "currency": "ILS",
       "images": [
-        "https://kolulu.zappy5.app/assets/product-1784124368259-ft17dm.webp"
+        "https://kolulu.zappy5.app/assets/product-1784124540611-twfd1e.webp"
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://kolulu.zappy5.app/product/avgt-bntv-kshr-bdts-copy-copy-8k46fl",
+      "url": "https://kolulu.zappy5.app/product/avgt-bntv-hgcws3",
       "categories": [],
-      "updated_at": "2026-07-15T14:08:42.055Z"
+      "updated_at": "2026-07-15T14:10:10.805Z"
     },
     {
       "id": "7035a4a5-4a65-49e6-912f-b151b3f1a5ac",
-      "slug": "avgt-bntv-kshr-bdts-copy-xvzwxb",
-      "name": "עוגת בנטו-כשר בד״ץ (Copy)",
+      "slug": "avgt-bntv-quvtyq",
+      "name": "עוגת בנטו",
       "name_translations": {},
       "description": "",
       "short_description": null,
@@ -45,9 +45,9 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://kolulu.zappy5.app/product/avgt-bntv-kshr-bdts-copy-xvzwxb",
+      "url": "https://kolulu.zappy5.app/product/avgt-bntv-quvtyq",
       "categories": [],
-      "updated_at": "2026-07-15T14:06:19.231Z"
+      "updated_at": "2026-07-15T14:10:32.879Z"
     },
     {
       "id": "705f147f-0962-43c1-bd63-b668cbd75f46",
