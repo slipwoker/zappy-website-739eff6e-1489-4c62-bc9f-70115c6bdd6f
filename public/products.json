@@ -1,10 +1,34 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-15T15:57:37.875Z",
+  "generated_at": "2026-07-15T16:02:03.971Z",
   "base_url": "https://kolulu.zappy5.app",
   "currency": "ILS",
-  "count": 12,
+  "count": 13,
   "products": [
+    {
+      "id": "f7833208-8645-4c85-98bb-a56e17e70951",
+      "slug": "avgt-bntv-vrvd-atyk-ppyvn-shchvr-vyntag-6x1kp6",
+      "name": "עוגת בנטו ורוד עתיק פפיון שחור וינטאג",
+      "name_translations": {},
+      "description": "",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 199,
+      "base_price": 199,
+      "sale_price": null,
+      "currency": "ILS",
+      "images": [
+        "https://kolulu.zappy5.app/assets/product-enhanced-1784131130678-91gycd.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://kolulu.zappy5.app/product/avgt-bntv-vrvd-atyk-ppyvn-shchvr-vyntag-6x1kp6",
+      "categories": [
+        "עוגות בנטו "
+      ],
+      "updated_at": "2026-07-15T16:01:44.793Z"
+    },
     {
       "id": "b3dedfdc-a9c1-45de-aeeb-ba3c171dba16",
       "slug": "kvlvlv-yvm-hvldt-dgm-lytl-0e67ry",
