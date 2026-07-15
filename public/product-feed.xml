@@ -4,7 +4,7 @@
     <title>קולולו</title>
     <link>https://kolulu.zappy5.app</link>
     <description>Product feed for קולולו</description>
-    <lastBuildDate>Wed, 15 Jul 2026 15:49:11 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jul 2026 15:49:38 GMT</lastBuildDate>
     <item>
       <g:id>b3dedfdc-a9c1-45de-aeeb-ba3c171dba16</g:id>
       <g:title>קולולו יום הולדת דגם ליטל</g:title>
@@ -84,19 +84,6 @@
       <g:product_type>עוגות בנטו </g:product_type>
     </item>
     <item>
-      <g:id>ddc50a89-d0a7-4190-bfc8-8172033b41e8</g:id>
-      <g:title>עוגת בנטו  תכלת/ורוד פפיונים וינטאג׳ </g:title>
-      <g:description>עוגת בנטו תכלת/ורוד פפיונים וינטאג׳</g:description>
-      <g:link>https://kolulu.zappy5.app/product/avgt-bntv-tkltvrvd-ppyvnym-vyntag-lvtp4h</g:link>
-      <g:image_link>https://kolulu.zappy5.app/assets/product-1784126392285-64bi6b.webp</g:image_link>
-      <g:availability>in_stock</g:availability>
-      <g:price>199.00 ILS</g:price>
-      <g:condition>new</g:condition>
-      <g:brand>קולולו</g:brand>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:product_type>עוגות בנטו </g:product_type>
-    </item>
-    <item>
       <g:id>a01504b8-f8fb-4888-8dcf-c4a5c01e5473</g:id>
       <g:title>עוגת בנטו 2 waves </g:title>
       <g:description>עוגת בנטו 2 waves</g:description>
@@ -128,6 +115,19 @@
       <g:description>עוגה בנטו וינטג׳ love</g:description>
       <g:link>https://kolulu.zappy5.app/product/avgh-bntv-vyntg-love-nidt0s</g:link>
       <g:image_link>https://kolulu.zappy5.app/assets/product-1784124540611-twfd1e.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>199.00 ILS</g:price>
+      <g:condition>new</g:condition>
+      <g:brand>קולולו</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>עוגות בנטו </g:product_type>
+    </item>
+    <item>
+      <g:id>ddc50a89-d0a7-4190-bfc8-8172033b41e8</g:id>
+      <g:title>עוגת בנטו  תכלת/ורוד פפיונים וינטאג׳ </g:title>
+      <g:description>עוגת בנטו תכלת/ורוד פפיונים וינטאג׳</g:description>
+      <g:link>https://kolulu.zappy5.app/product/avgt-bntv-tkltvrvd-ppyvnym-vyntag-lvtp4h</g:link>
+      <g:image_link>https://kolulu.zappy5.app/assets/product-1784126392285-64bi6b.webp</g:image_link>
       <g:availability>in_stock</g:availability>
       <g:price>199.00 ILS</g:price>
       <g:condition>new</g:condition>

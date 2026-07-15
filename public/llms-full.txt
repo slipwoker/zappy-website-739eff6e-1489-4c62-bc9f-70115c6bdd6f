@@ -5173,13 +5173,6 @@ Availability: In stock
 
 ---
 
-### עוגת בנטו  תכלת/ורוד פפיונים וינטאג׳ 
-URL: https://kolulu.zappy5.app/product/avgt-bntv-tkltvrvd-ppyvnym-vyntag-lvtp4h
-Price: 199.00 ILS
-Availability: In stock
-
----
-
 ### עוגת בנטו 2 waves 
 URL: https://kolulu.zappy5.app/product/avgt-bntv-2-waves-shu0ze
 Price: 199.00 ILS
@@ -5196,6 +5189,13 @@ Availability: In stock
 
 ### עוגה בנטו וינטג׳ love
 URL: https://kolulu.zappy5.app/product/avgh-bntv-vyntg-love-nidt0s
+Price: 199.00 ILS
+Availability: In stock
+
+---
+
+### עוגת בנטו  תכלת/ורוד פפיונים וינטאג׳ 
+URL: https://kolulu.zappy5.app/product/avgt-bntv-tkltvrvd-ppyvnym-vyntag-lvtp4h
 Price: 199.00 ILS
 Availability: In stock
 

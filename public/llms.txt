@@ -120,13 +120,6 @@ https://kolulu.zappy5.app/product/avgt-bntv-lbn-vyntag-is4qd8
 - Category: עוגות בנטו 
 - Image: https://kolulu.zappy5.app/assets/product-1784129566371-8qyg6s.webp
 
-### עוגת בנטו  תכלת/ורוד פפיונים וינטאג׳ 
-https://kolulu.zappy5.app/product/avgt-bntv-tkltvrvd-ppyvnym-vyntag-lvtp4h
-- Price: 199.00 ILS
-- Availability: In stock
-- Category: עוגות בנטו 
-- Image: https://kolulu.zappy5.app/assets/product-1784126392285-64bi6b.webp
-
 ### עוגת בנטו 2 waves 
 https://kolulu.zappy5.app/product/avgt-bntv-2-waves-shu0ze
 - Price: 199.00 ILS
@@ -147,6 +140,13 @@ https://kolulu.zappy5.app/product/avgh-bntv-vyntg-love-nidt0s
 - Availability: In stock
 - Category: עוגות בנטו 
 - Image: https://kolulu.zappy5.app/assets/product-1784124540611-twfd1e.webp
+
+### עוגת בנטו  תכלת/ורוד פפיונים וינטאג׳ 
+https://kolulu.zappy5.app/product/avgt-bntv-tkltvrvd-ppyvnym-vyntag-lvtp4h
+- Price: 199.00 ILS
+- Availability: In stock
+- Category: עוגות בנטו 
+- Image: https://kolulu.zappy5.app/assets/product-1784126392285-64bi6b.webp
 
 ### עוגת בנטו ורוד פפיונים וינטאג
 https://kolulu.zappy5.app/product/avgt-bntv-vrvd-ppyvnym-vyntag-5bnexz
