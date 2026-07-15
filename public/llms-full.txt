@@ -5131,9 +5131,16 @@ Description: קולולו - תודה שפנית אלינו
 
 ## Product Catalog
 
-### קולולו יום הולדת דגם אודליה (Copy)
-URL: https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-avdlyh-copy-5lhhlq
-Price: 349.00 ILS
+### קולולו יום הולדת דגם רויאל לבו (Copy)
+URL: https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-rvyal-lbv-copy-3i6tyk
+Price: 449.00 ILS
+Availability: In stock
+
+---
+
+### קולולו יום הולדת דגם רויאל לבו
+URL: https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-rvyal-lbv-m1dvg4
+Price: 449.00 ILS
 Availability: In stock
 
 ---
