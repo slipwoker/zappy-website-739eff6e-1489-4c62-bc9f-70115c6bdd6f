@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-15T15:54:45.333Z",
+  "generated_at": "2026-07-15T15:55:23.762Z",
   "base_url": "https://kolulu.zappy5.app",
   "currency": "ILS",
   "count": 12,
@@ -127,7 +127,7 @@
     },
     {
       "id": "cf71381c-c15c-4d6b-a557-01b293b48baf",
-      "slug": "avgt-bntv-lbn-vyntag-is4qd8",
+      "slug": "avgt-bntv-lbn-vyntag-h9c2gr",
       "name": "עוגת בנטו  לבן וינטאג׳",
       "name_translations": {},
       "description": "",
@@ -139,15 +139,15 @@
       "sale_price": null,
       "currency": "ILS",
       "images": [
-        "https://kolulu.zappy5.app/assets/product-1784129566371-8qyg6s.webp"
+        "https://kolulu.zappy5.app/assets/product-enhanced-1784130882429-ktmqm.webp"
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://kolulu.zappy5.app/product/avgt-bntv-lbn-vyntag-is4qd8",
+      "url": "https://kolulu.zappy5.app/product/avgt-bntv-lbn-vyntag-h9c2gr",
       "categories": [
         "עוגות בנטו "
       ],
-      "updated_at": "2026-07-15T15:50:56.057Z"
+      "updated_at": "2026-07-15T15:54:51.542Z"
     },
     {
       "id": "a01504b8-f8fb-4888-8dcf-c4a5c01e5473",
