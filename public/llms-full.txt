@@ -5132,15 +5132,15 @@ Description: קולולו - תודה שפנית אלינו
 ## Product Catalog
 
 ### קולולו יום הולדת דגם ליטל
-URL: https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-lytl-cy186h
-Price: 289.00 ILS
+URL: https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-lytl-0e67ry
+Price: 299.00 ILS
 Availability: In stock
 
 ---
 
 ### קולולו יום הולדת דגם סיוון
-URL: https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-syvvn-uyavti
-Price: 350.00 ILS
+URL: https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-syvvn-zhilak
+Price: 299.00 ILS
 Availability: In stock
 
 ---

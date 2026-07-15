@@ -1,21 +1,21 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-15T15:35:50.942Z",
+  "generated_at": "2026-07-15T15:36:56.860Z",
   "base_url": "https://kolulu.zappy5.app",
   "currency": "ILS",
   "count": 12,
   "products": [
     {
       "id": "b3dedfdc-a9c1-45de-aeeb-ba3c171dba16",
-      "slug": "kvlvlv-yvm-hvldt-dgm-lytl-cy186h",
+      "slug": "kvlvlv-yvm-hvldt-dgm-lytl-0e67ry",
       "name": "קולולו יום הולדת דגם ליטל",
       "name_translations": {},
       "description": "",
       "short_description": null,
       "sku": null,
       "brand": null,
-      "price": 289,
-      "base_price": 289,
+      "price": 299,
+      "base_price": 299,
       "sale_price": null,
       "currency": "ILS",
       "images": [
@@ -23,23 +23,23 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-lytl-cy186h",
+      "url": "https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-lytl-0e67ry",
       "categories": [
         "קולולו יום הולדת בשבילה"
       ],
-      "updated_at": "2026-07-15T15:35:19.239Z"
+      "updated_at": "2026-07-15T15:36:47.315Z"
     },
     {
       "id": "8bc8c243-d9da-4fa3-b411-0fba9c57e125",
-      "slug": "kvlvlv-yvm-hvldt-dgm-syvvn-uyavti",
+      "slug": "kvlvlv-yvm-hvldt-dgm-syvvn-zhilak",
       "name": "קולולו יום הולדת דגם סיוון",
       "name_translations": {},
       "description": "",
       "short_description": null,
       "sku": null,
       "brand": null,
-      "price": 350,
-      "base_price": 350,
+      "price": 299,
+      "base_price": 299,
       "sale_price": null,
       "currency": "ILS",
       "images": [
@@ -47,11 +47,11 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-syvvn-uyavti",
+      "url": "https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-syvvn-zhilak",
       "categories": [
         "קולולו יום הולדת בשבילה"
       ],
-      "updated_at": "2026-07-15T15:33:17.156Z"
+      "updated_at": "2026-07-15T15:36:25.514Z"
     },
     {
       "id": "2fceea67-db80-4081-afd1-4e6a094a02cf",
