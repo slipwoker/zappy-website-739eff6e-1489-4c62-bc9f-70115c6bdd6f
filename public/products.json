@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-15T15:43:19.199Z",
+  "generated_at": "2026-07-15T15:43:57.667Z",
   "base_url": "https://kolulu.zappy5.app",
   "currency": "ILS",
   "count": 12,
@@ -127,8 +127,8 @@
     },
     {
       "id": "cf71381c-c15c-4d6b-a557-01b293b48baf",
-      "slug": "avgt-bntv-4ywj77",
-      "name": "עוגת בנטו  ",
+      "slug": "avgt-bntv-lbn-vyntag-is4qd8",
+      "name": "עוגת בנטו  לבן וינטאג׳",
       "name_translations": {},
       "description": "",
       "short_description": null,
@@ -143,16 +143,16 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://kolulu.zappy5.app/product/avgt-bntv-4ywj77",
+      "url": "https://kolulu.zappy5.app/product/avgt-bntv-lbn-vyntag-is4qd8",
       "categories": [
         "עוגות בנטו "
       ],
-      "updated_at": "2026-07-15T15:38:58.386Z"
+      "updated_at": "2026-07-15T15:43:23.301Z"
     },
     {
       "id": "ddc50a89-d0a7-4190-bfc8-8172033b41e8",
-      "slug": "avgt-bntv-40f7yn",
-      "name": "עוגת בנטו  ",
+      "slug": "avgt-bntv-tklt-z4dyps",
+      "name": "עוגת בנטו  תכלת",
       "name_translations": {},
       "description": "",
       "short_description": null,
@@ -167,11 +167,11 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://kolulu.zappy5.app/product/avgt-bntv-40f7yn",
+      "url": "https://kolulu.zappy5.app/product/avgt-bntv-tklt-z4dyps",
       "categories": [
         "עוגות בנטו "
       ],
-      "updated_at": "2026-07-15T15:39:24.665Z"
+      "updated_at": "2026-07-15T15:43:38.745Z"
     },
     {
       "id": "a01504b8-f8fb-4888-8dcf-c4a5c01e5473",
