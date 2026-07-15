@@ -5131,13 +5131,6 @@ Description: קולולו - תודה שפנית אלינו
 
 ## Product Catalog
 
-### עוגת בנטו ורוד עתיק פפיון שחור וינטאג
-URL: https://kolulu.zappy5.app/product/avgt-bntv-vrvd-atyk-ppyvn-shchvr-vyntag-6x1kp6
-Price: 199.00 ILS
-Availability: In stock
-
----
-
 ### קולולו יום הולדת דגם ליטל
 URL: https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-lytl-0e67ry
 Price: 299.00 ILS
@@ -5169,6 +5162,13 @@ Availability: In stock
 ### קולולו יום הולדת דגם אלינור
 URL: https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-alynvr-5c6k8m
 Price: 299.00 ILS
+Availability: In stock
+
+---
+
+### עוגת בנטו ורוד עתיק פפיון שחור וינטאג
+URL: https://kolulu.zappy5.app/product/avgt-bntv-vrvd-atyk-ppyvn-shchvr-vyntag-6x1kp6
+Price: 199.00 ILS
 Availability: In stock
 
 ---

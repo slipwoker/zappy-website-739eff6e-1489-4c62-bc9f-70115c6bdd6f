@@ -78,13 +78,6 @@ Information about WCAG compliance and accessibility features.
 
 **Total active products: 13**
 
-### עוגת בנטו ורוד עתיק פפיון שחור וינטאג
-https://kolulu.zappy5.app/product/avgt-bntv-vrvd-atyk-ppyvn-shchvr-vyntag-6x1kp6
-- Price: 199.00 ILS
-- Availability: In stock
-- Category: עוגות בנטו 
-- Image: https://kolulu.zappy5.app/assets/product-enhanced-1784131130678-91gycd.webp
-
 ### קולולו יום הולדת דגם ליטל
 https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-lytl-0e67ry
 - Price: 299.00 ILS
@@ -119,6 +112,13 @@ https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-alynvr-5c6k8m
 - Availability: In stock
 - Category: קולולו יום הולדת בשבילה
 - Image: https://kolulu.zappy5.app/assets/product-enhanced-1784126834371-bqhg6v.webp
+
+### עוגת בנטו ורוד עתיק פפיון שחור וינטאג
+https://kolulu.zappy5.app/product/avgt-bntv-vrvd-atyk-ppyvn-shchvr-vyntag-6x1kp6
+- Price: 199.00 ILS
+- Availability: In stock
+- Category: עוגות בנטו 
+- Image: https://kolulu.zappy5.app/assets/product-enhanced-1784131130678-91gycd.webp
 
 ### עוגת בנטו  לבן וינטאג׳
 https://kolulu.zappy5.app/product/avgt-bntv-lbn-vyntag-h9c2gr
