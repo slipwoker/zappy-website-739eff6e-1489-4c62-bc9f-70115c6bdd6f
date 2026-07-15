@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-15T16:03:14.212Z",
+  "generated_at": "2026-07-15T16:04:59.840Z",
   "base_url": "https://kolulu.zappy5.app",
   "currency": "ILS",
   "count": 15,
@@ -175,8 +175,8 @@
     },
     {
       "id": "a6c4faba-fe8b-4801-aaee-c1d21a5747ed",
-      "slug": "avgt-bntv-lbn-vyntag-copy-rcv6u2",
-      "name": "עוגת בנטו  לבן וינטאג׳ (Copy)",
+      "slug": "avgt-bntv-lbvbv-vrvd-0ti72b",
+      "name": "עוגת בנטו לבובו ורוד",
       "name_translations": {},
       "description": "",
       "short_description": null,
@@ -187,15 +187,15 @@
       "sale_price": null,
       "currency": "ILS",
       "images": [
-        "https://kolulu.zappy5.app/assets/product-enhanced-1784130882429-ktmqm.webp"
+        "https://kolulu.zappy5.app/assets/product-enhanced-1784131457981-dojq2a.webp"
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://kolulu.zappy5.app/product/avgt-bntv-lbn-vyntag-copy-rcv6u2",
+      "url": "https://kolulu.zappy5.app/product/avgt-bntv-lbvbv-vrvd-0ti72b",
       "categories": [
         "עוגות בנטו "
       ],
-      "updated_at": "2026-07-15T16:02:34.597Z"
+      "updated_at": "2026-07-15T16:04:55.298Z"
     },
     {
       "id": "cf71381c-c15c-4d6b-a557-01b293b48baf",
