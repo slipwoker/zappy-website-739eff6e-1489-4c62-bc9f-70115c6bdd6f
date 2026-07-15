@@ -22,7 +22,7 @@ https://kolulu.zappy5.app/faq
 https://kolulu.zappy5.app/contact
 רוצים ליצור מתנות ליולדת ולתינוק או לאירוע מיוחד? צרו קשר עם צוות קולולו ונעזור לכם לבנות מארז חלומי עם נגיעה אישית. השאירו פרטים ונתחיל לפנק!
 
-### Products
+### כל המוצרים
 https://kolulu.zappy5.app/products
 המוצרים שלנו - קולולו
 
@@ -50,7 +50,7 @@ https://kolulu.zappy5.app/order-success
 https://kolulu.zappy5.app/product/:slug
 פרטי המוצר - קולולו
 
-### Category
+### כל המוצרים
 https://kolulu.zappy5.app/category/:slug
 מוצרים - קולולו
 
@@ -79,8 +79,8 @@ Information about WCAG compliance and accessibility features.
 **Total active products: 12**
 
 ### קולולו יום הולדת דגם ליטל
-https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-lytl-kyuzd9
-- Price: 350.00 ILS
+https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-lytl-cy186h
+- Price: 289.00 ILS
 - Availability: In stock
 - Category: קולולו יום הולדת בשבילה
 - Image: https://kolulu.zappy5.app/assets/product-enhanced-1784127317127-x851in.webp
