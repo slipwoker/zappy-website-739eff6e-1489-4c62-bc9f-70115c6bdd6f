@@ -1,10 +1,58 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-15T16:05:26.941Z",
+  "generated_at": "2026-07-15T16:08:00.745Z",
   "base_url": "https://kolulu.zappy5.app",
   "currency": "ILS",
-  "count": 15,
+  "count": 17,
   "products": [
+    {
+      "id": "743f6479-04cb-4852-9a50-0f0d820511b2",
+      "slug": "kvlvlv-yvm-hvldt-dgm-lytl-copy-copy-hh572o",
+      "name": "קולולו יום הולדת דגם ליטל (Copy) (Copy)",
+      "name_translations": {},
+      "description": "",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 299,
+      "base_price": 299,
+      "sale_price": null,
+      "currency": "ILS",
+      "images": [
+        "https://kolulu.zappy5.app/assets/product-enhanced-1784127317127-x851in.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-lytl-copy-copy-hh572o",
+      "categories": [
+        "קולולו יום הולדת בשבילה"
+      ],
+      "updated_at": "2026-07-15T16:07:28.634Z"
+    },
+    {
+      "id": "456c03c0-be09-4e7f-854f-657eee4a7cd8",
+      "slug": "kvlvlv-yvm-hvldt-dgm-lytl-copy-q4jihd",
+      "name": "קולולו יום הולדת דגם ליטל (Copy)",
+      "name_translations": {},
+      "description": "",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 299,
+      "base_price": 299,
+      "sale_price": null,
+      "currency": "ILS",
+      "images": [
+        "https://kolulu.zappy5.app/assets/product-enhanced-1784127317127-x851in.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-lytl-copy-q4jihd",
+      "categories": [
+        "קולולו יום הולדת בשבילה"
+      ],
+      "updated_at": "2026-07-15T16:07:19.836Z"
+    },
     {
       "id": "b3dedfdc-a9c1-45de-aeeb-ba3c171dba16",
       "slug": "kvlvlv-yvm-hvldt-dgm-lytl-0e67ry",
@@ -151,8 +199,8 @@
     },
     {
       "id": "c3166316-c139-4578-8fb7-b81d8a363144",
-      "slug": "avgt-bntv-lbn-vyntag-copy-copy-4tcaqz",
-      "name": "עוגת בנטו  לבן וינטאג׳ (Copy) (Copy)",
+      "slug": "avgt-bntv-dvbdbnym-ppyvnym-rr5a7b",
+      "name": "עוגת בנטו דובדבנים פפיונים",
       "name_translations": {},
       "description": "",
       "short_description": null,
@@ -163,15 +211,15 @@
       "sale_price": null,
       "currency": "ILS",
       "images": [
-        "https://kolulu.zappy5.app/assets/product-enhanced-1784130882429-ktmqm.webp"
+        "https://kolulu.zappy5.app/assets/product-enhanced-1784131546788-3685rn.webp"
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://kolulu.zappy5.app/product/avgt-bntv-lbn-vyntag-copy-copy-4tcaqz",
+      "url": "https://kolulu.zappy5.app/product/avgt-bntv-dvbdbnym-ppyvnym-rr5a7b",
       "categories": [
         "עוגות בנטו "
       ],
-      "updated_at": "2026-07-15T16:02:42.425Z"
+      "updated_at": "2026-07-15T16:07:00.355Z"
     },
     {
       "id": "a6c4faba-fe8b-4801-aaee-c1d21a5747ed",
