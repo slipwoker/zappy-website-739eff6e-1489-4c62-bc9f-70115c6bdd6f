@@ -14162,6 +14162,186 @@ if (document.readyState === 'complete') {
 })();
 /* ZAPPY_BLOCK_RUNTIME_END */
 
+/* ZAPPY_CUSTOM_JS_START:8ddcf01b69dd */
+(function () {
+  function __zappyCustomInit() {
+    try {
+(function() {
+  var builder = document.querySelector('#kululu-gift-builder .gift-builder');
+  if (!builder) return;
+
+  var state = { base: null, baseName: '', basePrice: 0, items: [], total: 0 };
+
+  function panels() {
+    return {
+      1: builder.querySelector('#gb-panel-1'),
+      2: builder.querySelector('#gb-panel-2'),
+      3: builder.querySelector('#gb-panel-3')
+    };
+  }
+
+  function switchPanel(num) {
+    var p = panels();
+    Object.keys(p).forEach(function(k) { if (p[k]) p[k].style.display = 'none'; });
+    if (p[num]) p[num].style.display = 'block';
+
+    var steps = builder.querySelectorAll('.gb-step');
+    steps.forEach(function(step) {
+      var s = parseInt(step.getAttribute('data-step'));
+      step.style.opacity = (s === num) ? '1' : (s < num ? '1' : '0.4');
+      if (s < num) step.classList.add('completed');
+      else step.classList.remove('completed');
+      
+      var numEl = step.querySelector('.gb-step-num');
+      if (numEl) {
+        if (s === num) { numEl.style.background = '#FF3399'; numEl.style.color = '#fff'; numEl.style.borderColor = '#FF3399'; }
+        else if (s < num) { numEl.style.background = '#BFA7FF'; numEl.style.borderColor = '#BFA7FF'; numEl.style.color = '#fff'; }
+        else { numEl.style.background = '#FFF0F6'; numEl.style.color = '#FF3399'; numEl.style.borderColor = '#FF3399'; }
+      }
+    });
+  }
+
+  function updateSummary() {
+    var bn = builder.querySelector('#gb-summary-base-name');
+    var il = builder.querySelector('#gb-summary-items-list');
+    var tp = builder.querySelector('#gb-total-price');
+    if (!bn || !il || !tp) return;
+
+    bn.textContent = state.baseName || '—';
+    il.innerHTML = '';
+    if (state.items.length === 0) {
+      il.innerHTML = '<li class="gb-summary-empty" style="padding:6px 0;font-size:0.95rem;color:#92858c;border-bottom:none;text-align:center;font-style:italic;">לא נבחרו פריטים עדיין</li>';
+    } else {
+      state.items.forEach(function(item, idx) {
+        var li = document.createElement('li');
+        li.style.cssText = 'padding:6px 0;font-size:0.95rem;color:#4A4A4A;border-bottom:1px solid #FFE0F0;display:flex;justify-content:space-between;align-items:center;';
+        li.innerHTML = '<span>' + item.name + '</span><span>' + item.price + ' ₪ <button class="gb-remove-item" style="background:none;border:none;color:#FF3399;cursor:pointer;font-size:0.85rem;font-weight:500;padding:2px 8px;border-radius:12px;">הסר</button></span>';
+        li.querySelector('.gb-remove-item').addEventListener('click', function(e) {
+          e.stopPropagation();
+          state.total -= state.items[idx].price;
+          state.items.splice(idx, 1);
+          updateSummary();
+        });
+        il.appendChild(li);
+      });
+    }
+    tp.textContent = '₪' + state.total;
+
+    builder.querySelectorAll('.gb-item-card').forEach(function(card) {
+      var itemId = card.getAttribute('data-item');
+      var added = state.items.some(function(i) { return i.id === itemId; });
+      var btn = card.querySelector('.gb-add-btn');
+      if (added) {
+        card.style.borderColor = '#BFA7FF';
+        card.style.background = '#F8F4FF';
+        if (btn) btn.textContent = '✓ נוסף';
+      } else {
+        card.style.borderColor = '#FFE0F0';
+        card.style.background = '#fff';
+        if (btn) btn.textContent = 'הוסף למארז';
+      }
+    });
+  }
+
+  function addItem(itemId, itemName, itemPrice) {
+    var existing = state.items.filter(function(i) { return i.id === itemId; });
+    if (existing.length >= 2) return;
+    state.items.push({ id: itemId, name: itemName, price: itemPrice });
+    state.total += itemPrice;
+    updateSummary();
+  }
+
+  // Base card clicks - DIRECT onclick handlers
+  builder.querySelectorAll('.gb-select-btn').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var card = btn.closest('.gb-base-card');
+      if (!card) return;
+      
+      builder.querySelectorAll('.gb-base-card').forEach(function(c) {
+        c.style.borderColor = '#FFE0F0';
+        c.style.background = '#fff';
+        c.style.boxShadow = '';
+        c.classList.remove('selected');
+      });
+      
+      card.classList.add('selected');
+      card.style.borderColor = '#FF3399';
+      card.style.background = '#FFF0F6';
+      card.style.boxShadow = '0 8px 30px rgba(255,51,153,0.18)';
+      
+      state.base = card.getAttribute('data-base');
+      state.baseName = card.getAttribute('data-name');
+      state.basePrice = parseInt(card.getAttribute('data-price')) || 0;
+      state.total = state.basePrice;
+      state.items.forEach(function(item) { state.total += item.price; });
+      updateSummary();
+      
+      setTimeout(function() { switchPanel(2); }, 400);
+    });
+  });
+
+  // Item add buttons - DIRECT onclick handlers
+  builder.querySelectorAll('.gb-add-btn').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var card = btn.closest('.gb-item-card');
+      if (!card) return;
+      
+      var itemId = card.getAttribute('data-item');
+      var itemName = card.getAttribute('data-name');
+      var itemPrice = parseInt(card.getAttribute('data-price')) || 0;
+      if (!itemId) return;
+      
+      addItem(itemId, itemName, itemPrice);
+    });
+  });
+
+  // Navigation buttons
+  var backToBase = builder.querySelector('#gb-back-to-base');
+  if (backToBase) backToBase.addEventListener('click', function() { switchPanel(1); });
+  
+  var backToItems = builder.querySelector('#gb-back-to-items');
+  if (backToItems) backToItems.addEventListener('click', function() { switchPanel(2); });
+  
+  var toCheckout = builder.querySelector('#gb-to-checkout');
+  if (toCheckout) {
+    toCheckout.addEventListener('click', function() {
+      if (!state.base) {
+        alert('אנא בחרי בסיס למארז לפני המעבר להזמנה.');
+        switchPanel(1);
+        return;
+      }
+      alert('תודה! ההרכבה נשלחה. נציג יצור איתך קשר בהקדם להשלמת ההזמנה.');
+    });
+  }
+
+  // Progress step clicks
+  builder.querySelectorAll('.gb-step').forEach(function(step) {
+    step.addEventListener('click', function() {
+      var s = parseInt(step.getAttribute('data-step'));
+      if ((s === 2 || s === 3) && !state.base) {
+        alert('אנא בחרי בסיס למארז תחילה.');
+        return;
+      }
+      switchPanel(s);
+    });
+  });
+
+  updateSummary();
+})();
+    } catch (e) {
+      if (typeof console !== 'undefined' && console.warn) { console.warn('[zappy-custom-js]', e); }
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __zappyCustomInit);
+  } else {
+    __zappyCustomInit();
+  }
+})();
+/* ZAPPY_CUSTOM_JS_END:8ddcf01b69dd */
+
 
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
 (function(){
