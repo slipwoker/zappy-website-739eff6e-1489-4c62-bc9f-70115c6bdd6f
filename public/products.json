@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-15T15:53:56.190Z",
+  "generated_at": "2026-07-15T15:54:45.333Z",
   "base_url": "https://kolulu.zappy5.app",
   "currency": "ILS",
   "count": 12,
@@ -199,7 +199,7 @@
     },
     {
       "id": "d5823f99-a796-4d2f-acd7-0af0a6127645",
-      "slug": "avgh-bntv-vyntg-love-nidt0s",
+      "slug": "avgh-bntv-vyntg-love-4uk2od",
       "name": "עוגה בנטו וינטג׳ love",
       "name_translations": {},
       "description": "",
@@ -211,15 +211,15 @@
       "sale_price": null,
       "currency": "ILS",
       "images": [
-        "https://kolulu.zappy5.app/assets/product-1784124540611-twfd1e.webp"
+        "https://kolulu.zappy5.app/assets/product-enhanced-1784130842097-a9uzo.webp"
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://kolulu.zappy5.app/product/avgh-bntv-vyntg-love-nidt0s",
+      "url": "https://kolulu.zappy5.app/product/avgh-bntv-vyntg-love-4uk2od",
       "categories": [
         "עוגות בנטו "
       ],
-      "updated_at": "2026-07-15T15:50:56.057Z"
+      "updated_at": "2026-07-15T15:54:13.871Z"
     },
     {
       "id": "ddc50a89-d0a7-4190-bfc8-8172033b41e8",
