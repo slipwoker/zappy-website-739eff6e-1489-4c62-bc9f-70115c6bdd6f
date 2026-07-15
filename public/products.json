@@ -1,9 +1,9 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-15T14:21:15.283Z",
+  "generated_at": "2026-07-15T14:24:00.173Z",
   "base_url": "https://kolulu.zappy5.app",
   "currency": "ILS",
-  "count": 5,
+  "count": 3,
   "products": [
     {
       "id": "d5823f99-a796-4d2f-acd7-0af0a6127645",
@@ -70,50 +70,6 @@
       "url": "https://kolulu.zappy5.app/product/avgt-bntv-ulo38w",
       "categories": [],
       "updated_at": "2026-07-15T14:12:10.570Z"
-    },
-    {
-      "id": "0244cf1f-6980-4e9e-803d-2d0fd50b41ed",
-      "slug": "shvkvld-mmvtg-nwa1pk",
-      "name": "שוקולד ממותג",
-      "name_translations": {},
-      "description": "",
-      "short_description": null,
-      "sku": null,
-      "brand": null,
-      "price": 1,
-      "base_price": 1,
-      "sale_price": null,
-      "currency": "ILS",
-      "images": [
-        "https://kolulu.zappy5.app/assets/product-1783956066295-eesob.webp"
-      ],
-      "in_stock": true,
-      "stock_status": "in_stock",
-      "url": "https://kolulu.zappy5.app/product/shvkvld-mmvtg-nwa1pk",
-      "categories": [],
-      "updated_at": "2026-07-15T10:30:20.289Z"
-    },
-    {
-      "id": "86d8d427-81e2-45f5-985a-be418f6a2758",
-      "slug": "marz-yvm-hvldt-layshh-17113f",
-      "name": "מארז יום הולדת לאישה",
-      "name_translations": {},
-      "description": "",
-      "short_description": null,
-      "sku": null,
-      "brand": null,
-      "price": 399,
-      "base_price": 399,
-      "sale_price": null,
-      "currency": "ILS",
-      "images": [
-        "https://kolulu.zappy5.app/assets/product-1783949078369-9lzt09.webp"
-      ],
-      "in_stock": true,
-      "stock_status": "in_stock",
-      "url": "https://kolulu.zappy5.app/product/marz-yvm-hvldt-layshh-17113f",
-      "categories": [],
-      "updated_at": "2026-07-15T10:30:47.554Z"
     }
   ]
 }

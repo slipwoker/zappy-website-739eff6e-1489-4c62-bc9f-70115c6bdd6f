@@ -4,7 +4,7 @@
     <title>קולולו</title>
     <link>https://kolulu.zappy5.app</link>
     <description>Product feed for קולולו</description>
-    <lastBuildDate>Wed, 15 Jul 2026 14:21:15 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jul 2026 14:24:00 GMT</lastBuildDate>
     <item>
       <g:id>d5823f99-a796-4d2f-acd7-0af0a6127645</g:id>
       <g:title>עוגת בנטו</g:title>
@@ -37,30 +37,6 @@
       <g:image_link>https://kolulu.zappy5.app/assets/product-1784109198280-gbpvy.webp</g:image_link>
       <g:availability>in_stock</g:availability>
       <g:price>200.00 ILS</g:price>
-      <g:condition>new</g:condition>
-      <g:brand>קולולו</g:brand>
-      <g:identifier_exists>no</g:identifier_exists>
-    </item>
-    <item>
-      <g:id>0244cf1f-6980-4e9e-803d-2d0fd50b41ed</g:id>
-      <g:title>שוקולד ממותג</g:title>
-      <g:description>שוקולד ממותג</g:description>
-      <g:link>https://kolulu.zappy5.app/product/shvkvld-mmvtg-nwa1pk</g:link>
-      <g:image_link>https://kolulu.zappy5.app/assets/product-1783956066295-eesob.webp</g:image_link>
-      <g:availability>in_stock</g:availability>
-      <g:price>1.00 ILS</g:price>
-      <g:condition>new</g:condition>
-      <g:brand>קולולו</g:brand>
-      <g:identifier_exists>no</g:identifier_exists>
-    </item>
-    <item>
-      <g:id>86d8d427-81e2-45f5-985a-be418f6a2758</g:id>
-      <g:title>מארז יום הולדת לאישה</g:title>
-      <g:description>מארז יום הולדת לאישה</g:description>
-      <g:link>https://kolulu.zappy5.app/product/marz-yvm-hvldt-layshh-17113f</g:link>
-      <g:image_link>https://kolulu.zappy5.app/assets/product-1783949078369-9lzt09.webp</g:image_link>
-      <g:availability>in_stock</g:availability>
-      <g:price>399.00 ILS</g:price>
       <g:condition>new</g:condition>
       <g:brand>קולולו</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
