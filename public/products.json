@@ -1,10 +1,58 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-15T14:40:36.458Z",
+  "generated_at": "2026-07-15T14:44:36.897Z",
   "base_url": "https://kolulu.zappy5.app",
   "currency": "ILS",
-  "count": 6,
+  "count": 8,
   "products": [
+    {
+      "id": "3c0dea43-c2c2-4854-9f2e-6f2955c3b23c",
+      "slug": "kvlvlv-yvm-hvldt-dgm-alynvr-copy-ietv4n",
+      "name": "קולולו יום הולדת דגם אלינור (Copy)",
+      "name_translations": {},
+      "description": "",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 350,
+      "base_price": 350,
+      "sale_price": null,
+      "currency": "ILS",
+      "images": [
+        "https://kolulu.zappy5.app/assets/product-ai-fit-1784126580063-m1hzpf.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-alynvr-copy-ietv4n",
+      "categories": [
+        "קולולו יום הולדת בשבילה"
+      ],
+      "updated_at": "2026-07-15T14:44:16.636Z"
+    },
+    {
+      "id": "531c191c-03fc-479f-86ba-64cf2f1c87ea",
+      "slug": "kvlvlv-yvm-hvldt-dgm-alynvr-5iimvr",
+      "name": "קולולו יום הולדת דגם אלינור",
+      "name_translations": {},
+      "description": "",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 350,
+      "base_price": 350,
+      "sale_price": null,
+      "currency": "ILS",
+      "images": [
+        "https://kolulu.zappy5.app/assets/product-ai-fit-1784126580063-m1hzpf.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-alynvr-5iimvr",
+      "categories": [
+        "קולולו יום הולדת בשבילה"
+      ],
+      "updated_at": "2026-07-15T14:44:04.850Z"
+    },
     {
       "id": "ddc50a89-d0a7-4190-bfc8-8172033b41e8",
       "slug": "avgt-bntv-gvsa56",
