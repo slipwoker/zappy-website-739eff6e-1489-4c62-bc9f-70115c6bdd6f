@@ -1,13 +1,13 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-15T10:23:25.861Z",
+  "generated_at": "2026-07-15T10:30:22.306Z",
   "base_url": "https://kolulu.zappy5.app",
   "currency": "ILS",
   "count": 3,
   "products": [
     {
       "id": "705f147f-0962-43c1-bd63-b668cbd75f46",
-      "slug": "avgt-bntv-kshr-bdts-bqmkvw",
+      "slug": "avgt-bntv-kshr-bdts-b227s5",
       "name": "עוגת בנטו-כשר בד״ץ",
       "name_translations": {},
       "description": "",
@@ -23,13 +23,13 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://kolulu.zappy5.app/product/avgt-bntv-kshr-bdts-bqmkvw",
+      "url": "https://kolulu.zappy5.app/product/avgt-bntv-kshr-bdts-b227s5",
       "categories": [],
-      "updated_at": "2026-07-15T09:56:07.042Z"
+      "updated_at": "2026-07-15T10:29:50.089Z"
     },
     {
       "id": "0244cf1f-6980-4e9e-803d-2d0fd50b41ed",
-      "slug": "shvkvld-mmvtg-jscgtv",
+      "slug": "shvkvld-mmvtg-nwa1pk",
       "name": "שוקולד ממותג",
       "name_translations": {},
       "description": "",
@@ -45,9 +45,9 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://kolulu.zappy5.app/product/shvkvld-mmvtg-jscgtv",
+      "url": "https://kolulu.zappy5.app/product/shvkvld-mmvtg-nwa1pk",
       "categories": [],
-      "updated_at": "2026-07-13T15:21:27.544Z"
+      "updated_at": "2026-07-15T10:30:20.289Z"
     },
     {
       "id": "86d8d427-81e2-45f5-985a-be418f6a2758",

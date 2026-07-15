@@ -6357,14 +6357,14 @@ Description: קולולו - תודה שפנית אלינו
 ## Product Catalog
 
 ### עוגת בנטו-כשר בד״ץ
-URL: https://kolulu.zappy5.app/product/avgt-bntv-kshr-bdts-bqmkvw
+URL: https://kolulu.zappy5.app/product/avgt-bntv-kshr-bdts-b227s5
 Price: 200.00 ILS
 Availability: In stock
 
 ---
 
 ### שוקולד ממותג
-URL: https://kolulu.zappy5.app/product/shvkvld-mmvtg-jscgtv
+URL: https://kolulu.zappy5.app/product/shvkvld-mmvtg-nwa1pk
 Price: 1.00 ILS
 Availability: In stock
 

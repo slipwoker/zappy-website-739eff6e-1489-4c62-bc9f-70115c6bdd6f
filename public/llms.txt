@@ -87,14 +87,14 @@ Information about WCAG compliance and accessibility features.
 **Total active products: 3**
 
 ### עוגת בנטו-כשר בד״ץ
-https://kolulu.zappy5.app/product/avgt-bntv-kshr-bdts-bqmkvw
+https://kolulu.zappy5.app/product/avgt-bntv-kshr-bdts-b227s5
 - Price: 200.00 ILS
 - Availability: In stock
 - Description: עוגת בנטו
 - Image: https://kolulu.zappy5.app/assets/product-1784109198280-gbpvy.webp
 
 ### שוקולד ממותג
-https://kolulu.zappy5.app/product/shvkvld-mmvtg-jscgtv
+https://kolulu.zappy5.app/product/shvkvld-mmvtg-nwa1pk
 - Price: 1.00 ILS
 - Availability: In stock
 - Image: https://kolulu.zappy5.app/assets/product-1783956066295-eesob.webp
