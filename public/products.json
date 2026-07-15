@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-15T15:38:41.584Z",
+  "generated_at": "2026-07-15T15:39:56.105Z",
   "base_url": "https://kolulu.zappy5.app",
   "currency": "ILS",
   "count": 12,
@@ -127,15 +127,15 @@
     },
     {
       "id": "cf71381c-c15c-4d6b-a557-01b293b48baf",
-      "slug": "avgt-bntv-x9djv5",
+      "slug": "avgt-bntv-4ywj77",
       "name": "עוגת בנטו  ",
       "name_translations": {},
       "description": "",
       "short_description": null,
       "sku": null,
       "brand": null,
-      "price": 200,
-      "base_price": 200,
+      "price": 199,
+      "base_price": 199,
       "sale_price": null,
       "currency": "ILS",
       "images": [
@@ -143,23 +143,23 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://kolulu.zappy5.app/product/avgt-bntv-x9djv5",
+      "url": "https://kolulu.zappy5.app/product/avgt-bntv-4ywj77",
       "categories": [
         "עוגות בנטו "
       ],
-      "updated_at": "2026-07-15T15:33:17.156Z"
+      "updated_at": "2026-07-15T15:38:58.386Z"
     },
     {
       "id": "ddc50a89-d0a7-4190-bfc8-8172033b41e8",
-      "slug": "avgt-bntv-gvsa56",
+      "slug": "avgt-bntv-40f7yn",
       "name": "עוגת בנטו  ",
       "name_translations": {},
       "description": "",
       "short_description": null,
       "sku": null,
       "brand": null,
-      "price": 200,
-      "base_price": 200,
+      "price": 199,
+      "base_price": 199,
       "sale_price": null,
       "currency": "ILS",
       "images": [
@@ -167,11 +167,11 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://kolulu.zappy5.app/product/avgt-bntv-gvsa56",
+      "url": "https://kolulu.zappy5.app/product/avgt-bntv-40f7yn",
       "categories": [
         "עוגות בנטו "
       ],
-      "updated_at": "2026-07-15T15:33:17.156Z"
+      "updated_at": "2026-07-15T15:39:24.665Z"
     },
     {
       "id": "a01504b8-f8fb-4888-8dcf-c4a5c01e5473",
