@@ -13095,6 +13095,14 @@ nav.navbar .sub-menu li a:hover { color: #d9ccd1 !important; background-color: r
 .zappy-catalog-menu {
   display: none !important;
 }
+
+#featured-products {
+  display: none !important;
+}
+
+#featured-categories {
+  display: none !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
