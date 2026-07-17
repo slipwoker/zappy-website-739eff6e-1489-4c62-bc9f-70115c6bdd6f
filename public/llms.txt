@@ -7,69 +7,69 @@
 ## Pages
 
 ### בית
-https://kolulu.zappy5.app
+https://kululugift.co.il
 גלו מארזים ליום הולדת בקולולו: מגשי שוקולד, בלונים ופרחים בעיצוב יוקרתי ונקי שהופכים כל חגיגה לבלתי נשכחת. המתנה המושלמת שמשדרת אושר מחכה לכם!
 
 ### אודות
-https://kolulu.zappy5.app/about
+https://kululugift.co.il/about
 קולולו היא בוטיק מתנות מודרני ונשי ששם דגש על עיצוב יוקרתי, ורוד רך וזהב עדין. גלו איך אנחנו יוצרים מארזים ליום הולדת וכל מתנה אחרת עם המון אהבה!
 
 ### שאלות נפוצות
-https://kolulu.zappy5.app/faq
+https://kululugift.co.il/faq
 יש לכם שאלות על משלוחים, התאמה אישית או מארזים ליום הולדת? דף השאלות הנפוצות של קולולו מרכז עבורכם את כל התשובות כדי שתוכלו להזמין בראש שקט. היכנסו עכשיו!
 
 ### צור קשר
-https://kolulu.zappy5.app/contact
+https://kululugift.co.il/contact
 רוצים ליצור מתנות ליולדת ולתינוק או לאירוע מיוחד? צרו קשר עם צוות קולולו ונעזור לכם לבנות מארז חלומי עם נגיעה אישית. השאירו פרטים ונתחיל לפנק!
 
 ### כל המוצרים
-https://kolulu.zappy5.app/products
+https://kululugift.co.il/products
 המוצרים שלנו - קולולו
 
 ### Cart
-https://kolulu.zappy5.app/cart
+https://kululugift.co.il/cart
 עגלת הקניות שלך
 
 ### Checkout
-https://kolulu.zappy5.app/checkout
+https://kululugift.co.il/checkout
 תשלום
 
 ### Login
-https://kolulu.zappy5.app/login
+https://kululugift.co.il/login
 התחברות לקוחות
 
 ### Account
-https://kolulu.zappy5.app/account
+https://kululugift.co.il/account
 החשבון שלי
 
 ### Order Success
-https://kolulu.zappy5.app/order-success
+https://kululugift.co.il/order-success
 תודה על ההזמנה
 
 ### Product Detail
-https://kolulu.zappy5.app/product/:slug
+https://kululugift.co.il/product/:slug
 פרטי המוצר - קולולו
 
 ### כל המוצרים
-https://kolulu.zappy5.app/category/:slug
+https://kululugift.co.il/category/:slug
 מוצרים - קולולו
 
 ### תודה שפנית אלינו
-https://kolulu.zappy5.app/thank-you
+https://kululugift.co.il/thank-you
 קולולו - תודה שפנית אלינו
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://kolulu.zappy5.app/privacy
+https://kululugift.co.il/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://kolulu.zappy5.app/terms
+https://kululugift.co.il/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://kolulu.zappy5.app/accessibility
+https://kululugift.co.il/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
@@ -79,180 +79,180 @@ Information about WCAG compliance and accessibility features.
 **Total active products: 25**
 
 ### קולולו יום הולדת דגם רויאל ורוד
-https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-rvyal-vrvd-om6kn5
+https://kululugift.co.il/product/kvlvlv-yvm-hvldt-dgm-rvyal-vrvd-om6kn5
 - Price: 449.00 ILS
 - Availability: In stock
 - Category: קולולו יום הולדת לאישה 
-- Image: https://kolulu.zappy5.app/assets/product-enhanced-1784133924590-pw08fm.webp
+- Image: https://kululugift.co.il/assets/product-enhanced-1784133924590-pw08fm.webp
 
 ### קולולו יום הולדת דגם רויאל לבן
-https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-rvyal-lbn-yf04g1
+https://kululugift.co.il/product/kvlvlv-yvm-hvldt-dgm-rvyal-lbn-yf04g1
 - Price: 449.00 ILS
 - Availability: In stock
 - Category: קולולו יום הולדת לאישה 
-- Image: https://kolulu.zappy5.app/assets/product-enhanced-1784134050497-1ttakd.webp
+- Image: https://kululugift.co.il/assets/product-enhanced-1784134050497-1ttakd.webp
 
 ### קולולו יום הולדת דגם אודליה
-https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-avdlyh-5ecwhu
+https://kululugift.co.il/product/kvlvlv-yvm-hvldt-dgm-avdlyh-5ecwhu
 - Price: 349.00 ILS
 - Availability: In stock
 - Category: קולולו יום הולדת לאישה 
-- Image: https://kolulu.zappy5.app/assets/product-enhanced-1784133056326-06lop.webp
+- Image: https://kululugift.co.il/assets/product-enhanced-1784133056326-06lop.webp
 
 ### קולולו יום הולדת דגם גלית
-https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-glyt-qxtbbf
+https://kululugift.co.il/product/kvlvlv-yvm-hvldt-dgm-glyt-qxtbbf
 - Price: 299.00 ILS
 - Availability: In stock
 - Category: קולולו יום הולדת לאישה 
-- Image: https://kolulu.zappy5.app/assets/product-1784134113974-m2312.webp
+- Image: https://kululugift.co.il/assets/product-1784134113974-m2312.webp
 
 ### קולולו יום הולדת דגם לירון בלבן
-https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-lyrvn-blbn-8zexib
+https://kululugift.co.il/product/kvlvlv-yvm-hvldt-dgm-lyrvn-blbn-8zexib
 - Price: 299.00 ILS
 - Availability: In stock
 - Category: קולולו יום הולדת לאישה 
-- Image: https://kolulu.zappy5.app/assets/product-enhanced-1784132726842-olztyk.webp
+- Image: https://kululugift.co.il/assets/product-enhanced-1784132726842-olztyk.webp
 
 ### קולולו יום הולדת דגם לירון בורוד
-https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-lyrvn-bvrvd-ej8n7i
+https://kululugift.co.il/product/kvlvlv-yvm-hvldt-dgm-lyrvn-bvrvd-ej8n7i
 - Price: 299.00 ILS
 - Availability: In stock
 - Category: קולולו יום הולדת לאישה 
-- Image: https://kolulu.zappy5.app/assets/product-enhanced-1784132600823-4ti04n.webp
+- Image: https://kululugift.co.il/assets/product-enhanced-1784132600823-4ti04n.webp
 
 ### קולולו יום הולדת דגם ליאן
-https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-lyan-3eemkk
+https://kululugift.co.il/product/kvlvlv-yvm-hvldt-dgm-lyan-3eemkk
 - Price: 299.00 ILS
 - Availability: In stock
 - Category: קולולו יום הולדת לאישה 
-- Image: https://kolulu.zappy5.app/assets/product-enhanced-1784133772756-y6eax.webp
+- Image: https://kululugift.co.il/assets/product-enhanced-1784133772756-y6eax.webp
 
 ### קולולו יום הולדת דגם מירב
-https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-myrb-gialsf
+https://kululugift.co.il/product/kvlvlv-yvm-hvldt-dgm-myrb-gialsf
 - Price: 299.00 ILS
 - Availability: In stock
 - Category: קולולו יום הולדת לאישה 
-- Image: https://kolulu.zappy5.app/assets/product-enhanced-1784132360920-b0exxu.webp
+- Image: https://kululugift.co.il/assets/product-enhanced-1784132360920-b0exxu.webp
 
 ### קולולו יום הולדת דגם סילבר 
-https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-sylbr-mvxi8w
+https://kululugift.co.il/product/kvlvlv-yvm-hvldt-dgm-sylbr-mvxi8w
 - Price: 299.00 ILS
 - Availability: In stock
 - Category: קולולו יום הולדת לאישה 
-- Image: https://kolulu.zappy5.app/assets/product-enhanced-1784132147687-jefdau.webp
+- Image: https://kululugift.co.il/assets/product-enhanced-1784132147687-jefdau.webp
 
 ### קולולו יום הולדת בלבן
-https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-blbn-m3fxor
+https://kululugift.co.il/product/kvlvlv-yvm-hvldt-blbn-m3fxor
 - Price: 299.00 ILS
 - Availability: In stock
 - Category: קולולו יום הולדת לאישה 
-- Image: https://kolulu.zappy5.app/assets/product-enhanced-1784131999165-nxtxo5.webp
+- Image: https://kululugift.co.il/assets/product-enhanced-1784131999165-nxtxo5.webp
 
 ### קולולו יום הולדת דגם ליטל
-https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-lytl-0e67ry
+https://kululugift.co.il/product/kvlvlv-yvm-hvldt-dgm-lytl-0e67ry
 - Price: 299.00 ILS
 - Availability: In stock
 - Category: קולולו יום הולדת לאישה 
-- Image: https://kolulu.zappy5.app/assets/product-enhanced-1784127317127-x851in.webp
+- Image: https://kululugift.co.il/assets/product-enhanced-1784127317127-x851in.webp
 
 ### קולולו יום הולדת דגם סיוון
-https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-syvvn-zhilak
+https://kululugift.co.il/product/kvlvlv-yvm-hvldt-dgm-syvvn-zhilak
 - Price: 299.00 ILS
 - Availability: In stock
 - Category: קולולו יום הולדת לאישה 
-- Image: https://kolulu.zappy5.app/assets/product-enhanced-1784127096801-5n5fat.webp
+- Image: https://kululugift.co.il/assets/product-enhanced-1784127096801-5n5fat.webp
 
 ### קולולו יום הולדת דגם שיר
-https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-shyr-eg147o
+https://kululugift.co.il/product/kvlvlv-yvm-hvldt-dgm-shyr-eg147o
 - Price: 299.00 ILS
 - Availability: In stock
 - Category: קולולו יום הולדת לאישה 
-- Image: https://kolulu.zappy5.app/assets/product-1784126928824-k9p5e8.webp
+- Image: https://kululugift.co.il/assets/product-1784126928824-k9p5e8.webp
 
 ### קולולו יום הולדת דגם אסתריקה
-https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-astrykh-gnrbcu
+https://kululugift.co.il/product/kvlvlv-yvm-hvldt-dgm-astrykh-gnrbcu
 - Price: 299.00 ILS
 - Availability: In stock
 - Category: קולולו יום הולדת לאישה 
-- Image: https://kolulu.zappy5.app/assets/product-ai-fit-1784126730881-n6f1le.webp
+- Image: https://kululugift.co.il/assets/product-ai-fit-1784126730881-n6f1le.webp
 
 ### קולולו יום הולדת דגם אלינור
-https://kolulu.zappy5.app/product/kvlvlv-yvm-hvldt-dgm-alynvr-5c6k8m
+https://kululugift.co.il/product/kvlvlv-yvm-hvldt-dgm-alynvr-5c6k8m
 - Price: 299.00 ILS
 - Availability: In stock
 - Category: קולולו יום הולדת לאישה 
-- Image: https://kolulu.zappy5.app/assets/product-enhanced-1784126834371-bqhg6v.webp
+- Image: https://kululugift.co.il/assets/product-enhanced-1784126834371-bqhg6v.webp
 
 ### עוגת בנטו ורוד עתיק פפיון שחור וינטאג
-https://kolulu.zappy5.app/product/avgt-bntv-vrvd-atyk-ppyvn-shchvr-vyntag-6x1kp6
+https://kululugift.co.il/product/avgt-bntv-vrvd-atyk-ppyvn-shchvr-vyntag-6x1kp6
 - Price: 199.00 ILS
 - Availability: In stock
 - Category: עוגות בנטו 
-- Image: https://kolulu.zappy5.app/assets/product-enhanced-1784131130678-91gycd.webp
+- Image: https://kululugift.co.il/assets/product-enhanced-1784131130678-91gycd.webp
 
 ### עוגת בנטו דובדבנים פפיונים
-https://kolulu.zappy5.app/product/avgt-bntv-dvbdbnym-ppyvnym-rr5a7b
+https://kululugift.co.il/product/avgt-bntv-dvbdbnym-ppyvnym-rr5a7b
 - Price: 199.00 ILS
 - Availability: In stock
 - Category: עוגות בנטו 
-- Image: https://kolulu.zappy5.app/assets/product-enhanced-1784131546788-3685rn.webp
+- Image: https://kululugift.co.il/assets/product-enhanced-1784131546788-3685rn.webp
 
 ### עוגת בנטו לבובו ורוד
-https://kolulu.zappy5.app/product/avgt-bntv-lbvbv-vrvd-0ti72b
+https://kululugift.co.il/product/avgt-bntv-lbvbv-vrvd-0ti72b
 - Price: 199.00 ILS
 - Availability: In stock
 - Category: עוגות בנטו 
-- Image: https://kolulu.zappy5.app/assets/product-enhanced-1784131457981-dojq2a.webp
+- Image: https://kululugift.co.il/assets/product-enhanced-1784131457981-dojq2a.webp
 
 ### עוגת בנטו  לבן וינטאג׳
-https://kolulu.zappy5.app/product/avgt-bntv-lbn-vyntag-h9c2gr
+https://kululugift.co.il/product/avgt-bntv-lbn-vyntag-h9c2gr
 - Price: 199.00 ILS
 - Availability: In stock
 - Category: עוגות בנטו 
-- Image: https://kolulu.zappy5.app/assets/product-enhanced-1784130882429-ktmqm.webp
+- Image: https://kululugift.co.il/assets/product-enhanced-1784130882429-ktmqm.webp
 
 ### עוגת בנטו 2 waves 
-https://kolulu.zappy5.app/product/avgt-bntv-2-waves-nigkww
+https://kululugift.co.il/product/avgt-bntv-2-waves-nigkww
 - Price: 199.00 ILS
 - Availability: In stock
 - Category: עוגות בנטו 
-- Image: https://kolulu.zappy5.app/assets/product-enhanced-1784130794219-r5neq8.webp
+- Image: https://kululugift.co.il/assets/product-enhanced-1784130794219-r5neq8.webp
 
 ### עוגת בנטו 3 waves 
-https://kolulu.zappy5.app/product/avgt-bntv-3-waves-6uwgwf
+https://kululugift.co.il/product/avgt-bntv-3-waves-6uwgwf
 - Price: 199.00 ILS
 - Availability: In stock
 - Category: עוגות בנטו 
-- Image: https://kolulu.zappy5.app/assets/product-enhanced-1784130749004-yo5rpe.webp
+- Image: https://kululugift.co.il/assets/product-enhanced-1784130749004-yo5rpe.webp
 
 ### עוגה בנטו וינטג׳ love
-https://kolulu.zappy5.app/product/avgh-bntv-vyntg-love-4uk2od
+https://kululugift.co.il/product/avgh-bntv-vyntg-love-4uk2od
 - Price: 199.00 ILS
 - Availability: In stock
 - Category: עוגות בנטו 
-- Image: https://kolulu.zappy5.app/assets/product-enhanced-1784130842097-a9uzo.webp
+- Image: https://kululugift.co.il/assets/product-enhanced-1784130842097-a9uzo.webp
 
 ### עוגת בנטו  תכלת/ורוד פפיונים וינטאג׳ 
-https://kolulu.zappy5.app/product/avgt-bntv-tkltvrvd-ppyvnym-vyntag-w3ixtn
+https://kululugift.co.il/product/avgt-bntv-tkltvrvd-ppyvnym-vyntag-w3ixtn
 - Price: 199.00 ILS
 - Availability: In stock
 - Category: עוגות בנטו 
-- Image: https://kolulu.zappy5.app/assets/product-enhanced-1784130921013-o5cic5q.webp
+- Image: https://kululugift.co.il/assets/product-enhanced-1784130921013-o5cic5q.webp
 
 ### עוגת בנטו ורוד פפיונים וינטאג
-https://kolulu.zappy5.app/product/avgt-bntv-vrvd-ppyvnym-vyntag-ah99g8
+https://kululugift.co.il/product/avgt-bntv-vrvd-ppyvnym-vyntag-ah99g8
 - Price: 199.00 ILS
 - Availability: In stock
 - Category: עוגות בנטו 
-- Image: https://kolulu.zappy5.app/assets/product-enhanced-1784130959175-ado2bp.webp
+- Image: https://kululugift.co.il/assets/product-enhanced-1784130959175-ado2bp.webp
 
 ### עוגת בנטו ניוד ורוד פפיונים וינטאג׳
-https://kolulu.zappy5.app/product/avgt-bntv-nyvd-vrvd-ppyvnym-vyntag-lirdvq
+https://kululugift.co.il/product/avgt-bntv-nyvd-vrvd-ppyvnym-vyntag-lirdvq
 - Price: 199.00 ILS
 - Availability: In stock
 - Category: עוגות בנטו 
 - Description: עוגת בנטו
-- Image: https://kolulu.zappy5.app/assets/product-enhanced-1784131014348-0i5fm.webp
+- Image: https://kululugift.co.il/assets/product-enhanced-1784131014348-0i5fm.webp
 
 ---
 
@@ -284,8 +284,8 @@ E-commerce / Gift & Lifestyle
 
 # Machine-readable feeds
 
-- Sitemap (XML): https://kolulu.zappy5.app/sitemap.xml
-- Robots: https://kolulu.zappy5.app/robots.txt
-- Flattened page text (for LLMs): https://kolulu.zappy5.app/llms-full.txt
-- Products (JSON): https://kolulu.zappy5.app/products.json
-- Products (Google Merchant RSS): https://kolulu.zappy5.app/product-feed.xml
+- Sitemap (XML): https://kululugift.co.il/sitemap.xml
+- Robots: https://kululugift.co.il/robots.txt
+- Flattened page text (for LLMs): https://kululugift.co.il/llms-full.txt
+- Products (JSON): https://kululugift.co.il/products.json
+- Products (Google Merchant RSS): https://kululugift.co.il/product-feed.xml
