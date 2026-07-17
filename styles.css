@@ -6544,7 +6544,13 @@ main { flex: 1 0 auto; }
   font-family: 'Rubik', sans-serif !important;
 }
 
-
+/* Logo size constraint - enforce max-height only */
+.logo, img.logo, .logo img, .logo-link img, .nav-brand img {
+  max-height: 40px !important;
+  height: auto !important;
+  width: auto !important;
+  object-fit: contain !important;
+}
 
 /* Footer contact alignment fix */
 .footer-contact li > a { display: flex; align-items: flex-start; gap: inherit; }
@@ -13085,21 +13091,6 @@ nav.navbar .sub-menu li a:hover { color: #d9ccd1 !important; background-color: r
   }
 }
 /* === NAVBAR STYLE OVERRIDES END === */
-/* Zappy custom logo size (desktop only — mobile stays at 110px/35px) */
-@media (min-width: 769px) {
-  .logo, img.logo, .logo img, .logo-link img, .nav-brand img {
-    max-height: none !important;
-    height: 43px !important;
-    max-width: 173px !important;
-    width: auto !important;
-    object-fit: contain !important;
-  }
-  .nav-container {
-    min-height: 73px !important;
-  }
-}
-/* /Zappy custom logo size */
-
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
