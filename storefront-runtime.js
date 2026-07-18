@@ -14607,136 +14607,6 @@ async function loadRelatedProducts(currentProduct, t) {
 })();
 /* ZAPPY_CUSTOM_JS_END:d931ccc1258a */
 
-/* ZAPPY_CUSTOM_JS_START:5d547d7ec191 */
-(function () {
-  function __zappyCustomInit() {
-    try {
-(function() {
-  var overlay = document.createElement('div');
-  overlay.id = 'confetti-home-overlay';
-  overlay.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:99999;overflow:hidden;';
-  document.body.appendChild(overlay);
-
-  // Warm center glow
-  var glow = document.createElement('div');
-  glow.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:99998;' +
-    'background: radial-gradient(ellipse at 50% 50%, rgba(255,180,140,0.20) 0%, rgba(255,140,160,0.08) 30%, transparent 65%);' +
-    'animation: warmGlowPulse 2.5s ease-in-out;';
-  document.body.appendChild(glow);
-
-  var glowStyle = document.createElement('style');
-  glowStyle.textContent = 
-    '@keyframes warmGlowPulse {' +
-    '  0% { opacity: 0; transform: scale(0.8); }' +
-    '  30% { opacity: 1; }' +
-    '  100% { opacity: 0; transform: scale(1.3); }' +
-    '}';
-  document.head.appendChild(glowStyle);
-
-  setTimeout(function() {
-    if (glow.parentNode) glow.parentNode.removeChild(glow);
-    if (glowStyle.parentNode) glowStyle.parentNode.removeChild(glowStyle);
-  }, 6000);
-
-  // Confetti styles
-  var style = document.createElement('style');
-  style.textContent = 
-    '#confetti-home-overlay .conf-piece {' +
-    '  position: absolute; top: -12px;' +
-    '  animation: confFall linear forwards;' +
-    '}' +
-    '@keyframes confFall {' +
-    '  0% { transform: translateY(0) rotate(0deg) scale(1); opacity: 1; }' +
-    '  70% { opacity: 0.9; }' +
-    '  100% { transform: translateY(105vh) rotate(720deg) scale(0.1); opacity: 0; }' +
-    '}';
-  document.head.appendChild(style);
-
-  var colors = ['#FF99CC','#FFCCE0','#FFB3D9','#FFF0F6','#FF80B3','#FFD1DC','#FFFFFF','#FFE4E1'];
-  var shapes = ['circle','heart','star'];
-  var totalPieces = 0;
-  var maxPieces = 55;
-
-  // Spread across screen center too: lower start positions
-  function makePiece() {
-    if (totalPieces >= maxPieces) return;
-    if (!overlay.parentNode) return;
-    
-    var el = document.createElement('div');
-    el.className = 'conf-piece';
-    var size = Math.random() * 8 + 5;
-    var color = colors[Math.floor(Math.random() * colors.length)];
-    var shape = shapes[Math.floor(Math.random() * shapes.length)];
-    var left = Math.random() * 100;
-    // Start from various heights, including middle
-    var startTop = -(Math.random() * 55 + 5);
-    var dur = Math.random() * 2.2 + 2.8;
-    var delay = Math.random() * 0.3;
-    
-    el.style.width = size + 'px';
-    el.style.height = size + 'px';
-    el.style.left = left + '%';
-    el.style.top = startTop + 'px';
-    el.style.animationDuration = dur + 's';
-    el.style.animationDelay = delay + 's';
-    
-    if (shape === 'circle') {
-      el.style.borderRadius = '50%';
-      el.style.backgroundColor = color;
-    } else if (shape === 'star') {
-      el.style.backgroundColor = 'transparent';
-      el.style.width = (size + 2) + 'px';
-      el.style.height = (size + 2) + 'px';
-      el.textContent = '\u2728';
-      el.style.fontSize = (size + 2) + 'px';
-      el.style.color = color;
-      el.style.lineHeight = '1';
-    } else {
-      el.style.backgroundColor = 'transparent';
-      el.style.width = (size + 3) + 'px';
-      el.style.height = (size + 3) + 'px';
-      el.textContent = '\u2665';
-      el.style.fontSize = (size + 2) + 'px';
-      el.style.color = color;
-      el.style.lineHeight = '1';
-    }
-    
-    overlay.appendChild(el);
-    totalPieces++;
-    
-    setTimeout(function() {
-      if (el.parentNode) el.parentNode.removeChild(el);
-    }, (dur + delay) * 1000 + 200);
-  }
-
-  // Gentle burst
-  for (var i = 0; i < 35; i++) {
-    setTimeout(makePiece, i * 55);
-  }
-
-  var spawnTimer = setInterval(makePiece, 160);
-
-  setTimeout(function() {
-    clearInterval(spawnTimer);
-  }, 5000);
-
-  setTimeout(function() {
-    if (overlay.parentNode) overlay.parentNode.removeChild(overlay);
-    if (style.parentNode) style.parentNode.removeChild(style);
-  }, 6500);
-})();
-    } catch (e) {
-      if (typeof console !== 'undefined' && console.warn) { console.warn('[zappy-custom-js]', e); }
-    }
-  }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', __zappyCustomInit);
-  } else {
-    __zappyCustomInit();
-  }
-})();
-/* ZAPPY_CUSTOM_JS_END:5d547d7ec191 */
-
 /* ZAPPY_CUSTOM_JS_START:b8fde4c49027 */
 (function () {
   function __zappyCustomInit() {
@@ -14868,6 +14738,124 @@ async function loadRelatedProducts(currentProduct, t) {
   }
 })();
 /* ZAPPY_CUSTOM_JS_END:b8fde4c49027 */
+
+/* ZAPPY_CUSTOM_JS_START:3a48168ea712 */
+(function () {
+  function __zappyCustomInit() {
+    try {
+(function() {
+  var overlay = document.createElement('div');
+  overlay.id = 'confetti-home-overlay';
+  overlay.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:99999;overflow:hidden;';
+  document.body.appendChild(overlay);
+
+  // Warm center glow
+  var glow = document.createElement('div');
+  glow.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:99998;' +
+    'background: radial-gradient(ellipse at 50% 50%, rgba(255,180,140,0.16) 0%, rgba(255,140,160,0.05) 25%, transparent 60%);' +
+    'animation: warmGlowPulse 2.5s ease-in-out;';
+  document.body.appendChild(glow);
+
+  var glowStyle = document.createElement('style');
+  glowStyle.textContent = 
+    '@keyframes warmGlowPulse {' +
+    '  0% { opacity: 0; transform: scale(0.8); }' +
+    '  35% { opacity: 1; }' +
+    '  100% { opacity: 0; transform: scale(1.3); }' +
+    '}';
+  document.head.appendChild(glowStyle);
+
+  setTimeout(function() {
+    if (glow.parentNode) glow.parentNode.removeChild(glow);
+    if (glowStyle.parentNode) glowStyle.parentNode.removeChild(glowStyle);
+  }, 6000);
+
+  var style = document.createElement('style');
+  style.textContent = 
+    '#confetti-home-overlay .conf-piece {' +
+    '  position: absolute; top: -10px;' +
+    '  animation: confFall linear forwards;' +
+    '}' +
+    '@keyframes confFall {' +
+    '  0% { transform: translateY(0) rotate(0deg) scale(1); opacity: 0.9; }' +
+    '  70% { opacity: 0.7; }' +
+    '  100% { transform: translateY(105vh) rotate(540deg) scale(0.1); opacity: 0; }' +
+    '}';
+  document.head.appendChild(style);
+
+  var colors = ['#FF99CC','#FFCCE0','#FFB3D9','#FFFFFF','#FFE4E1'];
+  var shapes = ['circle','star'];
+  var totalPieces = 0;
+  var maxPieces = 25;
+
+  function makePiece() {
+    if (totalPieces >= maxPieces) return;
+    if (!overlay.parentNode) return;
+    
+    var el = document.createElement('div');
+    el.className = 'conf-piece';
+    var size = Math.random() * 7 + 4;
+    var color = colors[Math.floor(Math.random() * colors.length)];
+    var shape = shapes[Math.floor(Math.random() * shapes.length)];
+    var left = Math.random() * 100;
+    var startTop = -(Math.random() * 40 + 5);
+    var dur = Math.random() * 2 + 3;
+    var delay = Math.random() * 0.2;
+    
+    el.style.width = size + 'px';
+    el.style.height = size + 'px';
+    el.style.left = left + '%';
+    el.style.top = startTop + 'px';
+    el.style.animationDuration = dur + 's';
+    el.style.animationDelay = delay + 's';
+    
+    if (shape === 'circle') {
+      el.style.borderRadius = '50%';
+      el.style.backgroundColor = color;
+    } else {
+      el.style.backgroundColor = 'transparent';
+      el.style.width = (size + 2) + 'px';
+      el.style.height = (size + 2) + 'px';
+      el.textContent = '\u2728';
+      el.style.fontSize = (size + 2) + 'px';
+      el.style.color = color;
+      el.style.lineHeight = '1';
+    }
+    
+    overlay.appendChild(el);
+    totalPieces++;
+    
+    setTimeout(function() {
+      if (el.parentNode) el.parentNode.removeChild(el);
+    }, (dur + delay) * 1000 + 200);
+  }
+
+  for (var i = 0; i < 18; i++) {
+    setTimeout(makePiece, i * 90);
+  }
+
+  var spawnTimer = setInterval(makePiece, 350);
+
+  setTimeout(function() {
+    clearInterval(spawnTimer);
+  }, 5000);
+
+  setTimeout(function() {
+    if (overlay.parentNode) overlay.parentNode.removeChild(overlay);
+    if (style.parentNode) style.parentNode.removeChild(style);
+  }, 6500);
+})();
+    } catch (e) {
+      if (typeof console !== 'undefined' && console.warn) { console.warn('[zappy-custom-js]', e); }
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __zappyCustomInit);
+  } else {
+    __zappyCustomInit();
+  }
+})();
+/* ZAPPY_CUSTOM_JS_END:3a48168ea712 */
 
 
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
