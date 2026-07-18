@@ -613,7 +613,7 @@
 
 
   
-  <!-- Favicons -->
+    <!-- Favicons -->
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
@@ -626,13 +626,528 @@
     <!-- Mickidum Accessibility Toolbar lazy-loaded by runtime -->
 
 
-  <script>
-    window.ZAPPY_WEBSITE_ID = "739eff6e-1489-4c62-bc9f-70115c6bdd6f";
-    // Preview pages are served by the current Zappy origin, which may be a
-    // remote tunnel/QA host rather than this server's baked SERVER_URL.
-    // Deployed sites are static and must call the public Zappy API (never localhost).
-    window.ZAPPY_API_BASE = "https://api.zappy5.com"</script>
-    <style id="zappy-critical-above-fold-css">
+    
+<style data-zappy-section-v2-css="true">
+/* V2 Regenerated Section CSS */
+.index-showcase-section {
+  background: #FDF5F8;
+  color: var(--text-dark);
+  padding: 80px 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.index-showcase-section__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 64px;
+}
+
+/* Media Column */
+.index-showcase-section__media {
+  flex: 1 1 45%;
+  position: relative;
+  z-index: 2;
+}
+
+.index-showcase-section__image-wrapper {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(232, 66, 124, 0.15);
+  background: #FFFFFF;
+  padding: 12px;
+}
+
+.index-showcase-section__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+/* Content Column */
+.index-showcase-section__content {
+  flex: 1 1 55%;
+  position: relative;
+  z-index: 2;
+  text-align: right;
+}
+
+.index-showcase-section__heading {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.25;
+  color: #2A1A1F;
+  margin-bottom: 16px;
+}
+
+.index-showcase-section__description {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #3D2030;
+  margin-bottom: 40px;
+  max-width: 520px;
+  margin-inline-start: auto;
+  text-align: right;
+}
+
+/* Features List */
+.index-showcase-section__features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.index-showcase-section__feature-item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+  text-align: right;
+}
+
+.index-showcase-section__feature-icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #E8427C;
+  box-shadow: 0 4px 12px rgba(232, 66, 124, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.index-showcase-section__feature-item:hover .index-showcase-section__feature-icon {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(232, 66, 124, 0.15);
+}
+
+.index-showcase-section__feature-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.index-showcase-section__feature-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: #2A1A1F;
+  margin-bottom: 4px;
+}
+
+.index-showcase-section__feature-desc {
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #3D2030;
+  margin: 0;
+  max-width: 480px;
+  margin-inline-start: auto;
+}
+
+/* CTA Button */
+.index-showcase-section__cta {
+  background: #E8427C;
+  color: #fff;
+  padding: 14px 36px;
+  border-radius: 50px;
+  border: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 8px 24px rgba(232, 66, 124, 0.25);
+}
+
+.index-showcase-section__cta:hover {
+  background: #D6386B;
+  box-shadow: 0 12px 32px rgba(232, 66, 124, 0.35);
+  transform: translateY(-2px);
+}
+
+/* Decorative Background Elements */
+.index-showcase-section::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  inset-inline-end: -40px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(232, 66, 124, 0.06) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.index-showcase-section::after {
+  content: '';
+  position: absolute;
+  bottom: -80px;
+  inset-inline-start: -60px;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(201, 169, 110, 0.05) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .index-showcase-section {
+    padding: 60px 16px;
+  }
+
+  .index-showcase-section__container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .index-showcase-section__media {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+
+  .index-showcase-section__content {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+
+  .index-showcase-section__heading {
+    font-size: 1.75rem;
+  }
+
+  .index-showcase-section__description {
+    max-width: 100%;
+    margin-inline-start: 0;
+  }
+
+  .index-showcase-section__features {
+    gap: 24px;
+  }
+
+  .index-showcase-section__feature-item {
+    gap: 12px;
+  }
+
+  .index-showcase-section__feature-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .index-showcase-section__feature-desc {
+    max-width: 100%;
+    margin-inline-start: 0;
+  }
+
+  .index-showcase-section__cta {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .index-showcase-section::before,
+  .index-showcase-section::after {
+    display: none;
+  }
+}
+</style>
+
+<style data-zappy-section-v2-css="true">
+/* V2 Regenerated Section CSS */
+.index-cta-section {
+  background-color: #FDF5F8;
+  background-image: radial-gradient(circle, #F2D9E5 1px, transparent 1px);
+  background-size: 24px 24px;
+  color: var(--text-dark);
+  padding: 80px 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.index-cta-section__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  direction: rtl;
+}
+
+.index-cta-section__content {
+  flex: 1;
+  text-align: right;
+  position: relative;
+  z-index: 2;
+}
+
+.index-cta-section__heading {
+  font-family: 'Heebo', 'Noto Sans Hebrew', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin: 0 0 16px 0;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+.index-cta-section__description {
+  font-family: 'Assistant', 'Noto Sans Hebrew', sans-serif;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin: 0 0 32px 0;
+  max-width: 540px;
+}
+
+.index-cta-section__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #E8427C;
+  color: #fff;
+  padding: 14px 32px;
+  border-radius: 100px;
+  border: none;
+  font-family: 'Assistant', 'Noto Sans Hebrew', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 24px rgba(232,66,124,0.08);
+  letter-spacing: 0.01em;
+}
+
+.index-cta-section__button:hover {
+  background: #D63868;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(232,66,124,0.14);
+}
+
+.index-cta-section__media {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 2;
+}
+
+.index-cta-section__media img {
+  width: 100%;
+  height: auto;
+  max-width: 560px;
+  border-radius: 24px;
+  display: block;
+  box-shadow: 0 8px 32px rgba(232,66,124,0.14);
+  object-fit: cover;
+  aspect-ratio: 3 / 2;
+}
+
+@media (max-width: 768px) {
+  .index-cta-section {
+    padding: 60px 16px;
+  }
+
+  .index-cta-section__container {
+    flex-direction: column;
+    gap: 32px;
+    text-align: center;
+  }
+
+  .index-cta-section__content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .index-cta-section__heading {
+    font-size: 1.75rem;
+    margin-bottom: 12px;
+  }
+
+  .index-cta-section__description {
+    max-width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .index-cta-section__media {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .index-cta-section__media img {
+    max-width: 100%;
+    border-radius: 20px;
+  }
+}
+</style>
+
+<style data-zappy-section-v2-css="true">
+/* V2 Regenerated Section CSS */
+.index-features-section {
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  padding: 80px 16px;
+  position: relative;
+  overflow: hidden;
+  direction: rtl;
+}
+
+.index-features-section__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.index-features-section__header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.index-features-section__title {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.25;
+  color: var(--text-dark);
+  margin: 0 0 16px 0;
+}
+
+.index-features-section__subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--text-muted);
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.index-features-section__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.index-features-section__card {
+  background: var(--bg-light);
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.index-features-section__card:hover {
+  box-shadow: 0 8px 32px rgba(232,66,124,0.14);
+  transform: translateY(-4px);
+}
+
+.index-features-section__card-media {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background-color: #FDF5F8;
+}
+
+.index-features-section__card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.index-features-section__card-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: right;
+}
+
+.index-features-section__card-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--text-dark);
+  margin: 0 0 8px 0;
+}
+
+.index-features-section__card-text {
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--text-muted);
+  margin: 0 0 20px 0;
+  flex: 1;
+}
+
+.index-features-section__card-link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: auto;
+  transition: gap 0.3s ease;
+}
+
+.index-features-section__card-link:hover {
+  gap: 12px;
+}
+
+@media (max-width: 768px) {
+  .index-features-section {
+    padding: 64px 16px;
+  }
+
+  .index-features-section__grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px;
+  }
+
+  .index-features-section__header {
+    margin-bottom: 32px;
+  }
+
+  .index-features-section__title {
+    font-size: 1.75rem;
+  }
+
+  .index-features-section__card-body {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .index-features-section__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+</style>
+
+  <style id="zappy-critical-above-fold-css">
 html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{box-sizing:inherit}body{margin:0;min-width:320px;overflow-x:clip}img,svg,video{max-width:100%;height:auto}main{display:block}.container{width:min(100% - 32px,1200px);margin-inline:auto}.navbar,nav.navbar,header .navbar,header[role="banner"]{position:relative;z-index:1000;width:100%}.nav-container,.navbar .container{display:flex;align-items:center;justify-content:space-between;min-height:64px}.logo,.logo-link img{display:block;width:35px;height:35px;object-fit:contain}.nav-menu,#navMenu{list-style:none;margin:0;padding:0}.navbar a,.nav-menu a,#navMenu a,.navbar .nav-links a{color:inherit;text-decoration:none}.navbar .sub-menu,.nav-menu .sub-menu,#navMenu .sub-menu{display:none}.fa,.fas,.far,.fab,.fa-solid,.fa-regular,.fa-brands{display:inline-block;min-width:1em;text-align:center}html:not(#zappy-noop)[data-zappy-site-type="ecommerce"] .phone-header-btn,html:not(#zappy-noop) .navbar:has(.nav-ecommerce-icons)>.phone-header-btn{display:none!important;visibility:hidden!important;width:0!important;height:0!important;pointer-events:none!important}.zappy-preview-empty-store-cta{display:none!important;visibility:hidden!important;height:0!important;max-height:0!important;overflow:hidden!important;margin:0!important;padding:0!important;border:0!important;box-shadow:none!important}.zappy-catalog-menu{background:var(--surface-color,var(--surface,linear-gradient(135deg,#f8f9fa 0%,#fff 100%)));border-bottom:1px solid var(--border-color,#e5e7eb);padding:0;position:sticky;top:0;z-index:90}.zappy-catalog-menu[dir=rtl],.zappy-catalog-menu.rtl{direction:rtl}.zappy-catalog-menu[dir=ltr],.zappy-catalog-menu.ltr{direction:ltr}.catalog-menu-container{max-width:1440px;margin:0 auto;display:flex;align-items:center;gap:8px;padding:10px 24px;overflow:visible}.catalog-menu-categories,.catalog-menu-list{display:flex;align-items:center;gap:4px;flex-wrap:wrap;margin:0;padding:0;list-style:none}.catalog-menu-item{display:inline-flex;align-items:center;padding:8px 16px;font-size:14px;font-weight:500;color:var(--text-color,var(--text,#374151));text-decoration:none;border-radius:20px;white-space:nowrap}.catalog-menu-all{background:var(--primary-color,var(--primary,#111));color:var(--text-light,#fff)!important}.catalog-menu-parent{position:relative;display:inline-flex;align-items:center}.catalog-menu-trigger{display:inline-flex;align-items:center;gap:6px}.catalog-menu-chevron{flex-shrink:0}.catalog-menu-parent>.sub-menu{display:none!important;visibility:hidden!important;opacity:0!important;pointer-events:none!important}.hero-section,.index-hero-section,section[class*="hero"]{position:relative;overflow:hidden;min-height:560px}.hero-bg-wrapper,.hero-bg-image,section[class*="hero"] [class*="hero-bg"]{position:absolute;inset:0;width:100%;height:100%}.hero-bg-wrapper img,.hero-bg-image img,section[class*="hero"] [data-hero-bg],section[class*="hero"] img[data-hero-background="true"]{width:100%!important;height:100%!important;object-fit:cover!important;display:block}.hero-content,section[class*="hero"] .container{position:relative;z-index:2}@media(max-width:768px){:root{--header-height:72px;--total-header-height:72px;--zappy-mobile-menu-top:72px}html[data-zappy-site-type="ecommerce"] body{padding-top:var(--total-header-height,72px)}html[data-zappy-site-type="ecommerce"] body>nav.navbar,html[data-zappy-site-type="ecommerce"] body>.navbar:not(.zappy-catalog-menu){position:fixed!important;top:0;left:0;right:0;z-index:100000;width:100%;margin-bottom:0}.zappy-catalog-menu{position:fixed;top:var(--header-height,72px);left:0;right:0;z-index:99999}.nav-container,.navbar .container{min-height:60px}.nav-menu,#navMenu{max-width:100vw;overflow-x:hidden}.hero-section,.index-hero-section,section[class*="hero"]{min-height:100svh}.hero-bg-wrapper,.hero-bg-image,.hero-scrim{min-height:100svh}}
 :root{--nav-bg:#FFFFFF}.navbar{background-color:#FFFFFF!important}
 
@@ -772,9 +1287,17 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
     </style>
 </head>
 <body>
-<div class="mobile-search-panel" id="mobile-search-panel">
+
+  <script>
+    window.ZAPPY_WEBSITE_ID = "739eff6e-1489-4c62-bc9f-70115c6bdd6f";
+    // Preview pages are served by the current Zappy origin, which may be a
+    // remote tunnel/QA host rather than this server's baked SERVER_URL.
+    // Deployed sites are static and must call the public Zappy API (never localhost).
+    window.ZAPPY_API_BASE = "https://api.zappy5.com"</script>
+  
+    <div class="mobile-search-panel" id="mobile-search-panel">
       <div class="search-wrapper">
-        <input type="text" id="mobile-search-input" placeholder="חיפוש כל הכל המוצרים..." autocomplete="off" />
+        <input type="text" id="mobile-search-input" placeholder="חיפוש מוצרים..." autocomplete="off" />
         <button class="search-submit" id="mobile-search-submit" title="חיפוש">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
         </button>
@@ -805,9 +1328,26 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
       <a href="/" class="logo-link"><img class="logo" src="/assets/e-commerce-gift-lifestyle-logo-1783979315566-2c1y1v.webp?v=1783979316277-7823bi" alt="קולולו" decoding="async" width="35" height="35" /></a>
     </div><ul class="nav-menu" id="navMenu">
 
+    <li class="menu-item-has-children zappy-products-dropdown">
+      <a href="/products">
+        מוצרים
+        <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M6 9l6 6 6-6"/>
+        </svg>
+      </a>
+      <ul class="sub-menu" id="zappy-nav-category-links" dir="rtl">
+        <li><a href="/products" data-i18n="ecom_products">מוצרים</a></li>
+        <!-- Categories will be loaded dynamically -->
+      <li data-category-id="89d5671e-ee10-48e0-b63a-83cb46cf93c8" data-category-slug="kololo-love"><a href="/category/kololo-love" dir="rtl">קולולו אהבה </a></li><li data-category-id="d02770e8-e98b-47cd-a600-9557c70e38dd" data-category-slug="birthday-song-for-women"><a href="/category/birthday-song-for-women" dir="rtl">קולולו יום הולדת לאישה </a></li><li data-category-id="7ff7522a-33c4-4e36-9d5b-70fe600cb489" data-category-slug="birthday-voice-message-for-men"><a href="/category/birthday-voice-message-for-men" dir="rtl">קולולו יום הולדת לגבר</a></li><li data-category-id="6d2f46ba-8a0c-4171-9246-dfc24248bafe" data-category-slug="kololo-thanks"><a href="/category/kololo-thanks" dir="rtl">קולולו תודה </a></li><li data-category-id="2cb44ec5-9dff-463f-a254-10bb27ec3b4a" data-category-slug="kololo-baby-boutique"><a href="/category/kololo-baby-boutique" dir="rtl">קולולו תינוקי קטן נולד</a></li><li data-category-id="1d1763d8-7827-4723-b8f1-c120312ad74e" data-category-slug="kololo-baby-girl-born"><a href="/category/kololo-baby-girl-born" dir="rtl">קולולו תינוקת קטנה נולדה</a></li><li data-category-id="af0283d9-5ffd-4c89-a305-d313cafecea0" data-category-slug="bento-cakes"><a href="/category/bento-cakes" dir="rtl">עוגות בנטו </a></li><li data-category-id="b0783f8e-cb4d-4435-ad9c-af6d460de69c" data-category-slug="kololo-academic"><a href="/category/kololo-academic" dir="rtl">קולולו Academic </a></li><li data-category-id="50b7152b-db6e-4991-98cd-4d6f46e50d59" data-category-slug="kololo-childrens-workshop-kits"><a href="/category/kololo-childrens-workshop-kits" dir="rtl">קיטים לסדנאות ילדים מבית קולולו</a></li></ul>
+    </li>
+  
+
+    
+  
+
     
   <li><a href="/">בית</a></li><li><a href="/about">אודות</a></li><li><a href="/faq">שאלות נפוצות</a></li><li><a href="/contact">צור קשר</a></li></ul><div class="nav-ecommerce-icons nav-icons-left"><a href="/login" class="login-link nav-login" title="התחברות"><svg class="login-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></a><a href="#cart" class="cart-link nav-cart" id="cart-drawer-toggle" title="עגלת קניות"><svg class="cart-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="cart-count">0</span></a><div class="nav-search-box">
-    <input type="text" class="nav-search-input" id="nav-search-input" placeholder="חיפוש כל הכל המוצרים..." autocomplete="off" />
+    <input type="text" class="nav-search-input" id="nav-search-input" placeholder="חיפוש מוצרים..." autocomplete="off" />
     <button class="nav-search-btn" id="nav-search-btn" title="חיפוש">
       <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
     </button>
@@ -822,7 +1362,7 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
 
     <nav class="zappy-catalog-menu rtl" id="zappy-catalog-menu" dir="rtl" style="display:none">
       <div class="catalog-menu-container">
-        <a href="/products" class="catalog-menu-item catalog-menu-all">כל הכל המוצרים</a>
+        <a href="/products" class="catalog-menu-item catalog-menu-all">מוצרים</a>
         <div class="catalog-menu-categories" id="zappy-category-links" dir="rtl" data-zappy-catalog-baked="1"></div>
       </div>
     </nav>
@@ -911,7 +1451,7 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
                 </div>
                 <div class="favorites-empty" id="favorites-empty" style="display: none;">
                   <p data-i18n="ecom_noFavorites">אין עדיין מוצרים מועדפים</p>
-                  <a href="/products" class="btn btn-primary btn-sm" data-i18n="ecom_browseFavorites">גלו את כל הכל הכל הכל הכל המוצרים שלנו</a>
+                  <a href="/products" class="btn btn-primary btn-sm" data-i18n="ecom_browseFavorites">גלו את כל המוצרים שלנו</a>
                 </div>
                 <div class="favorites-grid" id="favorites-grid" style="display: none;"></div>
               </div>
@@ -1182,9 +1722,7 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
     }
   })();
   </script>
-  <a href="https://wa.me/+972523421367" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
-    <div data-integration="accessibility:toolbar"></div>
-
+  <a href="https://wa.me/972523421367" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
 
     <script src="/script.js"></script>
 
