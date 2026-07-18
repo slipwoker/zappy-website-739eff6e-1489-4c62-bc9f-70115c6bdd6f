@@ -14714,6 +14714,123 @@ async function loadRelatedProducts(currentProduct, t) {
 })();
 /* ZAPPY_CUSTOM_JS_END:8949207d1974 */
 
+/* ZAPPY_CUSTOM_JS_START:19f2e768d3c6 */
+(function () {
+  function __zappyCustomInit() {
+    try {
+(function() {
+  if (document.getElementById('magic-confetti-root')) return;
+
+  var root = document.createElement('div');
+  root.id = 'magic-confetti-root';
+  root.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:99999;overflow:hidden;';
+  document.body.appendChild(root);
+
+  // === FAIRY LIGHTS ===
+  var lights = document.createElement('div');
+  lights.className = 'fairy-lights';
+  lights.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:140px;overflow:visible;';
+  root.appendChild(lights);
+
+  var bulbCount = 24;
+  var warmColors = ['#FFD4A8','#FFECD2','#FFC894','#FFE0BB','#FFF0DC','#FFDAB9'];
+  var styleTag = document.createElement('style');
+  styleTag.textContent = '@keyframes ftwinkle{0%,100%{opacity:0.35;transform:scale(0.75)}50%{opacity:1;transform:scale(1.45)}}' +
+    '@keyframes cdrift{0%{transform:translateY(0) rotate(0deg) scale(1);opacity:1}80%{opacity:1}100%{transform:translateY(105vh) rotate(720deg) scale(0.3);opacity:0}}';
+  document.head.appendChild(styleTag);
+
+  for (var i = 0; i < bulbCount; i++) {
+    var bulb = document.createElement('div');
+    var leftPct = (i / (bulbCount - 1)) * 100;
+    var sag = Math.sin(i * 0.6) * 25 + 20;
+    var dur = (Math.random() * 1.5 + 1.5);
+    var del = (Math.random() * 2);
+    bulb.style.cssText = 'position:absolute;width:7px;height:7px;border-radius:50%;background:' + warmColors[Math.floor(Math.random()*warmColors.length)] +
+      ';box-shadow:0 0 10px 4px rgba(255,180,100,0.7),0 0 20px 8px rgba(255,160,80,0.4),0 0 35px 14px rgba(255,140,60,0.2);' +
+      'animation:ftwinkle ' + dur + 's ease-in-out infinite;animation-delay:' + del + 's;' +
+      'left:' + leftPct + '%;top:' + sag + 'px;';
+    lights.appendChild(bulb);
+
+    // wire
+    var wire = document.createElement('div');
+    wire.style.cssText = 'position:absolute;top:' + (sag - 22) + 'px;left:' + leftPct + '%;width:1px;height:22px;background:rgba(180,140,100,0.35);transform:translateX(-50%);';
+    lights.appendChild(wire);
+  }
+
+  // === CONFETTI ===
+  var confettiContainer = document.createElement('div');
+  confettiContainer.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;overflow:hidden;';
+  root.appendChild(confettiContainer);
+
+  var colors = ['#FF99CC','#FFCCE0','#FFB3D9','#FFE0F0','#FFF0F6','#FF80B3','#FFC8A2','#FFD1DC','#FFFFFF','#FFE4E1','#FFD700','#FFC0CB'];
+  var shapes = ['circle','square','heart','star'];
+  var totalPieces = 160;
+  var spawned = 0;
+
+  function makePiece() {
+    var p = document.createElement('div');
+    var size = Math.random() * 12 + 6;
+    var color = colors[Math.floor(Math.random() * colors.length)];
+    var shape = shapes[Math.floor(Math.random() * shapes.length)];
+    var left = Math.random() * 100;
+    var dur = Math.random() * 5 + 5;
+    var del = Math.random() * 0.8;
+    p.style.cssText = 'position:absolute;top:-10px;left:' + left + '%;width:' + size + 'px;height:' + size + 'px;' +
+      'animation:cdrift ' + dur + 's linear ' + del + 's forwards;background:' + color + ';';
+
+    if (shape === 'circle') { p.style.borderRadius = '50%'; }
+    else if (shape === 'square') { p.style.borderRadius = '2px'; }
+    else if (shape === 'heart') {
+      p.style.background = 'transparent';
+      p.style.width = (size + 4) + 'px';
+      p.style.height = (size + 4) + 'px';
+      p.textContent = '\u2665';
+      p.style.fontSize = (size + 4) + 'px';
+      p.style.color = color;
+      p.style.lineHeight = '1';
+      p.style.display = 'flex';
+      p.style.alignItems = 'center';
+      p.style.justifyContent = 'center';
+    } else if (shape === 'star') {
+      p.style.background = 'transparent';
+      p.style.width = (size + 4) + 'px';
+      p.style.height = (size + 4) + 'px';
+      p.textContent = '\u2726';
+      p.style.fontSize = (size + 2) + 'px';
+      p.style.color = color;
+      p.style.lineHeight = '1';
+      p.style.display = 'flex';
+      p.style.alignItems = 'center';
+      p.style.justifyContent = 'center';
+    }
+
+    if (Math.random() > 0.6) { p.style.boxShadow = '0 0 6px rgba(255,150,180,0.5)'; }
+
+    confettiContainer.appendChild(p);
+    setTimeout(function() { if (p.parentNode) p.parentNode.removeChild(p); }, (dur + del) * 1000 + 500);
+  }
+
+  var iv = setInterval(function() {
+    if (spawned >= totalPieces) { clearInterval(iv); return; }
+    var burst = Math.random() < 0.25 ? Math.floor(Math.random() * 3) + 2 : 1;
+    for (var j = 0; j < burst; j++) { makePiece(); spawned++; if (spawned >= totalPieces) break; }
+  }, 60);
+
+  setTimeout(function() { clearInterval(iv); }, 12000);
+  setTimeout(function() { if (root.parentNode) root.parentNode.removeChild(root); }, 24000);
+})();
+    } catch (e) {
+      if (typeof console !== 'undefined' && console.warn) { console.warn('[zappy-custom-js]', e); }
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __zappyCustomInit);
+  } else {
+    __zappyCustomInit();
+  }
+})();
+/* ZAPPY_CUSTOM_JS_END:19f2e768d3c6 */
+
 
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
 (function(){

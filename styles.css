@@ -13801,6 +13801,17 @@ body .k-dot.k-done {
     opacity: 0;
   }
 }
+
+@keyframes fairyTwinkle {
+  0%, 100% { opacity: 0.35; transform: scale(0.75); }
+  50% { opacity: 1; transform: scale(1.45); }
+}
+
+@keyframes confettiDrift {
+  0% { transform: translateY(0) rotate(0deg) scale(1); opacity: 1; }
+  80% { opacity: 1; }
+  100% { transform: translateY(105vh) rotate(720deg) scale(0.3); opacity: 0; }
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
