@@ -1,13 +1,13 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-18T16:02:20.853Z",
+  "generated_at": "2026-07-18T16:04:24.432Z",
   "base_url": "https://kululugift.co.il",
   "currency": "ILS",
   "count": 25,
   "products": [
     {
       "id": "6d4a7adb-b540-46c7-aee8-db0d117027ee",
-      "slug": "kvlvlv-yvm-hvldt-dgm-rvyal-vrvd-om6kn5",
+      "slug": "kvlvlv-yvm-hvldt-dgm-rvyal-vrvd-wdlrzi",
       "name": "קולולו יום הולדת דגם רויאל ורוד",
       "name_translations": {},
       "description": "",
@@ -23,11 +23,11 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://kululugift.co.il/product/kvlvlv-yvm-hvldt-dgm-rvyal-vrvd-om6kn5",
+      "url": "https://kululugift.co.il/product/kvlvlv-yvm-hvldt-dgm-rvyal-vrvd-wdlrzi",
       "categories": [
         "קולולו יום הולדת לאישה "
       ],
-      "updated_at": "2026-07-15T16:45:45.262Z"
+      "updated_at": "2026-07-18T16:03:52.415Z"
     },
     {
       "id": "15f81425-ab1a-4052-90bf-65822333aaa8",
