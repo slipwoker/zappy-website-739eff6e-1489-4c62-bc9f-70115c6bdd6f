@@ -13787,6 +13787,20 @@ body .k-dot.k-on {
 body .k-dot.k-done {
   background: var(--secondary-color, var(--secondary, #BFA7FF)) !important;
 }
+
+@keyframes confettiHomeFall {
+  0% {
+    transform: translateY(0) rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(105vh) rotate(720deg) scale(0.2);
+    opacity: 0;
+  }
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
