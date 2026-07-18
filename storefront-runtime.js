@@ -14739,7 +14739,7 @@ async function loadRelatedProducts(currentProduct, t) {
 })();
 /* ZAPPY_CUSTOM_JS_END:b8fde4c49027 */
 
-/* ZAPPY_CUSTOM_JS_START:3a48168ea712 */
+/* ZAPPY_CUSTOM_JS_START:a2c037b09fb2 */
 (function () {
   function __zappyCustomInit() {
     try {
@@ -14752,16 +14752,16 @@ async function loadRelatedProducts(currentProduct, t) {
   // Warm center glow
   var glow = document.createElement('div');
   glow.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:99998;' +
-    'background: radial-gradient(ellipse at 50% 50%, rgba(255,180,140,0.16) 0%, rgba(255,140,160,0.05) 25%, transparent 60%);' +
-    'animation: warmGlowPulse 2.5s ease-in-out;';
+    'background: radial-gradient(ellipse at 50% 50%, rgba(255,180,160,0.12) 0%, rgba(255,140,160,0.04) 20%, transparent 55%);' +
+    'animation: warmGlowPulse 3s ease-in-out;';
   document.body.appendChild(glow);
 
   var glowStyle = document.createElement('style');
   glowStyle.textContent = 
     '@keyframes warmGlowPulse {' +
-    '  0% { opacity: 0; transform: scale(0.8); }' +
-    '  35% { opacity: 1; }' +
-    '  100% { opacity: 0; transform: scale(1.3); }' +
+    '  0% { opacity: 0; transform: scale(0.85); }' +
+    '  40% { opacity: 1; }' +
+    '  100% { opacity: 0; transform: scale(1.2); }' +
     '}';
   document.head.appendChild(glowStyle);
 
@@ -14773,20 +14773,20 @@ async function loadRelatedProducts(currentProduct, t) {
   var style = document.createElement('style');
   style.textContent = 
     '#confetti-home-overlay .conf-piece {' +
-    '  position: absolute; top: -10px;' +
+    '  position: absolute;' +
     '  animation: confFall linear forwards;' +
     '}' +
     '@keyframes confFall {' +
-    '  0% { transform: translateY(0) rotate(0deg) scale(1); opacity: 0.9; }' +
-    '  70% { opacity: 0.7; }' +
-    '  100% { transform: translateY(105vh) rotate(540deg) scale(0.1); opacity: 0; }' +
+    '  0% { transform: translateY(0) rotate(0deg) scale(1); opacity: 0.8; }' +
+    '  80% { opacity: 0.6; }' +
+    '  100% { transform: translateY(105vh) rotate(400deg) scale(0.1); opacity: 0; }' +
     '}';
   document.head.appendChild(style);
 
-  var colors = ['#FF99CC','#FFCCE0','#FFB3D9','#FFFFFF','#FFE4E1'];
-  var shapes = ['circle','star'];
+  var colors = ['#FF4D6D','#FF7B93','#FFFFFF','#FFF0F3','#FFCCD5','#FF99AC'];
+  var shapes = ['circle','heart'];
   var totalPieces = 0;
-  var maxPieces = 25;
+  var maxPieces = 16;
 
   function makePiece() {
     if (totalPieces >= maxPieces) return;
@@ -14794,13 +14794,13 @@ async function loadRelatedProducts(currentProduct, t) {
     
     var el = document.createElement('div');
     el.className = 'conf-piece';
-    var size = Math.random() * 7 + 4;
+    var size = Math.random() * 6 + 3;
     var color = colors[Math.floor(Math.random() * colors.length)];
     var shape = shapes[Math.floor(Math.random() * shapes.length)];
     var left = Math.random() * 100;
-    var startTop = -(Math.random() * 40 + 5);
-    var dur = Math.random() * 2 + 3;
-    var delay = Math.random() * 0.2;
+    var startTop = -(Math.random() * 35 + 3);
+    var dur = Math.random() * 3 + 4.5;
+    var delay = Math.random() * 0.25;
     
     el.style.width = size + 'px';
     el.style.height = size + 'px';
@@ -14816,7 +14816,7 @@ async function loadRelatedProducts(currentProduct, t) {
       el.style.backgroundColor = 'transparent';
       el.style.width = (size + 2) + 'px';
       el.style.height = (size + 2) + 'px';
-      el.textContent = '\u2728';
+      el.textContent = '\u2665';
       el.style.fontSize = (size + 2) + 'px';
       el.style.color = color;
       el.style.lineHeight = '1';
@@ -14830,11 +14830,11 @@ async function loadRelatedProducts(currentProduct, t) {
     }, (dur + delay) * 1000 + 200);
   }
 
-  for (var i = 0; i < 18; i++) {
-    setTimeout(makePiece, i * 90);
+  for (var i = 0; i < 10; i++) {
+    setTimeout(makePiece, i * 140);
   }
 
-  var spawnTimer = setInterval(makePiece, 350);
+  var spawnTimer = setInterval(makePiece, 600);
 
   setTimeout(function() {
     clearInterval(spawnTimer);
@@ -14855,7 +14855,7 @@ async function loadRelatedProducts(currentProduct, t) {
     __zappyCustomInit();
   }
 })();
-/* ZAPPY_CUSTOM_JS_END:3a48168ea712 */
+/* ZAPPY_CUSTOM_JS_END:a2c037b09fb2 */
 
 
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
