@@ -13824,6 +13824,14 @@ body .k-dot.k-done {
   50% { opacity: 0.9; }
   100% { opacity: 0.4; }
 }
+
+body .zappy-announcement-bar::before,
+body .zappy-announcement-bar::after {
+  content: none !important;
+  background-image: none !important;
+  animation: none !important;
+  display: none !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
