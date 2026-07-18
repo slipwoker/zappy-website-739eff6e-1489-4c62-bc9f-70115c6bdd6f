@@ -14607,112 +14607,88 @@ async function loadRelatedProducts(currentProduct, t) {
 })();
 /* ZAPPY_CUSTOM_JS_END:d931ccc1258a */
 
-/* ZAPPY_CUSTOM_JS_START:8cfdde3152ca */
+/* ZAPPY_CUSTOM_JS_START:1c1236738bff */
 (function () {
   function __zappyCustomInit() {
     try {
 (function() {
-  // Only on home page
-  if (window.location.pathname !== '/' && !window.location.pathname.startsWith('/?') && window.location.pathname !== '') return;
+  // יצירת מיכל נצנצים
+  var container = document.createElement('div');
+  container.id = 'sparkles-overlay';
+  container.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:9999;overflow:hidden;';
+  document.body.appendChild(container);
 
-  var overlay = document.createElement('div');
-  overlay.id = 'confetti-home-overlay';
-  overlay.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:99999;overflow:hidden;';
-  document.body.appendChild(overlay);
-
-  // Warm ambient glow
-  var glow = document.createElement('div');
-  glow.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:99998;' +
-    'background: radial-gradient(ellipse at 50% 45%, rgba(255,190,165,0.10) 0%, rgba(255,150,170,0.03) 25%, transparent 55%);' +
-    'animation: warmGlowPulse 4s ease-in-out;';
-  document.body.appendChild(glow);
-
-  var glowStyle = document.createElement('style');
-  glowStyle.textContent = 
-    '@keyframes warmGlowPulse {' +
-    '  0% { opacity: 0; transform: scale(0.9); }' +
-    '  45% { opacity: 1; }' +
-    '  100% { opacity: 0; transform: scale(1.15); }' +
-    '}';
-  document.head.appendChild(glowStyle);
-
-  setTimeout(function() {
-    if (glow.parentNode) glow.parentNode.removeChild(glow);
-    if (glowStyle.parentNode) glowStyle.parentNode.removeChild(glowStyle);
-  }, 6000);
-
+  // הוספת CSS
   var style = document.createElement('style');
   style.textContent = 
-    '#confetti-home-overlay .conf-piece {' +
-    '  position: absolute;' +
-    '  animation: confFall linear forwards;' +
+    '#sparkles-overlay .sparkle-item {' +
+    '  position:absolute;top:-40px;pointer-events:none;animation:sparkleFallSlow linear infinite;opacity:0;' +
     '}' +
-    '@keyframes confFall {' +
-    '  0% { transform: translateY(0) rotate(0deg) scale(1); opacity: 0.75; }' +
-    '  85% { opacity: 0.5; }' +
-    '  100% { transform: translateY(105vh) rotate(360deg) scale(0.05); opacity: 0; }' +
+    '#sparkles-overlay .diamond {' +
+    '  width:16px;height:16px;background:rgba(255,185,210,0.7);transform:rotate(45deg);border-radius:2px;' +
+    '  box-shadow:0 0 10px rgba(255,165,195,0.5),0 0 22px rgba(255,195,220,0.35);' +
+    '}' +
+    '#sparkles-overlay .dot {' +
+    '  width:7px;height:7px;background:rgba(255,205,230,0.65);border-radius:50%;' +
+    '  box-shadow:0 0 8px rgba(255,185,210,0.55),0 0 16px rgba(255,165,205,0.35);' +
+    '}' +
+    '@keyframes sparkleFallSlow {' +
+    '  0%{transform:translateY(0) rotate(0deg) scale(0.3);opacity:0;}' +
+    '  5%{opacity:0.8;}' +
+    '  15%{transform:translateY(12vh) rotate(45deg) scale(1);opacity:0.7;}' +
+    '  35%{transform:translateY(28vh) rotate(90deg) scale(0.9);opacity:0.55;}' +
+    '  55%{transform:translateY(48vh) rotate(135deg) scale(1);opacity:0.5;}' +
+    '  75%{transform:translateY(68vh) rotate(180deg) scale(0.85);opacity:0.35;}' +
+    '  90%{transform:translateY(88vh) rotate(225deg) scale(0.5);opacity:0.18;}' +
+    '  100%{transform:translateY(105vh) rotate(270deg) scale(0.2);opacity:0;}' +
     '}';
   document.head.appendChild(style);
 
-  var colors = ['#FF4D6D','#FF7B93','#FFFFFF','#FFF0F3','#FFCCD5'];
-  var shapes = ['circle','heart'];
-  var totalPieces = 0;
-  var maxPieces = 10;
+  var sparkleCount = 30;
 
-  function makePiece() {
-    if (totalPieces >= maxPieces) return;
-    if (!overlay.parentNode) return;
-    
-    var el = document.createElement('div');
-    el.className = 'conf-piece';
-    var size = Math.random() * 6 + 3;
-    var color = colors[Math.floor(Math.random() * colors.length)];
-    var shape = shapes[Math.floor(Math.random() * shapes.length)];
-    var left = Math.random() * 100;
-    var startTop = -(Math.random() * 30 + 3);
-    var dur = Math.random() * 3 + 5.5;
-    var delay = Math.random() * 0.3;
-    
-    el.style.width = size + 'px';
-    el.style.height = size + 'px';
-    el.style.left = left + '%';
-    el.style.top = startTop + 'px';
-    el.style.animationDuration = dur + 's';
-    el.style.animationDelay = delay + 's';
-    
-    if (shape === 'circle') {
-      el.style.borderRadius = '50%';
-      el.style.backgroundColor = color;
+  function createSparkle() {
+    var sparkle = document.createElement('div');
+    var isDiamond = Math.random() > 0.5;
+    sparkle.className = 'sparkle-item ' + (isDiamond ? 'diamond' : 'dot');
+    sparkle.style.left = Math.random() * 100 + '%';
+
+    var sizeVariation = 0.6 + Math.random() * 0.8;
+    if (isDiamond) {
+      var baseSize = 10 + Math.random() * 14;
+      sparkle.style.width = (baseSize * sizeVariation) + 'px';
+      sparkle.style.height = (baseSize * sizeVariation) + 'px';
     } else {
-      el.style.backgroundColor = 'transparent';
-      el.style.width = (size + 2) + 'px';
-      el.style.height = (size + 2) + 'px';
-      el.textContent = '\u2665';
-      el.style.fontSize = (size + 2) + 'px';
-      el.style.color = color;
-      el.style.lineHeight = '1';
+      var baseDotSize = 4 + Math.random() * 7;
+      sparkle.style.width = (baseDotSize * sizeVariation) + 'px';
+      sparkle.style.height = (baseDotSize * sizeVariation) + 'px';
     }
-    
-    overlay.appendChild(el);
-    totalPieces++;
-    
-    setTimeout(function() {
-      if (el.parentNode) el.parentNode.removeChild(el);
-    }, (dur + delay) * 1000 + 200);
+
+    var duration = 14 + Math.random() * 20;
+    sparkle.style.animationDuration = duration + 's';
+    sparkle.style.animationDelay = Math.random() * 18 + 's';
+
+    var hue = 330 + Math.random() * 30;
+    var lightness = 75 + Math.random() * 20;
+    var alpha = 0.3 + Math.random() * 0.4;
+    if (isDiamond) {
+      sparkle.style.background = 'hsla(' + hue + ',70%,' + lightness + '%,' + alpha + ')';
+      sparkle.style.boxShadow = '0 0 6px hsla(' + hue + ',60%,' + (lightness+5) + '%,0.3), 0 0 16px hsla(' + hue + ',50%,' + lightness + '%,0.18)';
+    } else {
+      sparkle.style.background = 'hsla(' + hue + ',40%,' + (lightness+8) + '%,' + alpha + ')';
+      sparkle.style.boxShadow = '0 0 5px hsla(' + hue + ',50%,' + lightness + '%,0.35), 0 0 12px hsla(' + hue + ',40%,' + (lightness+2) + '%,0.2)';
+    }
+
+    container.appendChild(sparkle);
+
+    sparkle.addEventListener('animationend', function() {
+      sparkle.remove();
+      setTimeout(createSparkle, Math.random() * 1000);
+    });
   }
 
-  for (var i = 0; i < 7; i++) {
-    setTimeout(makePiece, i * 200);
+  for (var i = 0; i < sparkleCount; i++) {
+    setTimeout(createSparkle, i * 350 + Math.random() * 500);
   }
-
-  setTimeout(makePiece, 2800);
-  setTimeout(makePiece, 3800);
-  setTimeout(makePiece, 4600);
-
-  setTimeout(function() {
-    if (overlay.parentNode) overlay.parentNode.removeChild(overlay);
-    if (style.parentNode) style.parentNode.removeChild(style);
-  }, 6500);
 })();
     } catch (e) {
       if (typeof console !== 'undefined' && console.warn) { console.warn('[zappy-custom-js]', e); }
@@ -14724,136 +14700,7 @@ async function loadRelatedProducts(currentProduct, t) {
     __zappyCustomInit();
   }
 })();
-/* ZAPPY_CUSTOM_JS_END:8cfdde3152ca */
-
-/* ZAPPY_CUSTOM_JS_START:f77f17ad11a5 */
-(function () {
-  function __zappyCustomInit() {
-    try {
-(function() {
-  var isHomepage = window.location.pathname === '/' ||
-    window.location.pathname.endsWith('/') ||
-    (window.location.search && window.location.search.indexOf('page=%2F') !== -1) ||
-    (document.querySelector('.kololo-hero') && document.querySelector('.kololo-categories'));
-  
-  if (!isHomepage) return;
-
-  var old = document.getElementById('magic-confetti-root');
-  if (old) old.remove();
-
-  var root = document.createElement('div');
-  root.id = 'magic-confetti-root';
-  root.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:100000;overflow:hidden;';
-  document.body.appendChild(root);
-
-  var styleTag = document.createElement('style');
-  styleTag.textContent = '@keyframes ftwinkle2{0%,100%{opacity:0.3;transform:scale(0.7)}50%{opacity:1;transform:scale(1.4)}}' +
-    '@keyframes cdrift2{0%{transform:translateY(0) rotate(0deg) scale(1);opacity:0.8}80%{opacity:0.6}100%{transform:translateY(105vh) rotate(540deg) scale(0.2);opacity:0}}';
-  document.head.appendChild(styleTag);
-
-  // === FAIRY LIGHTS ===
-  var wireSvg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-  wireSvg.setAttribute('width', '100%');
-  wireSvg.setAttribute('height', '140');
-  wireSvg.style.cssText = 'position:absolute;top:0;left:0;display:block;';
-
-  function drawGarland(yBase, sagAmt) {
-    var path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-    var d = 'M0,' + yBase + ' ';
-    for (var s = 0; s <= 15; s++) {
-      var x = (s / 15) * 100;
-      var y = yBase + Math.sin(s * 1.1) * sagAmt;
-      d += 'L' + x + '%,' + y + ' ';
-    }
-    path.setAttribute('d', d);
-    path.setAttribute('fill', 'none');
-    path.setAttribute('stroke', 'rgba(200,150,100,0.3)');
-    path.setAttribute('stroke-width', '0.8');
-    wireSvg.appendChild(path);
-  }
-  drawGarland(20, 14);
-  drawGarland(52, 12);
-  root.appendChild(wireSvg);
-
-  var lightsEl = document.createElement('div');
-  lightsEl.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:140px;overflow:visible;';
-  root.appendChild(lightsEl);
-
-  var warmColors = ['#FFDAB9','#FFECD2','#FFD4A8','#FFE5CC','#FFF0DC'];
-  var yOffsets = [20, 52];
-  var bulbPositions = [];
-  for (var row = 0; row < yOffsets.length; row++) {
-    for (var i = 0; i < 16; i++) {
-      var leftPct = (i / 15) * 100;
-      var sag = yOffsets[row] + Math.sin(i * 1.1) * (row === 0 ? 14 : 12);
-      bulbPositions.push({ left: leftPct, top: sag });
-    }
-  }
-
-  bulbPositions.forEach(function(pos) {
-    var bulb = document.createElement('div');
-    var dur = (Math.random() * 2.5 + 2);
-    var del = Math.random() * 3;
-    var sz = Math.random() * 2 + 5;
-    bulb.style.cssText = 'position:absolute;width:'+sz+'px;height:'+sz+'px;border-radius:50%;background:' + warmColors[Math.floor(Math.random()*warmColors.length)] +
-      ';box-shadow:0 0 8px 4px rgba(255,170,100,0.5),0 0 16px 6px rgba(255,150,70,0.25);' +
-      'animation:ftwinkle2 ' + dur + 's ease-in-out infinite;animation-delay:' + del + 's;' +
-      'left:' + pos.left + '%;top:' + pos.top + 'px;';
-    lightsEl.appendChild(bulb);
-  });
-
-  // === SUBTLE CONFETTI (20 pieces) ===
-  var cc = document.createElement('div');
-  cc.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;overflow:hidden;';
-  root.appendChild(cc);
-
-  var colors = ['#FFCCE0','#FFE0F0','#FFF0F6','#FFD1DC','#FFE4E1','#FFC0CB','#FFDDE4'];
-  var shapes = ['circle','heart','star'];
-  var total = 20;
-  var spawned = 0;
-
-  function makePiece() {
-    var p = document.createElement('div');
-    var size = Math.random() * 8 + 5;
-    var color = colors[Math.floor(Math.random() * colors.length)];
-    var shape = shapes[Math.floor(Math.random() * shapes.length)];
-    var left = Math.random() * 100;
-    var dur = (Math.random() * 5 + 5);
-    var del = Math.random() * 0.5;
-    p.style.cssText = 'position:absolute;top:-10px;left:' + left + '%;width:' + size + 'px;height:' + size + 'px;' +
-      'animation:cdrift2 ' + dur + 's linear ' + del + 's forwards;opacity:0.7;';
-    if (shape === 'circle') { p.style.background = color; p.style.borderRadius = '50%'; }
-    else if (shape === 'heart') {
-      p.style.background = 'transparent'; p.style.width = (size+4)+'px'; p.style.height = (size+4)+'px';
-      p.textContent = '\u2665'; p.style.fontSize = (size+4)+'px'; p.style.color = color;
-      p.style.lineHeight = '1'; p.style.display = 'flex'; p.style.alignItems = 'center'; p.style.justifyContent = 'center';
-    } else {
-      p.style.background = 'transparent'; p.style.width = (size+4)+'px'; p.style.height = (size+4)+'px';
-      p.textContent = '\u2726'; p.style.fontSize = (size+3)+'px'; p.style.color = color;
-      p.style.lineHeight = '1'; p.style.display = 'flex'; p.style.alignItems = 'center'; p.style.justifyContent = 'center';
-    }
-    cc.appendChild(p);
-    setTimeout(function() { if (p.parentNode) p.parentNode.removeChild(p); }, (dur+del)*1000+600);
-  }
-
-  var iv = setInterval(function() {
-    if (spawned >= total) { clearInterval(iv); return; }
-    makePiece(); spawned++;
-  }, 400);
-
-  setTimeout(function() { clearInterval(iv); }, 10000);
-})();
-    } catch (e) {
-      if (typeof console !== 'undefined' && console.warn) { console.warn('[zappy-custom-js]', e); }
-    }
-  }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', __zappyCustomInit);
-  } else {
-    __zappyCustomInit();
-  }
-})();
-/* ZAPPY_CUSTOM_JS_END:f77f17ad11a5 */
+/* ZAPPY_CUSTOM_JS_END:1c1236738bff */
 
 
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
