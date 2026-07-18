@@ -13818,6 +13818,12 @@ body .k-dot.k-done {
   50% { opacity: 0.85; }
   100% { opacity: 1; }
 }
+
+@keyframes twinkle {
+  0% { opacity: 0.5; }
+  50% { opacity: 0.9; }
+  100% { opacity: 0.4; }
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
