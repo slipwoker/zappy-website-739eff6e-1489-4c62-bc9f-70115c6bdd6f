@@ -14739,29 +14739,32 @@ async function loadRelatedProducts(currentProduct, t) {
 })();
 /* ZAPPY_CUSTOM_JS_END:b8fde4c49027 */
 
-/* ZAPPY_CUSTOM_JS_START:a2c037b09fb2 */
+/* ZAPPY_CUSTOM_JS_START:8cfdde3152ca */
 (function () {
   function __zappyCustomInit() {
     try {
 (function() {
+  // Only on home page
+  if (window.location.pathname !== '/' && !window.location.pathname.startsWith('/?') && window.location.pathname !== '') return;
+
   var overlay = document.createElement('div');
   overlay.id = 'confetti-home-overlay';
   overlay.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:99999;overflow:hidden;';
   document.body.appendChild(overlay);
 
-  // Warm center glow
+  // Warm ambient glow
   var glow = document.createElement('div');
   glow.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:99998;' +
-    'background: radial-gradient(ellipse at 50% 50%, rgba(255,180,160,0.12) 0%, rgba(255,140,160,0.04) 20%, transparent 55%);' +
-    'animation: warmGlowPulse 3s ease-in-out;';
+    'background: radial-gradient(ellipse at 50% 45%, rgba(255,190,165,0.10) 0%, rgba(255,150,170,0.03) 25%, transparent 55%);' +
+    'animation: warmGlowPulse 4s ease-in-out;';
   document.body.appendChild(glow);
 
   var glowStyle = document.createElement('style');
   glowStyle.textContent = 
     '@keyframes warmGlowPulse {' +
-    '  0% { opacity: 0; transform: scale(0.85); }' +
-    '  40% { opacity: 1; }' +
-    '  100% { opacity: 0; transform: scale(1.2); }' +
+    '  0% { opacity: 0; transform: scale(0.9); }' +
+    '  45% { opacity: 1; }' +
+    '  100% { opacity: 0; transform: scale(1.15); }' +
     '}';
   document.head.appendChild(glowStyle);
 
@@ -14777,16 +14780,16 @@ async function loadRelatedProducts(currentProduct, t) {
     '  animation: confFall linear forwards;' +
     '}' +
     '@keyframes confFall {' +
-    '  0% { transform: translateY(0) rotate(0deg) scale(1); opacity: 0.8; }' +
-    '  80% { opacity: 0.6; }' +
-    '  100% { transform: translateY(105vh) rotate(400deg) scale(0.1); opacity: 0; }' +
+    '  0% { transform: translateY(0) rotate(0deg) scale(1); opacity: 0.75; }' +
+    '  85% { opacity: 0.5; }' +
+    '  100% { transform: translateY(105vh) rotate(360deg) scale(0.05); opacity: 0; }' +
     '}';
   document.head.appendChild(style);
 
-  var colors = ['#FF4D6D','#FF7B93','#FFFFFF','#FFF0F3','#FFCCD5','#FF99AC'];
+  var colors = ['#FF4D6D','#FF7B93','#FFFFFF','#FFF0F3','#FFCCD5'];
   var shapes = ['circle','heart'];
   var totalPieces = 0;
-  var maxPieces = 16;
+  var maxPieces = 10;
 
   function makePiece() {
     if (totalPieces >= maxPieces) return;
@@ -14798,9 +14801,9 @@ async function loadRelatedProducts(currentProduct, t) {
     var color = colors[Math.floor(Math.random() * colors.length)];
     var shape = shapes[Math.floor(Math.random() * shapes.length)];
     var left = Math.random() * 100;
-    var startTop = -(Math.random() * 35 + 3);
-    var dur = Math.random() * 3 + 4.5;
-    var delay = Math.random() * 0.25;
+    var startTop = -(Math.random() * 30 + 3);
+    var dur = Math.random() * 3 + 5.5;
+    var delay = Math.random() * 0.3;
     
     el.style.width = size + 'px';
     el.style.height = size + 'px';
@@ -14830,15 +14833,13 @@ async function loadRelatedProducts(currentProduct, t) {
     }, (dur + delay) * 1000 + 200);
   }
 
-  for (var i = 0; i < 10; i++) {
-    setTimeout(makePiece, i * 140);
+  for (var i = 0; i < 7; i++) {
+    setTimeout(makePiece, i * 200);
   }
 
-  var spawnTimer = setInterval(makePiece, 600);
-
-  setTimeout(function() {
-    clearInterval(spawnTimer);
-  }, 5000);
+  setTimeout(makePiece, 2800);
+  setTimeout(makePiece, 3800);
+  setTimeout(makePiece, 4600);
 
   setTimeout(function() {
     if (overlay.parentNode) overlay.parentNode.removeChild(overlay);
@@ -14855,7 +14856,7 @@ async function loadRelatedProducts(currentProduct, t) {
     __zappyCustomInit();
   }
 })();
-/* ZAPPY_CUSTOM_JS_END:a2c037b09fb2 */
+/* ZAPPY_CUSTOM_JS_END:8cfdde3152ca */
 
 
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
