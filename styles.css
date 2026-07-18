@@ -13635,6 +13635,158 @@ main,
   from { opacity: 0; transform: translateY(8px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+body .k-gb-float,
+body .k-gb-panel,
+body .k-gb-header,
+body .k-gb-body,
+body .k-step,
+body .k-opts,
+body .k-opt,
+body .k-back,
+body .k-res,
+body .k-prog,
+body .k-dot {
+  font-family: 'Assistant', 'Noto Sans Hebrew', sans-serif;
+}
+
+body .k-gb-float {
+  position: fixed !important;
+  bottom: 24px !important;
+  left: 24px !important;
+  z-index: 9999 !important;
+  direction: rtl !important;
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 50% !important;
+  background: var(--accent-color, var(--accent, #FF3399)) !important;
+  color: #fff !important;
+  border: none !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 0 8px 30px rgba(255,51,153,0.35) !important;
+  transition: transform 0.3s, box-shadow 0.3s !important;
+}
+
+body .k-gb-panel {
+  position: fixed !important;
+  bottom: 100px !important;
+  left: 24px !important;
+  width: 380px !important;
+  max-width: calc(100vw - 48px) !important;
+  background: #fff !important;
+  border-radius: 20px !important;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.18) !important;
+  overflow: hidden !important;
+  display: none !important;
+  flex-direction: column !important;
+  z-index: 9998 !important;
+  direction: rtl !important;
+}
+
+body .k-gb-panel.k-open {
+  display: flex !important;
+}
+
+body .k-gb-header {
+  background: linear-gradient(135deg, var(--accent-color, var(--accent, #FF3399)), var(--secondary-color, var(--secondary, #BFA7FF))) !important;
+  color: #fff !important;
+  padding: 20px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  position: relative !important;
+}
+
+body .k-gb-body {
+  padding: 20px !important;
+  min-height: 260px !important;
+}
+
+body .k-step {
+  display: none !important;
+}
+
+body .k-step.k-on {
+  display: block !important;
+}
+
+body .k-opts {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+}
+
+body .k-opt {
+  background: var(--primary-color, var(--primary, #FFF0F6)) !important;
+  border: 2px solid transparent !important;
+  border-radius: 14px !important;
+  padding: 14px 18px !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  color: #35263A !important;
+  cursor: pointer !important;
+  text-align: right !important;
+}
+
+body .k-opt.k-sel {
+  background: var(--accent-color, var(--accent, #FF3399)) !important;
+  color: #fff !important;
+  border-color: var(--accent-color, var(--accent, #FF3399)) !important;
+}
+
+body .k-back {
+  background: none !important;
+  border: none !important;
+  color: #92858c !important;
+  font-size: 0.9rem !important;
+  cursor: pointer !important;
+  margin-top: 16px !important;
+  display: block !important;
+  text-align: center !important;
+  width: 100% !important;
+}
+
+body .k-res {
+  text-align: center !important;
+}
+
+body .k-res-btn {
+  display: inline-block !important;
+  background: var(--accent-color, var(--accent, #FF3399)) !important;
+  color: #fff !important;
+  padding: 12px 28px !important;
+  border-radius: 50px !important;
+  text-decoration: none !important;
+  font-weight: 700 !important;
+  font-size: 0.95rem !important;
+}
+
+body .k-prog {
+  display: flex !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  padding: 16px !important;
+  border-top: 1px solid #f3e8ed !important;
+}
+
+body .k-dot {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+  background: #e8dce2 !important;
+}
+
+body .k-dot.k-on {
+  background: var(--accent-color, var(--accent, #FF3399)) !important;
+  transform: scale(1.3) !important;
+}
+
+body .k-dot.k-done {
+  background: var(--secondary-color, var(--secondary, #BFA7FF)) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
