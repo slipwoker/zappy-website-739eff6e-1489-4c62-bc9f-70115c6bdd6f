@@ -13812,6 +13812,12 @@ body .k-dot.k-done {
   80% { opacity: 1; }
   100% { transform: translateY(105vh) rotate(720deg) scale(0.3); opacity: 0; }
 }
+
+@keyframes twinkleLights {
+  0% { opacity: 0.6; }
+  50% { opacity: 0.85; }
+  100% { opacity: 1; }
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
