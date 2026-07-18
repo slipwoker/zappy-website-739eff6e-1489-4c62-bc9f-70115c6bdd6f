@@ -14726,20 +14726,24 @@ async function loadRelatedProducts(currentProduct, t) {
 })();
 /* ZAPPY_CUSTOM_JS_END:8cfdde3152ca */
 
-/* ZAPPY_CUSTOM_JS_START:c6a067e36b73 */
+/* ZAPPY_CUSTOM_JS_START:f77f17ad11a5 */
 (function () {
   function __zappyCustomInit() {
     try {
 (function() {
-  // Only run on homepage
-  if (window.location.pathname !== '/' && !window.location.pathname.startsWith('/?')) return;
+  var isHomepage = window.location.pathname === '/' ||
+    window.location.pathname.endsWith('/') ||
+    (window.location.search && window.location.search.indexOf('page=%2F') !== -1) ||
+    (document.querySelector('.kololo-hero') && document.querySelector('.kololo-categories'));
+  
+  if (!isHomepage) return;
 
   var old = document.getElementById('magic-confetti-root');
   if (old) old.remove();
 
   var root = document.createElement('div');
   root.id = 'magic-confetti-root';
-  root.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:99999;overflow:hidden;';
+  root.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:100000;overflow:hidden;';
   document.body.appendChild(root);
 
   var styleTag = document.createElement('style');
@@ -14763,48 +14767,47 @@ async function loadRelatedProducts(currentProduct, t) {
     }
     path.setAttribute('d', d);
     path.setAttribute('fill', 'none');
-    path.setAttribute('stroke', 'rgba(180,140,110,0.2)');
-    path.setAttribute('stroke-width', '0.6');
+    path.setAttribute('stroke', 'rgba(200,150,100,0.3)');
+    path.setAttribute('stroke-width', '0.8');
     wireSvg.appendChild(path);
   }
-  drawGarland(32, 12);
-  drawGarland(56, 10);
-
+  drawGarland(20, 14);
+  drawGarland(52, 12);
   root.appendChild(wireSvg);
 
   var lightsEl = document.createElement('div');
   lightsEl.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:140px;overflow:visible;';
   root.appendChild(lightsEl);
 
-  var warmColors = ['#FFDAB9','#FFECD2','#FFD4A8','#FFE5CC','#FFF0DC','#FFDFC4'];
-  var yOffsets = [32, 56];
+  var warmColors = ['#FFDAB9','#FFECD2','#FFD4A8','#FFE5CC','#FFF0DC'];
+  var yOffsets = [20, 52];
   var bulbPositions = [];
   for (var row = 0; row < yOffsets.length; row++) {
     for (var i = 0; i < 16; i++) {
       var leftPct = (i / 15) * 100;
-      var sag = yOffsets[row] + Math.sin(i * 1.1) * (row === 0 ? 12 : 10);
+      var sag = yOffsets[row] + Math.sin(i * 1.1) * (row === 0 ? 14 : 12);
       bulbPositions.push({ left: leftPct, top: sag });
     }
   }
 
   bulbPositions.forEach(function(pos) {
     var bulb = document.createElement('div');
-    var dur = (Math.random() * 2 + 2);
+    var dur = (Math.random() * 2.5 + 2);
     var del = Math.random() * 3;
-    var sz = Math.random() * 2 + 4;
+    var sz = Math.random() * 2 + 5;
     bulb.style.cssText = 'position:absolute;width:'+sz+'px;height:'+sz+'px;border-radius:50%;background:' + warmColors[Math.floor(Math.random()*warmColors.length)] +
-      ';box-shadow:0 0 6px 3px rgba(255,170,100,0.4),0 0 14px 5px rgba(255,150,70,0.2);' +
+      ';box-shadow:0 0 8px 4px rgba(255,170,100,0.5),0 0 16px 6px rgba(255,150,70,0.25);' +
       'animation:ftwinkle2 ' + dur + 's ease-in-out infinite;animation-delay:' + del + 's;' +
       'left:' + pos.left + '%;top:' + pos.top + 'px;';
     lightsEl.appendChild(bulb);
   });
 
-  // === LIGHT CONFETTI (only 20 pieces, very subtle) ===
+  // === SUBTLE CONFETTI (20 pieces) ===
   var cc = document.createElement('div');
   cc.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;overflow:hidden;';
   root.appendChild(cc);
 
-  var colors = ['#FFCCE0','#FFE0F0','#FFF0F6','#FFD1DC','#FFE4E1','#FFC0CB','#FFDDE4','#FFB3D9'];
+  var colors = ['#FFCCE0','#FFE0F0','#FFF0F6','#FFD1DC','#FFE4E1','#FFC0CB','#FFDDE4'];
   var shapes = ['circle','heart','star'];
   var total = 20;
   var spawned = 0;
@@ -14815,30 +14818,30 @@ async function loadRelatedProducts(currentProduct, t) {
     var color = colors[Math.floor(Math.random() * colors.length)];
     var shape = shapes[Math.floor(Math.random() * shapes.length)];
     var left = Math.random() * 100;
-    var dur = (Math.random() * 4 + 4);
+    var dur = (Math.random() * 5 + 5);
     var del = Math.random() * 0.5;
     p.style.cssText = 'position:absolute;top:-10px;left:' + left + '%;width:' + size + 'px;height:' + size + 'px;' +
       'animation:cdrift2 ' + dur + 's linear ' + del + 's forwards;opacity:0.7;';
     if (shape === 'circle') { p.style.background = color; p.style.borderRadius = '50%'; }
     else if (shape === 'heart') {
-      p.style.background = 'transparent'; p.style.width = (size+3)+'px'; p.style.height = (size+3)+'px';
-      p.textContent = '\u2665'; p.style.fontSize = (size+3)+'px'; p.style.color = color;
+      p.style.background = 'transparent'; p.style.width = (size+4)+'px'; p.style.height = (size+4)+'px';
+      p.textContent = '\u2665'; p.style.fontSize = (size+4)+'px'; p.style.color = color;
       p.style.lineHeight = '1'; p.style.display = 'flex'; p.style.alignItems = 'center'; p.style.justifyContent = 'center';
     } else {
-      p.style.background = 'transparent'; p.style.width = (size+3)+'px'; p.style.height = (size+3)+'px';
-      p.textContent = '\u2726'; p.style.fontSize = (size+2)+'px'; p.style.color = color;
+      p.style.background = 'transparent'; p.style.width = (size+4)+'px'; p.style.height = (size+4)+'px';
+      p.textContent = '\u2726'; p.style.fontSize = (size+3)+'px'; p.style.color = color;
       p.style.lineHeight = '1'; p.style.display = 'flex'; p.style.alignItems = 'center'; p.style.justifyContent = 'center';
     }
     cc.appendChild(p);
-    setTimeout(function() { if (p.parentNode) p.parentNode.removeChild(p); }, (dur+del)*1000+500);
+    setTimeout(function() { if (p.parentNode) p.parentNode.removeChild(p); }, (dur+del)*1000+600);
   }
 
   var iv = setInterval(function() {
     if (spawned >= total) { clearInterval(iv); return; }
     makePiece(); spawned++;
-  }, 350);
+  }, 400);
 
-  setTimeout(function() { clearInterval(iv); }, 9000);
+  setTimeout(function() { clearInterval(iv); }, 10000);
 })();
     } catch (e) {
       if (typeof console !== 'undefined' && console.warn) { console.warn('[zappy-custom-js]', e); }
@@ -14850,7 +14853,7 @@ async function loadRelatedProducts(currentProduct, t) {
     __zappyCustomInit();
   }
 })();
-/* ZAPPY_CUSTOM_JS_END:c6a067e36b73 */
+/* ZAPPY_CUSTOM_JS_END:f77f17ad11a5 */
 
 
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
