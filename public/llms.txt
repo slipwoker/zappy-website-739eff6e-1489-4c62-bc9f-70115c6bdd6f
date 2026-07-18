@@ -22,7 +22,7 @@ https://kululugift.co.il/faq
 https://kululugift.co.il/contact
 רוצים ליצור מתנות ליולדת ולתינוק או לאירוע מיוחד? צרו קשר עם צוות קולולו ונעזור לכם לבנות מארז חלומי עם נגיעה אישית. השאירו פרטים ונתחיל לפנק!
 
-### כל המוצרים
+### Products
 https://kululugift.co.il/products
 המוצרים שלנו - קולולו
 
@@ -50,7 +50,7 @@ https://kululugift.co.il/order-success
 https://kululugift.co.il/product/:slug
 פרטי המוצר - קולולו
 
-### כל המוצרים
+### Category
 https://kululugift.co.il/category/:slug
 מוצרים - קולולו
 
