@@ -14545,6 +14545,68 @@ async function loadRelatedProducts(currentProduct, t) {
 })();
 /* ZAPPY_BLOCK_RUNTIME_END */
 
+/* ZAPPY_CUSTOM_JS_START:d931ccc1258a */
+(function () {
+  function __zappyCustomInit() {
+    try {
+(function() {
+  if (document.getElementById('kololoGiftBotFloat')) return;
+
+  var css = document.createElement('style');
+  css.id = 'kololo-giftbot-css';
+  css.textContent = "@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&display=swap');.k-gb-float{font-family:'Assistant',sans-serif;position:fixed;bottom:24px;left:24px;z-index:9999;direction:rtl;width:60px;height:60px;border-radius:50%;background:#FF3399;color:#fff;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 30px rgba(255,51,153,0.35);transition:transform 0.3s,box-shadow 0.3s;animation:kPulse 2s infinite;}.k-gb-float:hover{transform:scale(1.08);box-shadow:0 12px 36px rgba(255,51,153,0.45);}@keyframes kPulse{0%,100%{box-shadow:0 8px 30px rgba(255,51,153,0.35)}50%{box-shadow:0 12px 40px rgba(255,51,153,0.55)}}.k-gb-panel{font-family:'Assistant',sans-serif;position:fixed;bottom:100px;left:24px;width:380px;max-width:calc(100vw-48px);background:#fff;border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,0.18);overflow:hidden;display:none;flex-direction:column;z-index:9998;opacity:0;transform:translateY(20px);transition:opacity 0.3s,transform 0.3s;direction:rtl;}.k-gb-panel.k-open{display:flex;opacity:1;transform:translateY(0);}.k-gb-header{background:linear-gradient(135deg,#FF3399,#BFA7FF);color:#fff;padding:20px;display:flex;align-items:center;gap:14px;position:relative;}.k-gb-hicon{font-size:36px;background:rgba(255,255,255,0.2);width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}.k-gb-header h3{margin:0;font-size:1.1rem;font-weight:700;}.k-gb-header p{margin:2px 0 0;font-size:0.85rem;opacity:0.9;}.k-gb-close{position:absolute;top:12px;left:16px;background:rgba(255,255,255,0.2);border:none;color:#fff;font-size:22px;width:32px;height:32px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;}.k-gb-close:hover{background:rgba(255,255,255,0.35);}.k-gb-body{padding:20px;min-height:260px;}.k-step{display:none;animation:kFadeIn 0.35s ease;}.k-step.k-on{display:block;}@keyframes kFadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}.k-step h4{margin:0 0 16px;font-size:1.15rem;color:#35263A;font-weight:700;text-align:center;}.k-opts{display:flex;flex-direction:column;gap:10px;}.k-opt{background:#FFF0F6;border:2px solid transparent;border-radius:14px;padding:14px 18px;font-size:1rem;font-weight:600;color:#35263A;cursor:pointer;text-align:right;transition:all 0.2s;font-family:'Assistant',sans-serif;}.k-opt:hover{background:#FFE0F0;border-color:#FF3399;transform:translateX(-4px);}.k-opt.k-sel{background:#FF3399;color:#fff;border-color:#FF3399;}.k-back{background:none;border:none;color:#92858c;font-size:0.9rem;cursor:pointer;margin-top:16px;display:block;text-align:center;width:100%;font-family:'Assistant',sans-serif;transition:color 0.2s;}.k-back:hover{color:#FF3399;}.k-res{text-align:center;}.k-res-icon{font-size:56px;margin-bottom:12px;}.k-res h4{color:#FF3399;font-size:1.2rem;margin-bottom:10px;}.k-res p{color:#4A4A4A;font-size:0.95rem;line-height:1.6;margin-bottom:16px;}.k-res-tags{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-bottom:20px;}.k-res-tag{background:#FFF0F6;color:#FF3399;padding:6px 14px;border-radius:20px;font-size:0.85rem;font-weight:600;}.k-res-btn{display:inline-block;background:#FF3399;color:#fff;padding:12px 28px;border-radius:50px;text-decoration:none;font-weight:700;font-size:0.95rem;transition:background 0.2s,transform 0.2s;}.k-res-btn:hover{background:#E82D8A;transform:translateY(-2px);}.k-prog{display:flex;justify-content:center;gap:10px;padding:16px;border-top:1px solid #f3e8ed;}.k-dot{width:10px;height:10px;border-radius:50%;background:#e8dce2;transition:all 0.3s;}.k-dot.k-on{background:#FF3399;transform:scale(1.3);}.k-dot.k-done{background:#BFA7FF;}@media(max-width:420px){.k-gb-panel{left:8px;right:8px;width:auto;max-width:none;bottom:90px}.k-gb-float{left:16px;bottom:18px;width:54px;height:54px}}";
+  document.head.appendChild(css);
+
+  var html = '<div class="k-gb-float" id="kgbFloat"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M20 12v6a2 2 0 01-2 2H6a2 2 0 01-2-2v-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M12 2v12m0-12L8 6m4-4l4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 8h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><rect x="6" y="10" width="3" height="4" rx="0.5" fill="currentColor"/><rect x="15" y="10" width="3" height="4" rx="0.5" fill="currentColor"/></svg></div><div class="k-gb-panel" id="kgbPanel"><div class="k-gb-header"><div class="k-gb-hicon">🎁</div><div><h3>בוט התאמת מתנות</h3><p>ענה על כמה שאלות ואתאים לך את המארז המושלם</p></div><button class="k-gb-close" id="kgbClose">&times;</button></div><div class="k-gb-body"><div class="k-step k-on" data-step="1"><h4>לאיזה אירוע?</h4><div class="k-opts"><button class="k-opt" data-v="birthday">🎂 יום הולדת</button><button class="k-opt" data-v="romantic">💝 רומנטי</button><button class="k-opt" data-v="baby">👶 יום הולדת לתינוק</button><button class="k-opt" data-v="thanks">🙏 תודה</button><button class="k-opt" data-v="getwell">💐 החלמה מהירה</button><button class="k-opt" data-v="justbecause">✨ סתם כי בא לי לפנק</button></div></div><div class="k-step" data-step="2"><h4>למי המתנה?</h4><div class="k-opts"><button class="k-opt" data-v="friend">👯 חבר/ה / הכי טוב/ה</button><button class="k-opt" data-v="partner">💑 בן/בת זוג</button><button class="k-opt" data-v="family">👨‍👩‍👧‍👦 משפחה</button><button class="k-opt" data-v="colleague">💼 קולגה</button><button class="k-opt" data-v="self">🛍️ לעצמי</button></div><button class="k-back">← חזרה</button></div><div class="k-step" data-step="3"><h4>איזה סגנון?</h4><div class="k-opts"><button class="k-opt" data-v="sweet">🍫 מתוק ומפנק</button><button class="k-opt" data-v="colorful">🌈 צבעוני ושמח</button><button class="k-opt" data-v="elegant">🌿 אלגנטי ויוקרתי</button><button class="k-opt" data-v="spa">🕯️ ספא ורוגע</button><button class="k-opt" data-v="personal">💌 אישי ומיוחד</button></div><button class="k-back">← חזרה</button></div><div class="k-step" data-step="4"><h4>מה התקציב?</h4><div class="k-opts"><button class="k-opt" data-v="low">💰 עד 150 ₪</button><button class="k-opt" data-v="mid">💎 150–300 ₪</button><button class="k-opt" data-v="high">👑 300+ ₪</button><button class="k-opt" data-v="any">🎲 לא משנה לי</button></div><button class="k-back">← חזרה</button></div><div class="k-step" data-step="5"><div class="k-res"><div class="k-res-icon" id="kResIcon">🎁</div><h4 id="kResTitle">מחפש לך את המארז המושלם...</h4><p id="kResText">רגע...</p><div class="k-res-tags" id="kResTags"></div><a href="/products" class="k-res-btn">לכל המארזים 🎀</a></div><button class="k-back">← בחר שונה</button></div></div><div class="k-prog"><span class="k-dot k-on" data-dot="1"></span><span class="k-dot" data-dot="2"></span><span class="k-dot" data-dot="3"></span><span class="k-dot" data-dot="4"></span><span class="k-dot" data-dot="5"></span></div></div>';
+  var wrapper = document.createElement('div');
+  wrapper.innerHTML = html;
+  while (wrapper.firstChild) document.body.appendChild(wrapper.firstChild);
+
+  var R={birthday_friend_sweet:{e:'🎂',t:'מארז יום הולדת מתוק',x:'מארז שוקולדים מפנק, בלונים צבעוניים ועוגת קופסא אישית עם הקדשה — מתוק, שמח ובלתי נשכח.',g:['מארזי יום הולדת','שוקולד','בלונים']},birthday_friend_colorful:{e:'🌈',t:'בלונים צבעוניים ומפנקים',x:'בלונים בשלל צבעים וגדלים, כוסית אישית וזר פרחים קטן — מארז מתוק שעושה את היום!',g:['בלונים','מארזי יום הולדת']},birthday_friend_elegant:{e:'🌿',t:'מארז יוקרתי לחבר/ה',x:'מארז אלגנטי עם פרחים מיובשים ושוקולד בלגי משובח — מתנה מעוצבת ברמה גבוהה.',g:['פרחים','שוקולד']},birthday_partner_sweet:{e:'💝',t:'מארז רומנטי מתוק',x:'שוקולדים בעבודת יד, בלונים מעוצבים ונרות ריחניים — מארז מושלם לבן/בת זוג.',g:['שוקולד','רומנטי']},birthday_partner_elegant:{e:'🥂',t:'חוויה יוקרתית לזוג',x:'מארז מפנק במיוחד, שוקולד ופרחים מיובשים באריזת יוקרה עם הקדשה מוזהבת.',g:['פרחים','שוקולד']},birthday_family_sweet:{e:'🎉',t:'חבילת חגיגה משפחתית',x:'מארז גדול עם מבחר שוקולדים, בלונים צבעוניים ומשחק משפחתי — כולם נהנים!',g:['שוקולד','בלונים']},romantic_partner_elegant:{e:'💕',t:'מארז אהבה יוקרתי',x:'ורדים מיובשים, שוקולד בלגי ונר ריחני — כל מה שצריך לערב רומנטי קסום.',g:['פרחים','ספא','שוקולד']},romantic_partner_spa:{e:'🕯️',t:'מארז ספא זוגי',x:'שמנים ארומטיים, מלחי אמבט ונרות — ערכת פינוק רומנטית עם חלוקי מגבת.',g:['מארזי פינוק','ספא']},baby_family_sweet:{e:'👶',t:'מארז מתוק לתינוק',x:'בלונים רכים, שוקולדים ומוצקי תינוק חמודים — מתנה מתוקה שכל ההורים יאהבו!',g:['בלונים','שוקולד']},baby_family_personal:{e:'🍼',t:'מתנה אישית מושלמת',x:'מארז אישי עם שמיכת קטיפה, בלונים מעוצבים ומסגרת תמונה — מתנה מיוחדת.',g:['מתנות אישיות','בלונים']},thanks_colleague_sweet:{e:'🙏',t:'מארז תודה מתוק',x:'שוקולדים איכותיים ופתקית תודה מפנקת להבעת הערכה לקולגה.',g:['שוקולד','מתנות אישיות']},thanks_colleague_elegant:{e:'🌿',t:'מתנת תודה אלגנטית',x:'מארז יוקרתי עם פרחים מיובשים ושוקולד משובח — תודה בסטייל.',g:['פרחים','שוקולד']},getwell_any_elegant:{e:'💐',t:'זר החלמה מהירה',x:'פרחים רעננים ומארז שוקולד מחמם לב — בדיוק מה שצריך כדי להרגיש טוב.',g:['פרחים','שוקולד']},getwell_any_spa:{e:'🕶️',t:'מארז פינוק מרגיע',x:'נרות, שמנים אתריים וחלוק מגבת להחלמה בכיף — פינוק אמיתי.',g:['מארזי פינוק','ספא']},justbecause_self_spa:{e:'✨',t:'פינוק לעצמך מושלם',x:'מארז ספא מפנק במיוחד עם כל מה שצריך לערב רגוע — כי מגיע לך!',g:['מארזי פינוק','ספא']},justbecause_self_sweet:{e:'🍫',t:'פינוק מתוק לעצמך',x:'חבילת שוקולדים בעבודת יד ופינוקים מתוקים — כי את/ה הכי טוב/ה לך!',g:['שוקולד']},justbecause_friend_colorful:{e:'🎟️',t:'מארז "סתם כי בא" שמח',x:'בלונים צבעוניים ושוקולדים — מפנק חבר/ה סתם כי בא לך!',g:['בלונים','שוקולד']},_x:{e:'🎁',t:'מארז מושלם בשבילך!',x:'חיפשנו בשבילך מארז מפנק ומיוחד — מתנה מושלמת לכל אירוע. כנסו לכל המארזים!',g:['בלונים','פרחים','שוקולד']}};
+  var A={},S=1;
+
+  function k(){return (A.e||'')+'_'+(A.w||'')+'_'+(A.s||'');}
+  function f(){var k0=k();if(R[k0])return R[k0];if(R[(A.e||'')+'_'+(A.w||'')+'_sweet'])return R[(A.e||'')+'_'+(A.w||'')+'_sweet'];if(R[(A.e||'')+'_any_elegant'])return R[(A.e||'')+'_any_elegant'];return R._x;}
+  function g(n){
+    document.querySelectorAll('.k-step').forEach(function(s){s.classList.remove('k-on');});
+    var t=document.querySelector('.k-step[data-step="'+n+'"]');if(t)t.classList.add('k-on');
+    document.querySelectorAll('.k-dot').forEach(function(d,i){d.classList.remove('k-on','k-done');if(i+1<n)d.classList.add('k-done');if(i+1===n)d.classList.add('k-on');});
+    S=n;
+    if(n===5){var r=f();document.getElementById('kResIcon').textContent=r.e;document.getElementById('kResTitle').textContent=r.t;document.getElementById('kResText').textContent=r.x;document.getElementById('kResTags').innerHTML=r.g.map(function(t){return'<span class="k-res-tag">'+t+'</span>';}).join('');}
+  }
+  function r(){A={};g(1);}
+  document.querySelector('.k-gb-body').addEventListener('click',function(e){
+    var o=e.target.closest('.k-opt');if(o){var v=o.getAttribute('data-v'),p=parseInt(o.closest('.k-step').getAttribute('data-step'));
+    if(p===1)A.e=v;if(p===2)A.w=v;if(p===3)A.s=v;if(p===4)A.b=v;
+    o.parentElement.querySelectorAll('.k-opt').forEach(function(x){x.classList.remove('k-sel');});o.classList.add('k-sel');
+    setTimeout(function(){g(p+1);},250);}
+    var b=e.target.closest('.k-back');if(b){if(S===5)r();else if(S>1)g(S-1);}
+  });
+  document.getElementById('kgbFloat').addEventListener('click',function(){
+    var p=document.getElementById('kgbPanel');
+    if(p.classList.contains('k-open')){p.classList.remove('k-open');setTimeout(function(){p.style.display='none';},300);}
+    else{p.style.display='flex';setTimeout(function(){p.classList.add('k-open');},10);if(S===5)r();}
+  });
+  document.getElementById('kgbClose').addEventListener('click',function(){
+    var p=document.getElementById('kgbPanel');p.classList.remove('k-open');setTimeout(function(){p.style.display='none';},300);
+  });
+  document.addEventListener('click',function(e){
+    var p=document.getElementById('kgbPanel'),f=document.getElementById('kgbFloat');
+    if(p.classList.contains('k-open')&&!p.contains(e.target)&&e.target!==f&&!f.contains(e.target)){p.classList.remove('k-open');setTimeout(function(){p.style.display='none';},300);}
+  });
+})();
+    } catch (e) {
+      if (typeof console !== 'undefined' && console.warn) { console.warn('[zappy-custom-js]', e); }
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __zappyCustomInit);
+  } else {
+    __zappyCustomInit();
+  }
+})();
+/* ZAPPY_CUSTOM_JS_END:d931ccc1258a */
+
 
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
 (function(){
