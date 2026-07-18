@@ -14607,138 +14607,6 @@ async function loadRelatedProducts(currentProduct, t) {
 })();
 /* ZAPPY_CUSTOM_JS_END:d931ccc1258a */
 
-/* ZAPPY_CUSTOM_JS_START:b8fde4c49027 */
-(function () {
-  function __zappyCustomInit() {
-    try {
-(function() {
-  // Remove old instance
-  var old = document.getElementById('magic-confetti-root');
-  if (old) old.remove();
-
-  var root = document.createElement('div');
-  root.id = 'magic-confetti-root';
-  root.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:99999;overflow:hidden;';
-  document.body.appendChild(root);
-
-  // Keyframes
-  var styleTag = document.createElement('style');
-  styleTag.textContent = '@keyframes ftwinkle2{0%,100%{opacity:0.35;transform:scale(0.75)}50%{opacity:1;transform:scale(1.45)}}' +
-    '@keyframes cdrift2{0%{transform:translateY(0) rotate(0deg) scale(1);opacity:1}80%{opacity:1}100%{transform:translateY(105vh) rotate(720deg) scale(0.3);opacity:0}}';
-  document.head.appendChild(styleTag);
-
-  // === FAIRY LIGHTS (dual garlands) ===
-  var wireSvg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-  wireSvg.setAttribute('width', '100%');
-  wireSvg.setAttribute('height', '150');
-  wireSvg.style.cssText = 'position:absolute;top:0;left:0;display:block;';
-
-  function drawGarland(yBase, sagAmt) {
-    var path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-    var d = 'M0,' + yBase + ' ';
-    var segments = 12;
-    for (var s = 0; s <= segments; s++) {
-      var x = (s / segments) * 100;
-      var y = yBase + Math.sin(s * 1.2) * sagAmt;
-      d += 'L' + x + '%,' + y + ' ';
-    }
-    path.setAttribute('d', d);
-    path.setAttribute('fill', 'none');
-    path.setAttribute('stroke', 'rgba(160,120,90,0.25)');
-    path.setAttribute('stroke-width', '0.8');
-    wireSvg.appendChild(path);
-  }
-  drawGarland(30, 14);
-  drawGarland(58, 12);
-
-  root.appendChild(wireSvg);
-
-  // Bulbs
-  var lightsEl = document.createElement('div');
-  lightsEl.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:140px;overflow:visible;';
-  root.appendChild(lightsEl);
-
-  var warmColors = ['#FFD4A8','#FFECD2','#FFC894','#FFE0BB','#FFF0DC','#FFDAB9','#FFEBC2','#FFDFAA'];
-  var bulbPositions = [];
-  var yOffsets = [30, 58]; // two rows matching garlands
-  for (var row = 0; row < yOffsets.length; row++) {
-    for (var i = 0; i < 12; i++) {
-      var leftPct = (i / 11) * 100;
-      var sag = yOffsets[row] + Math.sin(i * 1.2) * (row === 0 ? 14 : 12);
-      bulbPositions.push({ left: leftPct, top: sag });
-    }
-  }
-
-  bulbPositions.forEach(function(pos) {
-    var bulb = document.createElement('div');
-    var dur = (Math.random() * 1.5 + 1.5);
-    var del = Math.random() * 2;
-    bulb.style.cssText = 'position:absolute;width:6px;height:6px;border-radius:50%;background:' + warmColors[Math.floor(Math.random()*warmColors.length)] +
-      ';box-shadow:0 0 8px 4px rgba(255,180,100,0.55),0 0 18px 6px rgba(255,160,80,0.3);' +
-      'animation:ftwinkle2 ' + dur + 's ease-in-out infinite;animation-delay:' + del + 's;' +
-      'left:' + pos.left + '%;top:' + pos.top + 'px;';
-    lightsEl.appendChild(bulb);
-  });
-
-  // === CONFETTI (60 pieces, no yellow) ===
-  var cc = document.createElement('div');
-  cc.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;overflow:hidden;';
-  root.appendChild(cc);
-
-  var colors = ['#FF99CC','#FFCCE0','#FFB3D9','#FFE0F0','#FFF0F6','#FF80B3','#FFD1DC','#FFFFFF','#FFE4E1','#FFC0CB','#FFB6C1','#FFDDE4'];
-  var shapes = ['circle','square','heart','star'];
-  var total = 60;
-  var spawned = 0;
-
-  function makePiece() {
-    var p = document.createElement('div');
-    var size = Math.random() * 12 + 6;
-    var color = colors[Math.floor(Math.random() * colors.length)];
-    var shape = shapes[Math.floor(Math.random() * shapes.length)];
-    var left = Math.random() * 100;
-    var dur = (Math.random() * 3 + 2);
-    var del = Math.random() * 0.6;
-    p.style.cssText = 'position:absolute;top:-10px;left:' + left + '%;width:' + size + 'px;height:' + size + 'px;' +
-      'animation:cdrift2 ' + dur + 's linear ' + del + 's forwards;background:' + color + ';';
-
-    if (shape === 'circle') { p.style.borderRadius = '50%'; }
-    else if (shape === 'square') { p.style.borderRadius = '2px'; }
-    else if (shape === 'heart') {
-      p.style.background = 'transparent'; p.style.width = (size+4)+'px'; p.style.height = (size+4)+'px';
-      p.textContent = '\u2665'; p.style.fontSize = (size+4)+'px'; p.style.color = color;
-      p.style.lineHeight = '1'; p.style.display = 'flex'; p.style.alignItems = 'center'; p.style.justifyContent = 'center';
-    } else if (shape === 'star') {
-      p.style.background = 'transparent'; p.style.width = (size+4)+'px'; p.style.height = (size+4)+'px';
-      p.textContent = '\u2726'; p.style.fontSize = (size+2)+'px'; p.style.color = color;
-      p.style.lineHeight = '1'; p.style.display = 'flex'; p.style.alignItems = 'center'; p.style.justifyContent = 'center';
-    }
-    if (Math.random() > 0.55) { p.style.boxShadow = '0 0 5px rgba(255,150,180,0.45)'; }
-    cc.appendChild(p);
-    setTimeout(function() { if (p.parentNode) p.parentNode.removeChild(p); }, (dur+del)*1000+400);
-  }
-
-  var iv = setInterval(function() {
-    if (spawned >= total) { clearInterval(iv); return; }
-    var burst = Math.random() < 0.2 ? 2 : 1;
-    for (var j = 0; j < burst; j++) { makePiece(); spawned++; if (spawned >= total) break; }
-  }, 70);
-
-  setTimeout(function() { clearInterval(iv); }, 7000);
-  // Remove after ~15s (3s shorter than before)
-  setTimeout(function() { if (root.parentNode) root.parentNode.removeChild(root); }, 16000);
-})();
-    } catch (e) {
-      if (typeof console !== 'undefined' && console.warn) { console.warn('[zappy-custom-js]', e); }
-    }
-  }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', __zappyCustomInit);
-  } else {
-    __zappyCustomInit();
-  }
-})();
-/* ZAPPY_CUSTOM_JS_END:b8fde4c49027 */
-
 /* ZAPPY_CUSTOM_JS_START:8cfdde3152ca */
 (function () {
   function __zappyCustomInit() {
@@ -14857,6 +14725,132 @@ async function loadRelatedProducts(currentProduct, t) {
   }
 })();
 /* ZAPPY_CUSTOM_JS_END:8cfdde3152ca */
+
+/* ZAPPY_CUSTOM_JS_START:c6a067e36b73 */
+(function () {
+  function __zappyCustomInit() {
+    try {
+(function() {
+  // Only run on homepage
+  if (window.location.pathname !== '/' && !window.location.pathname.startsWith('/?')) return;
+
+  var old = document.getElementById('magic-confetti-root');
+  if (old) old.remove();
+
+  var root = document.createElement('div');
+  root.id = 'magic-confetti-root';
+  root.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:99999;overflow:hidden;';
+  document.body.appendChild(root);
+
+  var styleTag = document.createElement('style');
+  styleTag.textContent = '@keyframes ftwinkle2{0%,100%{opacity:0.3;transform:scale(0.7)}50%{opacity:1;transform:scale(1.4)}}' +
+    '@keyframes cdrift2{0%{transform:translateY(0) rotate(0deg) scale(1);opacity:0.8}80%{opacity:0.6}100%{transform:translateY(105vh) rotate(540deg) scale(0.2);opacity:0}}';
+  document.head.appendChild(styleTag);
+
+  // === FAIRY LIGHTS ===
+  var wireSvg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  wireSvg.setAttribute('width', '100%');
+  wireSvg.setAttribute('height', '140');
+  wireSvg.style.cssText = 'position:absolute;top:0;left:0;display:block;';
+
+  function drawGarland(yBase, sagAmt) {
+    var path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    var d = 'M0,' + yBase + ' ';
+    for (var s = 0; s <= 15; s++) {
+      var x = (s / 15) * 100;
+      var y = yBase + Math.sin(s * 1.1) * sagAmt;
+      d += 'L' + x + '%,' + y + ' ';
+    }
+    path.setAttribute('d', d);
+    path.setAttribute('fill', 'none');
+    path.setAttribute('stroke', 'rgba(180,140,110,0.2)');
+    path.setAttribute('stroke-width', '0.6');
+    wireSvg.appendChild(path);
+  }
+  drawGarland(32, 12);
+  drawGarland(56, 10);
+
+  root.appendChild(wireSvg);
+
+  var lightsEl = document.createElement('div');
+  lightsEl.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:140px;overflow:visible;';
+  root.appendChild(lightsEl);
+
+  var warmColors = ['#FFDAB9','#FFECD2','#FFD4A8','#FFE5CC','#FFF0DC','#FFDFC4'];
+  var yOffsets = [32, 56];
+  var bulbPositions = [];
+  for (var row = 0; row < yOffsets.length; row++) {
+    for (var i = 0; i < 16; i++) {
+      var leftPct = (i / 15) * 100;
+      var sag = yOffsets[row] + Math.sin(i * 1.1) * (row === 0 ? 12 : 10);
+      bulbPositions.push({ left: leftPct, top: sag });
+    }
+  }
+
+  bulbPositions.forEach(function(pos) {
+    var bulb = document.createElement('div');
+    var dur = (Math.random() * 2 + 2);
+    var del = Math.random() * 3;
+    var sz = Math.random() * 2 + 4;
+    bulb.style.cssText = 'position:absolute;width:'+sz+'px;height:'+sz+'px;border-radius:50%;background:' + warmColors[Math.floor(Math.random()*warmColors.length)] +
+      ';box-shadow:0 0 6px 3px rgba(255,170,100,0.4),0 0 14px 5px rgba(255,150,70,0.2);' +
+      'animation:ftwinkle2 ' + dur + 's ease-in-out infinite;animation-delay:' + del + 's;' +
+      'left:' + pos.left + '%;top:' + pos.top + 'px;';
+    lightsEl.appendChild(bulb);
+  });
+
+  // === LIGHT CONFETTI (only 20 pieces, very subtle) ===
+  var cc = document.createElement('div');
+  cc.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;overflow:hidden;';
+  root.appendChild(cc);
+
+  var colors = ['#FFCCE0','#FFE0F0','#FFF0F6','#FFD1DC','#FFE4E1','#FFC0CB','#FFDDE4','#FFB3D9'];
+  var shapes = ['circle','heart','star'];
+  var total = 20;
+  var spawned = 0;
+
+  function makePiece() {
+    var p = document.createElement('div');
+    var size = Math.random() * 8 + 5;
+    var color = colors[Math.floor(Math.random() * colors.length)];
+    var shape = shapes[Math.floor(Math.random() * shapes.length)];
+    var left = Math.random() * 100;
+    var dur = (Math.random() * 4 + 4);
+    var del = Math.random() * 0.5;
+    p.style.cssText = 'position:absolute;top:-10px;left:' + left + '%;width:' + size + 'px;height:' + size + 'px;' +
+      'animation:cdrift2 ' + dur + 's linear ' + del + 's forwards;opacity:0.7;';
+    if (shape === 'circle') { p.style.background = color; p.style.borderRadius = '50%'; }
+    else if (shape === 'heart') {
+      p.style.background = 'transparent'; p.style.width = (size+3)+'px'; p.style.height = (size+3)+'px';
+      p.textContent = '\u2665'; p.style.fontSize = (size+3)+'px'; p.style.color = color;
+      p.style.lineHeight = '1'; p.style.display = 'flex'; p.style.alignItems = 'center'; p.style.justifyContent = 'center';
+    } else {
+      p.style.background = 'transparent'; p.style.width = (size+3)+'px'; p.style.height = (size+3)+'px';
+      p.textContent = '\u2726'; p.style.fontSize = (size+2)+'px'; p.style.color = color;
+      p.style.lineHeight = '1'; p.style.display = 'flex'; p.style.alignItems = 'center'; p.style.justifyContent = 'center';
+    }
+    cc.appendChild(p);
+    setTimeout(function() { if (p.parentNode) p.parentNode.removeChild(p); }, (dur+del)*1000+500);
+  }
+
+  var iv = setInterval(function() {
+    if (spawned >= total) { clearInterval(iv); return; }
+    makePiece(); spawned++;
+  }, 350);
+
+  setTimeout(function() { clearInterval(iv); }, 9000);
+})();
+    } catch (e) {
+      if (typeof console !== 'undefined' && console.warn) { console.warn('[zappy-custom-js]', e); }
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __zappyCustomInit);
+  } else {
+    __zappyCustomInit();
+  }
+})();
+/* ZAPPY_CUSTOM_JS_END:c6a067e36b73 */
 
 
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
