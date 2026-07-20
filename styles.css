@@ -13833,6 +13833,11 @@ body .k-dot.k-done {
 body {
   background-color: var(--background-color, var(--background, var(--bg-light, #FFFFFF))) !important;
 }
+
+body main.page-container.ecommerce-page {
+  background: var(--primary-color, var(--primary, #FFF0F6)) !important;
+  background-color: var(--primary-color, var(--primary, #FFF0F6)) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
