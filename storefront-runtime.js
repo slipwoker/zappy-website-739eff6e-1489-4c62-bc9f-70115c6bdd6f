@@ -15213,9 +15213,17 @@ async function loadRelatedProducts(currentProduct, t) {
         var shStr = wrapper.getAttribute('data-zappy-zoom-wrapper-height');
         var swNum = parseFloat(swStr) || 0;
         var shNum = parseFloat(shStr) || 0;
+        // If the slot's height is only as tall as the wrapper, that height is
+        // content-driven by THIS wrapper (common for .home-feature-image-wrap
+        // with no CSS height). Switching to height:100% then collapses on the
+        // next layout pass because the absolute <img> no longer contributes
+        // intrinsic height — the Artistic Epoxy / nwooda middle-card bug.
+        var slotSizedByWrapper = Math.abs(slotRect.height - wrapRect.height) <= 2;
+        var canFillSlotHeight = slotRect.height > 0 && !slotSizedByWrapper &&
+          (forceCardSlotFill || (slotHeightGap > 4 && slotCS.overflow !== 'visible'));
         wrapper.style.setProperty('width', '100%', 'important');
         wrapper.style.setProperty('max-width', '100%', 'important');
-        if (slotRect.height > 0 && (forceCardSlotFill || (slotHeightGap > 4 && slotCS.overflow !== 'visible'))) {
+        if (canFillSlotHeight) {
           wrapper.style.setProperty('height', '100%', 'important');
           wrapper.style.setProperty('aspect-ratio', 'auto', 'important');
           wrapper.style.setProperty('padding-bottom', '0', 'important');
@@ -15257,8 +15265,12 @@ async function loadRelatedProducts(currentProduct, t) {
             }
           }
         } else if (swNum > 0 && shNum > 0) {
+          // Heightless / content-sized slots (and already-collapsed wrappers):
+          // keep width:100% and size via the saved aspect ratio so absolute
+          // images remain visible after refresh.
           wrapper.style.setProperty('aspect-ratio', swNum + '/' + shNum, 'important');
           wrapper.style.setProperty('height', 'auto', 'important');
+          wrapper.style.setProperty('padding-bottom', '0', 'important');
         }
         wrapper.setAttribute('data-zappy-card-slot-fill', '1');
         // Also stretch any intermediate .zappy-inserted-element ancestors up
@@ -17779,6 +17791,58 @@ function fixContrast(){
       setTimeout(syncPdp, 400);
     }
     setTimeout(syncPdp, 1200);
+  } catch (e) {}
+})();
+
+
+/* ZAPPY_SERVICE_BOOKING_WIDGET_CSS_V3 */
+;(function(){
+  try {
+    function ensure() {
+      if (!document.getElementById('zappy-booking-widget-css-v3')) {
+        var style = document.createElement('style');
+        style.id = 'zappy-booking-widget-css-v3';
+        style.textContent =
+          '.zappy-qv-booking{display:flex!important;flex-direction:column!important;gap:10px!important;width:min(100%,320px)!important;max-width:320px!important;margin:8px 0 18px!important;align-self:flex-start!important;padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;box-sizing:border-box!important}' +
+        '.zappy-qv-book-row{display:flex!important;flex-direction:column!important;gap:5px!important}' +
+        '.zappy-qv-book-row.is-check{flex-direction:row!important;align-items:center!important;gap:8px!important}' +
+        '.zappy-qv-book-label{font-size:12px!important;font-weight:600!important;color:var(--text-color,#374151)!important}' +
+        '.zappy-qv-book-req{color:#dc2626!important}' +
+        '.zappy-qv-book-select,.zappy-qv-book-input{width:100%!important;min-height:42px!important;padding:8px 12px!important;border:1px solid var(--border-color,#d1d5db)!important;border-radius:8px!important;background:#fff!important;color:var(--text-color,#111827)!important;font-size:14px!important;font-family:inherit!important;box-sizing:border-box!important}' +
+        '.zappy-qv-book-input:focus,.zappy-qv-book-select:focus{outline:none!important;border-color:var(--primary-color,#ff0083)!important}' +
+        '.zappy-qv-book-calendar{width:100%!important;max-width:320px!important;margin:0!important;padding:10px!important;border:1px solid var(--border-color,#d1d5db)!important;border-radius:12px!important;background:#fff!important;box-shadow:0 8px 22px rgba(15,23,42,.06)!important;box-sizing:border-box!important}' +
+        '.zappy-qv-book-cal-head{display:grid!important;grid-template-columns:32px 1fr 32px!important;align-items:center!important;gap:8px!important;margin-bottom:8px!important}' +
+        '.zappy-qv-book-cal-title{text-align:center!important;font-size:13px!important;font-weight:700!important;color:var(--text-color,#111827)!important}' +
+        '.zappy-qv-book-cal-nav{width:32px!important;height:32px!important;border:1px solid var(--border-color,#d1d5db)!important;border-radius:999px!important;background:#fff!important;color:var(--text-color,#111827)!important;cursor:pointer!important;font:inherit!important;line-height:1!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;padding:0!important}' +
+        '.zappy-qv-book-cal-nav:disabled{opacity:.35!important;cursor:not-allowed!important}' +
+        '#zappy-qv-modal .zappy-qv-book-cal-weekdays,#zappy-qv-modal .zappy-qv-book-cal-grid,#zappy-pdp-booking .zappy-qv-book-cal-weekdays,#zappy-pdp-booking .zappy-qv-book-cal-grid,.zappy-qv-booking .zappy-qv-book-cal-weekdays,.zappy-qv-booking .zappy-qv-book-cal-grid{display:grid!important;grid-template-columns:repeat(7,1fr)!important;grid-auto-columns:minmax(0,1fr)!important;gap:4px!important}' +
+        '.zappy-qv-book-cal-weekdays{margin-bottom:4px!important}' +
+        '.zappy-qv-book-cal-weekday{text-align:center!important;font-size:11px!important;font-weight:700!important;color:var(--text-muted,#6b7280)!important}' +
+        '.zappy-qv-book-calendar .zappy-qv-book-cal-day{display:flex!important;align-items:center!important;justify-content:center!important;min-width:0!important;width:auto!important;max-width:none!important;height:34px!important;border:1px solid transparent!important;border-radius:9px!important;background:transparent!important;color:var(--text-muted,#9ca3af)!important;font:inherit!important;font-size:13px!important;cursor:default!important;padding:0!important;box-sizing:border-box!important}' +
+        '.zappy-qv-book-cal-day.is-available{border-color:var(--border-color,#d1d5db)!important;background:rgba(255,255,255,.72)!important;color:var(--text-color,#111827)!important;cursor:pointer!important}' +
+        '.zappy-qv-book-cal-day.is-available:hover{border-color:var(--primary-color,#ff0083)!important}' +
+        '.zappy-qv-book-cal-day.is-selected{border-color:var(--primary-color,#ff0083)!important;background:var(--primary-color,#ff0083)!important;color:var(--text-light,#fff)!important;font-weight:700!important}' +
+        'textarea.zappy-qv-book-input{min-height:60px!important;resize:vertical!important}' +
+        '.zappy-qv-book-check{width:18px!important;height:18px!important;accent-color:var(--primary-color,#ff0083)!important}' +
+          '.zappy-qv-book-row.is-check .zappy-qv-book-label{font-weight:500!important;order:2!important}' +
+          '.zappy-qv-book-loading,.zappy-qv-book-empty{font-size:13px!important;color:var(--text-muted,#6b7280)!important;padding:4px 0!important}' +
+          '.product-add-row.zappy-service-booking-actions{position:static!important;bottom:auto!important;z-index:auto!important}';
+        document.head.appendChild(style);
+      }
+      var pdpBooking = document.getElementById('zappy-pdp-booking');
+      var actionRow = document.querySelector('.product-add-row');
+      if (pdpBooking && actionRow) actionRow.classList.add('zappy-service-booking-actions');
+    }
+    if (!window.zappyEnsureBookingWidgetStyles) window.zappyEnsureBookingWidgetStyles = ensure;
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', ensure);
+    else ensure();
+    setTimeout(ensure, 500);
+    setTimeout(ensure, 1500);
+    setTimeout(ensure, 3000);
+    if (window.MutationObserver && !window.__zappyServiceBookingWidgetCssObserver) {
+      window.__zappyServiceBookingWidgetCssObserver = new MutationObserver(ensure);
+      window.__zappyServiceBookingWidgetCssObserver.observe(document.documentElement, { childList: true, subtree: true });
+    }
   } catch (e) {}
 })();
 
