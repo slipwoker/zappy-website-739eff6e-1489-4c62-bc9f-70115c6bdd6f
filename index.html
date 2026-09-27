@@ -399,10 +399,14 @@
     return 'zappy_purchase_fired_' + String(orderId || '');
   }
 
+  function purchaseMetaDedupKey(orderId) {
+    return 'zappy_purchase_meta_fired_' + String(orderId || '');
+  }
+
   function alreadyFiredPurchase(orderId) {
     if (!orderId) return false;
     try {
-      return sessionStorage.getItem(purchaseDedupKey(orderId)) === '1';
+      return window.sessionStorage.getItem(purchaseDedupKey(orderId)) === '1';
     } catch (e) {
       return false;
     }
@@ -410,8 +414,77 @@
 
   function markPurchaseFired(orderId) {
     if (!orderId) return;
-    try { sessionStorage.setItem(purchaseDedupKey(orderId), '1'); } catch (e) {}
+    try { window.sessionStorage.setItem(purchaseDedupKey(orderId), '1'); } catch (e) {}
   }
+
+  function alreadyFiredPurchaseMeta(orderId) {
+    if (!orderId) return false;
+    try {
+      return window.sessionStorage.getItem(purchaseMetaDedupKey(orderId)) === '1';
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function markPurchaseMetaFired(orderId) {
+    if (!orderId) return;
+    try { window.sessionStorage.setItem(purchaseMetaDedupKey(orderId), '1'); } catch (e) {}
+  }
+
+  function getPendingMetaEvents() {
+    try {
+      if (!Array.isArray(window.__zappyPendingMetaEvents)) {
+        window.__zappyPendingMetaEvents = [];
+      }
+      return window.__zappyPendingMetaEvents;
+    } catch (e) {
+      return [];
+    }
+  }
+
+  function enqueueMetaEvent(eventName, params, orderId) {
+    var q = getPendingMetaEvents();
+    if (orderId) {
+      for (var i = 0; i < q.length; i++) {
+        if (q[i] && q[i].orderId === orderId && q[i].eventName === eventName) return;
+      }
+    }
+    q.push({ eventName: eventName, params: params || {}, orderId: orderId || null });
+  }
+
+  /**
+   * Live sites replace the eager Meta snippet with a consent-gated lazy
+   * loader. Payment providers bounce the shopper back to /order-success
+   * before CookieConsent hydrates, so confirm-order used to fire Purchase
+   * while window.fbq was still undefined — then sessionStorage blocked a
+   * retry. Queue until fbq exists, then flush.
+   */
+  function flushPendingMetaEvents() {
+    if (typeof window.fbq !== 'function') return;
+    var q = getPendingMetaEvents().slice();
+    try { window.__zappyPendingMetaEvents = []; } catch (e) {}
+    for (var i = 0; i < q.length; i++) {
+      var item = q[i];
+      if (!item || !item.eventName) continue;
+      if (item.orderId && alreadyFiredPurchaseMeta(item.orderId)) continue;
+      try {
+        window.fbq('track', item.eventName, item.params || {});
+        if (item.orderId) markPurchaseMetaFired(item.orderId);
+      } catch (e2) {}
+    }
+  }
+  window.zappyFlushPendingMetaEvents = flushPendingMetaEvents;
+
+  var metaFlushAttempts = 0;
+  var metaFlushTimer = setInterval(function() {
+    metaFlushAttempts++;
+    flushPendingMetaEvents();
+    var pendingLen = 0;
+    try { pendingLen = (window.__zappyPendingMetaEvents || []).length; } catch (e) {}
+    if ((pendingLen === 0 && typeof window.fbq === 'function') || metaFlushAttempts > 60) {
+      clearInterval(metaFlushTimer);
+    }
+  }, 500);
 
   /**
    * Fire a marketing event to first-party analytics + GA4/GTM/Meta when present.
@@ -431,15 +504,19 @@
         metadata.pagePath = pagePath();
       }
 
+      var oid = '';
+      var purchaseAlreadySent = false;
+      var purchaseMetaAlreadySent = false;
       if (eventId === 'checkout_complete') {
-        var oid = String(metadata.orderId || metadata.order_id || metadata.transaction_id || '');
-        if (oid && alreadyFiredPurchase(oid)) return;
-        if (oid) markPurchaseFired(oid);
+        oid = String(metadata.orderId || metadata.order_id || metadata.transaction_id || '');
+        purchaseAlreadySent = !!(oid && alreadyFiredPurchase(oid));
+        purchaseMetaAlreadySent = !!(oid && alreadyFiredPurchaseMeta(oid));
+        if (purchaseAlreadySent && purchaseMetaAlreadySent) return;
       }
 
       // First-party (skip when already tracked via zappyTrackEcomAnalytics path
       // that opts out, or when caller already recorded under a different name)
-      if (!opts.skipFirstParty) {
+      if (!opts.skipFirstParty && !purchaseAlreadySent) {
         try {
           if (window.zappyAnalytics && typeof window.zappyAnalytics.track === 'function') {
             window.zappyAnalytics.track(eventId, metadata);
@@ -448,40 +525,53 @@
       }
 
       // GTM / dataLayer — platform-standard ecommerce event names
-      try {
-        window.dataLayer = window.dataLayer || [];
-        if (plat.ecom) {
-          var ga4ForGtm = buildGa4Params(eventId, metadata);
-          var ecommerce = {};
-          if (ga4ForGtm.transaction_id) ecommerce.transaction_id = ga4ForGtm.transaction_id;
-          if (ga4ForGtm.value != null) ecommerce.value = ga4ForGtm.value;
-          if (ga4ForGtm.currency) ecommerce.currency = ga4ForGtm.currency;
-          if (ga4ForGtm.items) ecommerce.items = ga4ForGtm.items;
-          window.dataLayer.push({ event: plat.gtm, ecommerce: ecommerce });
-          // Secondary Zappy-specific trigger for merchants who want it
-          if (eventId === 'checkout_complete' || eventId === 'checkout_started') {
-            window.dataLayer.push({ event: eventId, ecommerce: ecommerce });
+      if (!purchaseAlreadySent) {
+        try {
+          window.dataLayer = window.dataLayer || [];
+          if (plat.ecom) {
+            var ga4ForGtm = buildGa4Params(eventId, metadata);
+            var ecommerce = {};
+            if (ga4ForGtm.transaction_id) ecommerce.transaction_id = ga4ForGtm.transaction_id;
+            if (ga4ForGtm.value != null) ecommerce.value = ga4ForGtm.value;
+            if (ga4ForGtm.currency) ecommerce.currency = ga4ForGtm.currency;
+            if (ga4ForGtm.items) ecommerce.items = ga4ForGtm.items;
+            window.dataLayer.push({ event: plat.gtm, ecommerce: ecommerce });
+            // Secondary Zappy-specific trigger for merchants who want it
+            if (eventId === 'checkout_complete' || eventId === 'checkout_started') {
+              window.dataLayer.push({ event: eventId, ecommerce: ecommerce });
+            }
+          } else {
+            var dl = { event: plat.gtm };
+            for (var k in metadata) {
+              if (Object.prototype.hasOwnProperty.call(metadata, k)) dl[k] = metadata[k];
+            }
+            window.dataLayer.push(dl);
           }
+        } catch (e2) {}
+
+        // GA4 gtag
+        try {
+          if (typeof window.gtag === 'function') {
+            window.gtag('event', plat.ga4, buildGa4Params(eventId, metadata));
+          }
+        } catch (e3) {}
+
+        if (oid) markPurchaseFired(oid);
+      }
+
+      // Meta Pixel — live sites lazy-load fbq after marketing consent. If the
+      // stub is not defined yet, queue and flush when the pixel arrives.
+      try {
+        if (purchaseMetaAlreadySent) {
+          // already delivered to Meta
         } else {
-          var dl = { event: plat.gtm };
-          for (var k in metadata) {
-            if (Object.prototype.hasOwnProperty.call(metadata, k)) dl[k] = metadata[k];
+          var metaParams = buildMetaParams(eventId, metadata);
+          if (typeof window.fbq === 'function') {
+            window.fbq('track', plat.meta, metaParams);
+            if (oid) markPurchaseMetaFired(oid);
+          } else {
+            enqueueMetaEvent(plat.meta, metaParams, eventId === 'checkout_complete' ? oid : null);
           }
-          window.dataLayer.push(dl);
-        }
-      } catch (e2) {}
-
-      // GA4 gtag
-      try {
-        if (typeof window.gtag === 'function') {
-          window.gtag('event', plat.ga4, buildGa4Params(eventId, metadata));
-        }
-      } catch (e3) {}
-
-      // Meta Pixel (only when fbq is loaded — consent-gated lazy loader)
-      try {
-        if (typeof window.fbq === 'function') {
-          window.fbq('track', plat.meta, buildMetaParams(eventId, metadata));
         }
       } catch (e4) {}
     } catch (err) {}
@@ -1711,7 +1801,7 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
 </head>
 <body>
 
-<div class="zappy-announcement-bar">
+<div class="zappy-announcement-bar" data-interval="4000">
       <span class="zappy-announcement-message active">ברוכים הבאים לאתר של קולולו </span>
     </div>
 <script>window.ZAPPY_PRODUCTS_LISTING_PATH = "/products";</script>
@@ -1719,8 +1809,8 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
     <section class="featured-products-section" id="featured-products">
       <div class="container">
         
-        <div class="product-grid featured-grid" id="zappy-featured-products"></div>
-        <div class="view-all-products" style>
+        <div class="product-grid featured-grid" id="zappy-featured-products"><div class="loading-products"></div></div>
+        <div class="view-all-products">
           
         </div>
       </div>
@@ -1738,7 +1828,7 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
       </div>
       <div class="search-results" id="mobile-search-results"></div>
     </div>
-<script>window.ZAPPY_WEBSITE_ID = "739eff6e-1489-4c62-bc9f-70115c6bdd6f";window.ZAPPY_API_BASE = (window.location.pathname.includes('/preview') ? window.location.origin : "https://api.zappy5.com");</script><a class="skip-link" href="#main">דלג לתוכן הראשי</a>
+<script>window.ZAPPY_WEBSITE_ID = "739eff6e-1489-4c62-bc9f-70115c6bdd6f";window.ZAPPY_API_BASE = "https://api.zappy5.com"</script><a class="skip-link" href="#main">דלג לתוכן הראשי</a>
   <nav class="navbar" dir="rtl">
   <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
     <svg style="display:block !important" class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -2273,7 +2363,7 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
   
   
 
-<section class="kololo-categories" aria-labelledby="categories-heading" id="kololo-categories" style="position: relative; overflow: hidden; background-color: #FFE0F0; --zappy-bg-color: #FFE0F0" data-zappy-bg-type="color" data-zappy-bg-color="#FFE0F0" data-zappy-bg-image data-zappy-bg-overlay-color="#000000" data-zappy-bg-overlay-opacity="0" data-zappy-bg-video-type data-zappy-bg-video-url><p class="zappy-editable"><span class="zappy-announcement-message active" style><span style="color: #fff0f6 !important"><span style="color: #fff0f6 !important">ברוכים הבאים לאתר של קולולו </span></span></span></p><style data-zappy-section-color="kololo-categories">#kololo-categories, #kololo-categories h1, #kololo-categories h2, #kololo-categories h3, #kololo-categories h4, #kololo-categories h5, #kololo-categories h6, #kololo-categories p, #kololo-categories span, #kololo-categories a, #kololo-categories li, #kololo-categories label, #kololo-categories blockquote, #kololo-categories figcaption, #kololo-categories dt, #kololo-categories dd, #kololo-categories td, #kololo-categories th { color: #1A1A1A; }</style><p style="font-size: 16px;">ברוכים הבאים לאתר של קולולו </p>
+<section class="kololo-categories" aria-labelledby="categories-heading" id="kololo-categories" style="position: relative; overflow: hidden; background-color: #FFE0F0; --zappy-bg-color: #FFE0F0" data-zappy-bg-type="color" data-zappy-bg-color="#FFE0F0" data-zappy-bg-image data-zappy-bg-overlay-color="#000000" data-zappy-bg-overlay-opacity="0" data-zappy-bg-video-type data-zappy-bg-video-url><p><span class="zappy-announcement-message active"><span style="color: #fff0f6 !important"><span style="color: #fff0f6 !important">ברוכים הבאים לאתר של קולולו </span></span></span></p><style data-zappy-section-color="kololo-categories">#kololo-categories, #kololo-categories h1, #kololo-categories h2, #kololo-categories h3, #kololo-categories h4, #kololo-categories h5, #kololo-categories h6, #kololo-categories p, #kololo-categories span, #kololo-categories a, #kololo-categories li, #kololo-categories label, #kololo-categories blockquote, #kololo-categories figcaption, #kololo-categories dt, #kololo-categories dd, #kololo-categories td, #kololo-categories th { color: #1A1A1A; }</style><p style="font-size: 16px;">ברוכים הבאים לאתר של קולולו </p>
   <div class="categories-container" style="font-size: 16px;">
     <header class="categories-header">
       <span class="categories-badge" style="font-size: 14px;">העולם המתוק שלנו</span>
@@ -2281,7 +2371,7 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
       <p class="categories-subtitle" style="font-size: 16px;">בחרי את הקטגוריה המושלמת והתחילי לפנק את האהובים שלך במארזים מעוצבים למשעי</p>
     </header>
 
-    <div class="categories-grid zappy-preserve-css-grid" style="--zappy-grid-cols: repeat(auto-fit, minmax(min(100%, 348px), 1fr)); grid-template-columns: repeat(auto-fit, minmax(min(100%, 348px), 1fr)); font-size: 16px; display: grid; align-items: stretch !important;" id="zappy-auto-grid-1784546888591-okbs28" data-zappy-auto-grid="true" data-original-item-width="400" data-original-gap="24px" data-zappy-explicit-columns="true">
+    <div class="categories-grid zappy-preserve-css-grid" style="--zappy-grid-cols: repeat(auto-fit, minmax(min(100%, 348px), 1fr)); grid-template-columns: repeat(auto-fit, minmax(min(100%, 348px), 1fr)); font-size: 16px; display: grid; align-items: stretch !important;" id="zappy-auto-grid-1784546888591-okbs28" data-zappy-auto-grid="true" data-original-item-width="348" data-original-gap="28px" data-zappy-explicit-columns="true">
       <a href="/products" class="category-card" data-category="birthday" data-grid-item-index="0" style="font-size: 16px;">
         <br /><br />
           <br /><br />
@@ -2293,50 +2383,15 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
         <span class="category-link" style="font-size: 14.4px;">לכל המארזים <i class="fas fa-chevron-left" aria-hidden="true" style="cursor: pointer;"></i></span>
       </a>
 
-      <a href="/products" class="category-card" data-category="balloons" data-grid-item-index="1" style="font-size: 16px;">
-        <br /><br />
-          <br /><br />&nbsp;<i class="fas fa-balloon category-icon" aria-hidden="true" style="cursor: pointer; color: #FF3399"></i>
-          
-        
-        <h3 class="category-name" style="font-size: 22px;">בלונים</h3>
-        <p class="category-desc" style="font-size: 16px;">בלונים צבעוניים ומרהיבים בכל הגדלים והצורות להוספת קסם לכל חגיגה</p>
-        <p style="font-size: 16px;"><span class="category-link" style="font-size: 14.4px;">לכל המארזים <i class="fas fa-chevron-left" aria-hidden="true" style="cursor: pointer;"></i></span>
-      </p></a>
+      
 
-      <a href="/products" class="category-card" data-category="flowers" data-grid-item-index="2" style="font-size: 16px;">
-        <br /><br />
-          <br /><br />
-            <i class="fas fa-seedling category-icon" aria-hidden="true" data-element-type="icon" data-element-id="icon-1784403611320-01rv0nsqy" data-icon-type="fontawesome" style="pointer-events: auto; cursor: pointer;"></i>
-          
-        
-        <h3 class="category-name" style="font-size: 22px;">פרחים</h3>
-        <p class="category-desc" style="font-size: 16px;">זרי פרחים רעננים ומעוצבים בקפידה להביא חיוך וריח משכר לכל אירוע</p>
-        <span class="category-link" style="font-size: 14.4px;">לכל המארזים <i class="fas fa-chevron-left" aria-hidden="true" style="cursor: pointer;"></i></span>
-      </a>
+      
 
-      <a href="/products" class="category-card" data-category="sweets" data-grid-item-index="3" style="font-size: 16px;">
-        <br /><br />
-          <br /><br />
-            <i class="fas fa-candy-cane category-icon" aria-hidden="true" data-element-type="icon" data-element-id="icon-1784403611320-0eu06xgvh" data-icon-type="fontawesome" style="pointer-events: auto; cursor: pointer;"></i>
-          
-        
-        <h3 class="category-name" style="font-size: 22px;">שוקולד ומתוקים</h3>
-        <p class="category-desc" style="font-size: 16px;">מבחר שוקולדים איכותיים, סוכריות ומתוקים מפנקים שיעשו לכם את היום</p>
-        <span class="category-link" style="font-size: 14.4px;">לכל המארזים <i class="fas fa-chevron-left" aria-hidden="true" style="cursor: pointer;"></i></span>
-      </a>
+      
 
-      <a href="/products" class="category-card" data-category="spa" data-grid-item-index="4" style="font-size: 16px;">
-        <br /><br />
-          <br /><br />
-            <i class="fas fa-spa category-icon" aria-hidden="true" data-element-type="icon" data-element-id="icon-1784403611320-vop9yum7t" data-icon-type="fontawesome" style="pointer-events: auto; cursor: pointer;"></i>
-          
-        
-        <h3 class="category-name" style="font-size: 22px;">מארזי פינוק</h3>
-        <p class="category-desc" style="font-size: 16px;">מארזי ספא מפנקים עם מוצרי טיפוח, נרות ריחניים ואביזרים להרגעה מושלמת</p>
-        <span class="category-link" style="font-size: 14.4px;">לכל המארזים <i class="fas fa-chevron-left" aria-hidden="true" style="cursor: pointer;"></i></span>
-      </a>
+      
 
-      <a href="/products" class="category-card" data-category="personal" data-grid-item-index="5" style="font-size: 16px;">
+      <a href="/products" class="category-card" data-category="personal" data-grid-item-index="1" style="font-size: 16px;">
         <br /><br />
           <br /><br />
             <i class="fas fa-heart category-icon" aria-hidden="true" data-element-type="icon" data-element-id="icon-1784403611320-exh1ch3k3" data-icon-type="fontawesome" style="pointer-events: auto; cursor: pointer;"></i>
@@ -2359,7 +2414,7 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
 <section class="kololo-hero" dir="rtl" id="zappy-section-1784540160732-2439" style="position: relative; overflow: hidden; background-color: #FFFFFF; --zappy-bg-color: #FFFFFF" data-zappy-bg-type="color" data-zappy-bg-color="#FFFFFF" data-zappy-bg-image data-zappy-bg-overlay-color="#000000" data-zappy-bg-overlay-opacity="0" data-zappy-bg-video-type data-zappy-bg-video-url><style data-zappy-section-color="zappy-section-1784540160732-2439">#zappy-section-1784540160732-2439, #zappy-section-1784540160732-2439 h1, #zappy-section-1784540160732-2439 h2, #zappy-section-1784540160732-2439 h3, #zappy-section-1784540160732-2439 h4, #zappy-section-1784540160732-2439 h5, #zappy-section-1784540160732-2439 h6, #zappy-section-1784540160732-2439 p, #zappy-section-1784540160732-2439 span, #zappy-section-1784540160732-2439 a, #zappy-section-1784540160732-2439 li, #zappy-section-1784540160732-2439 label, #zappy-section-1784540160732-2439 blockquote, #zappy-section-1784540160732-2439 figcaption, #zappy-section-1784540160732-2439 dt, #zappy-section-1784540160732-2439 dd, #zappy-section-1784540160732-2439 td, #zappy-section-1784540160732-2439 th { color: #1A1A1A; }</style>
   <div class="hero-container">
     <div class="hero-visual">
-      <img data-placeholder="hero-illustration-1" data-context="Cute cartoon illustration of a smiling woman with dark hair, holding a large round arrangement of pink and red balloons and a basket filled with pink gift boxes and a small teddy bear. Floating heart-shaped balloons and confetti. Soft pink, red, and gold color palette. No text. Warm, joyful mood." src="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27600%27 height=%27600%27%3E%3Cdefs%3E%3ClinearGradient id=%27grad%27 x1=%270%25%27 y1=%270%25%27 x2=%27100%25%27 y2=%27100%25%27%3E%3Cstop offset=%270%25%27 style=%27stop-color:%23FF0083;stop-opacity:1%27 /%3E%3Cstop offset=%27100%25%27 style=%27stop-color:%23FF008320;stop-opacity:1%27 /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width=%27100%25%27 height=%27100%25%27 fill=%27url(%23grad)%27/%3E%3Ctext x=%2750%25%27 y=%2750%25%27 font-family=%27Arial, sans-serif%27 font-size=%2718%27 fill=%27white%27 text-anchor=%27middle%27 dy=%27.3em%27 font-weight=%27500%27%3Eהאיור הראשי%3C/text%3E%3C/svg%3E" alt="איור של אישה מחייכת עם בלונים ומארז מתנה" data-zappy-editable-image="true" class="hero-illustration" decoding="async" />
+      <img data-placeholder="hero-illustration-1" data-context="Cute cartoon illustration of a smiling woman with dark hair, holding a large round arrangement of pink and red balloons and a basket filled with pink gift boxes and a small teddy bear. Floating heart-shaped balloons and confetti. Soft pink, red, and gold color palette. No text. Warm, joyful mood." src="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27600%27 height=%27600%27%3E%3Cdefs%3E%3ClinearGradient id=%27grad%27 x1=%270%25%27 y1=%270%25%27 x2=%27100%25%27 y2=%27100%25%27%3E%3Cstop offset=%270%25%27 style=%27stop-color:%23FF0083;stop-opacity:1%27 /%3E%3Cstop offset=%27100%25%27 style=%27stop-color:%23FF008320;stop-opacity:1%27 /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width=%27100%25%27 height=%27100%25%27 fill=%27url(%23grad)%27/%3E%3Ctext x=%2750%25%27 y=%2750%25%27 font-family=%27Arial, sans-serif%27 font-size=%2718%27 fill=%27white%27 text-anchor=%27middle%27 dy=%27.3em%27 font-weight=%27500%27%3Eהאיור הראשי%3C/text%3E%3C/svg%3E" alt="איור של אישה מחייכת עם בלונים ומארז מתנה" class="hero-illustration" decoding="async" />
     </div>
     <div class="hero-content">
       <p class="hero-eyebrow">מארזים משמחים</p>
@@ -2407,7 +2462,7 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
             <span class="contact-icon"><i class="fas fa-phone" data-element-type="icon" data-element-id="icon-1784387762122-55yisoykr" data-icon-type="fontawesome"></i></span>
             <span class="contact-text"><a href="tel:+972523421367">+972523421367</a></span>
           </li>
-          <li style="color: rgb(74, 74, 74) !important;"><a href="https://www.google.com/maps/search/?api=1&amp;query=%D7%90%D7%A9%D7%93%D7%95%D7%93%2C%207767503%2C%20%D7%99%D7%A9%D7%A8%D7%90%D7%9C" target="_blank" rel="noopener noreferrer" style><span class="contact-icon"><i class="fas fa-map-marker-alt" style="cursor: pointer;"></i></span>
+          <li style="color: rgb(74, 74, 74) !important;"><a href="https://www.google.com/maps/search/?api=1&amp;query=%D7%90%D7%A9%D7%93%D7%95%D7%93%2C%207767503%2C%20%D7%99%D7%A9%D7%A8%D7%90%D7%9C" target="_blank" rel="noopener noreferrer"><span class="contact-icon"><i class="fas fa-map-marker-alt" style="cursor: pointer;"></i></span>
             <span class="contact-text">אשדוד, 7767503, ישראל</span></a></li>
         </ul>
       </div>
@@ -2430,14 +2485,14 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
     </div>
     <div class="footer-bottom">
       <p class="footer-copyright">© 2026 קולולו. כל הזכויות שמורות.</p>
-      <div class="footer-legal" style>
+      <div class="footer-legal">
         <a href="/privacy">מדיניות פרטיות</a>
         <a href="/terms">תנאי שימוש</a><span class="separator">|</span>
             <a href="/return-policy" aria-label="מדיניות החזרות">
               מדיניות החזרות
             </a>
         <a href="/accessibility">נגישות</a>
-        <a href="https://zappy5.com" target="_blank" class="zappy-attribution" style>נוצר באמצעות Zappy<br />Website Design by Sima yossef</a>
+        <a href="https://zappy5.com" target="_blank" class="zappy-attribution">נוצר באמצעות Zappy<br />Website Design by Sima yossef</a>
       </div>
     </div>
   </div>
