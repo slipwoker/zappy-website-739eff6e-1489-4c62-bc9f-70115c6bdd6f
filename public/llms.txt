@@ -76,7 +76,7 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 25**
+**Total active products: 15**
 
 ### קולולו יום הולדת דגם רויאל ורוד
 https://kululugift.co.il/product/kvlvlv-yvm-hvldt-dgm-rvyal-vrvd-wdlrzi
@@ -182,77 +182,6 @@ https://kululugift.co.il/product/kvlvlv-yvm-hvldt-dgm-alynvr-5c6k8m
 - Availability: In stock
 - Category: קולולו יום הולדת לאישה 
 - Image: https://kululugift.co.il/assets/product-enhanced-1784126834371-bqhg6v.webp
-
-### עוגת בנטו ורוד עתיק פפיון שחור וינטאג
-https://kululugift.co.il/product/avgt-bntv-vrvd-atyk-ppyvn-shchvr-vyntag-6x1kp6
-- Price: 199.00 ILS
-- Availability: In stock
-- Category: עוגות בנטו 
-- Image: https://kululugift.co.il/assets/product-enhanced-1784131130678-91gycd.webp
-
-### עוגת בנטו דובדבנים פפיונים
-https://kululugift.co.il/product/avgt-bntv-dvbdbnym-ppyvnym-rr5a7b
-- Price: 199.00 ILS
-- Availability: In stock
-- Category: עוגות בנטו 
-- Image: https://kululugift.co.il/assets/product-enhanced-1784131546788-3685rn.webp
-
-### עוגת בנטו לבובו ורוד
-https://kululugift.co.il/product/avgt-bntv-lbvbv-vrvd-0ti72b
-- Price: 199.00 ILS
-- Availability: In stock
-- Category: עוגות בנטו 
-- Image: https://kululugift.co.il/assets/product-enhanced-1784131457981-dojq2a.webp
-
-### עוגת בנטו  לבן וינטאג׳
-https://kululugift.co.il/product/avgt-bntv-lbn-vyntag-h9c2gr
-- Price: 199.00 ILS
-- Availability: In stock
-- Category: עוגות בנטו 
-- Image: https://kululugift.co.il/assets/product-enhanced-1784130882429-ktmqm.webp
-
-### עוגת בנטו 2 waves 
-https://kululugift.co.il/product/avgt-bntv-2-waves-nigkww
-- Price: 199.00 ILS
-- Availability: In stock
-- Category: עוגות בנטו 
-- Image: https://kululugift.co.il/assets/product-enhanced-1784130794219-r5neq8.webp
-
-### עוגת בנטו 3 waves 
-https://kululugift.co.il/product/avgt-bntv-3-waves-6uwgwf
-- Price: 199.00 ILS
-- Availability: In stock
-- Category: עוגות בנטו 
-- Image: https://kululugift.co.il/assets/product-enhanced-1784130749004-yo5rpe.webp
-
-### עוגה בנטו וינטג׳ love
-https://kululugift.co.il/product/avgh-bntv-vyntg-love-4uk2od
-- Price: 199.00 ILS
-- Availability: In stock
-- Category: עוגות בנטו 
-- Image: https://kululugift.co.il/assets/product-enhanced-1784130842097-a9uzo.webp
-
-### עוגת בנטו  תכלת/ורוד פפיונים וינטאג׳ 
-https://kululugift.co.il/product/avgt-bntv-tkltvrvd-ppyvnym-vyntag-w3ixtn
-- Price: 199.00 ILS
-- Availability: In stock
-- Category: עוגות בנטו 
-- Image: https://kululugift.co.il/assets/product-enhanced-1784130921013-o5cic5q.webp
-
-### עוגת בנטו ורוד פפיונים וינטאג
-https://kululugift.co.il/product/avgt-bntv-vrvd-ppyvnym-vyntag-ah99g8
-- Price: 199.00 ILS
-- Availability: In stock
-- Category: עוגות בנטו 
-- Image: https://kululugift.co.il/assets/product-enhanced-1784130959175-ado2bp.webp
-
-### עוגת בנטו ניוד ורוד פפיונים וינטאג׳
-https://kululugift.co.il/product/avgt-bntv-nyvd-vrvd-ppyvnym-vyntag-lirdvq
-- Price: 199.00 ILS
-- Availability: In stock
-- Category: עוגות בנטו 
-- Description: עוגת בנטו
-- Image: https://kululugift.co.il/assets/product-enhanced-1784131014348-0i5fm.webp
 
 ---
 
