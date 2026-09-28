@@ -1,8 +1,31 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-09-27T09:56:34.612Z",
+  "generated_at": "2026-09-28T18:02:45.988Z",
   "base_url": "https://kululugift.co.il",
   "currency": "ILS",
-  "count": 0,
-  "products": []
+  "count": 1,
+  "products": [
+    {
+      "id": "2cc3307a-48e7-4a9a-a4a6-e4926e7f314d",
+      "slug": "pdf-bvl-kmv-shat-qtjfet",
+      "name": "PDF בול כמו שאת",
+      "name_translations": {},
+      "description": "<p>מוצר דיגיטלי</p>",
+      "short_description": "מוצר דיגיטלי ",
+      "sku": null,
+      "brand": null,
+      "price": 0,
+      "base_price": 0,
+      "sale_price": null,
+      "currency": "ILS",
+      "images": [
+        "https://kululugift.co.il/assets/product-1790618386453-d0ic5f.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://kululugift.co.il/product/pdf-bvl-kmv-shat-qtjfet",
+      "categories": [],
+      "updated_at": "2026-09-28T18:02:08.205Z"
+    }
+  ]
 }
